@@ -1,0 +1,33 @@
+# 대회 제공 데이터·도구 — 재배포하지 않는다 (이용약관)
+#   submission_kit 은 대회가 참가자에게 배포하는 공식 도구다. 특히
+#   checkpoints/action_extractor.ckpt 는 채점용 모델이라 공개 재배포 대상이 아니다.
+#   우리 코드는 킷을 "최종 mp4 확정 후 CSV 변환"에만 무수정 실행한다(SOLUTION.md 6절).
+data/
+submission_kit/
+
+# NVIDIA Cosmos-Predict2.5 원본 저장소 (자체 .git 을 가진 외부 코드)
+#   재현 시 공식 저장소에서 받아 cosmos/cosmos-predict2.5/ 에 둔다.
+cosmos/cosmos-predict2.5/
+
+# 모델 가중치 — GitHub 파일당 100MB 한도를 넘는다
+*.pt
+*.pth
+*.safetensors
+cosmos/checkpoints/
+
+# 사전계산 잠재 40GB
+cosmos/train/latents/
+cosmos/train/val_latents/
+
+# 생성 산출물 (재현하면 다시 만들어진다)
+cosmos/train/runs/gen_*/
+cosmos/train/runs/input_videos_backup/
+*.mp4
+
+# 실행 환경
+.venv/
+__pycache__/
+*.pyc
+
+# 로그
+*.log

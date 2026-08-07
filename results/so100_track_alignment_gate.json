@@ -1,0 +1,252 @@
+{
+  "method": "train-only oracle camera/q0 fit; not deployable inference",
+  "identifiable_samples": 7,
+  "median_differences": {
+    "normal_minus_zero": -0.009826496426202702,
+    "normal_minus_reverse": -1.9389530202653589,
+    "normal_minus_batch_roll": -1.2440741654148448
+  },
+  "win_rates": {
+    "normal_minus_zero": 0.5714285714285714,
+    "normal_minus_reverse": 1.0,
+    "normal_minus_batch_roll": 0.8571428571428571
+  },
+  "verdict": "REJECT_URDF_ALIGNMENT",
+  "samples": [
+    {
+      "sample_id": "holdout_0000",
+      "status": "OK",
+      "matched_tracks": 6,
+      "fit_even_rmse": 4.729818427876521,
+      "normal_odd_motion_rmse": 2.065845990851697,
+      "zero_odd_motion_rmse": 1.7233651544229778,
+      "reverse_odd_motion_rmse": 3.5404637761869395,
+      "batch_roll_odd_motion_rmse": 1.5623683988356245,
+      "normal_minus_zero": 0.3424808364287193,
+      "normal_minus_reverse": -1.4746177853352425,
+      "normal_minus_batch_roll": 0.5034775920160726,
+      "q0_radians": [
+        1.0784172446039744,
+        -1.3239114402295116,
+        0.36420851423567074,
+        0.7453290813865269,
+        2.0608356761020157,
+        0.9677861092441868
+      ],
+      "camera_ortho": {
+        "euler": [
+          -1.1324281240880494,
+          2.4311739131721386,
+          0.26253296439102264
+        ],
+        "pixels_per_meter": 450.28065586366495,
+        "translation": [
+          61.75627598161617,
+          -16.252182501045127
+        ]
+      }
+    },
+    {
+      "sample_id": "holdout_0001",
+      "status": "OK",
+      "matched_tracks": 6,
+      "fit_even_rmse": 2.3258159394212976,
+      "normal_odd_motion_rmse": 1.475203865717658,
+      "zero_odd_motion_rmse": 1.348970804131726,
+      "reverse_odd_motion_rmse": 1.6778065731434082,
+      "batch_roll_odd_motion_rmse": 2.719278031132503,
+      "normal_minus_zero": 0.12623306158593195,
+      "normal_minus_reverse": -0.20260270742575015,
+      "normal_minus_batch_roll": -1.2440741654148448,
+      "q0_radians": [
+        -0.19170228631796588,
+        -1.3290087258190422,
+        -0.19188700688212734,
+        -0.8119635310260119,
+        -2.773643149531578,
+        -0.4016157123575305
+      ],
+      "camera_ortho": {
+        "euler": [
+          -0.6376130773951156,
+          -0.9602372470842055,
+          0.04056954298317279
+        ],
+        "pixels_per_meter": 333.2830839525573,
+        "translation": [
+          171.70773399852087,
+          36.41355472466777
+        ]
+      }
+    },
+    {
+      "sample_id": "holdout_0002",
+      "status": "OK",
+      "matched_tracks": 10,
+      "fit_even_rmse": 3.369513098142992,
+      "normal_odd_motion_rmse": 1.569726544603952,
+      "zero_odd_motion_rmse": 1.5795530410301546,
+      "reverse_odd_motion_rmse": 3.5086795648693108,
+      "batch_roll_odd_motion_rmse": 2.0199180844124407,
+      "normal_minus_zero": -0.009826496426202702,
+      "normal_minus_reverse": -1.9389530202653589,
+      "normal_minus_batch_roll": -0.4501915398084888,
+      "q0_radians": [
+        -1.505360457349049,
+        -0.4128784361495175,
+        0.1397176632615384,
+        1.398096202612784,
+        -2.8639870302724777,
+        -0.4281013821863999
+      ],
+      "camera_ortho": {
+        "euler": [
+          -2.030197532009859,
+          -1.7502962346604338,
+          1.5011509609815945
+        ],
+        "pixels_per_meter": 368.51409359766393,
+        "translation": [
+          214.66086960929817,
+          29.359597729443365
+        ]
+      }
+    },
+    {
+      "sample_id": "holdout_0003",
+      "status": "OK",
+      "matched_tracks": 10,
+      "fit_even_rmse": 9.856872807516517,
+      "normal_odd_motion_rmse": 5.352658997899374,
+      "zero_odd_motion_rmse": 23.934599509851097,
+      "reverse_odd_motion_rmse": 46.899237392666834,
+      "batch_roll_odd_motion_rmse": 11.602321371591454,
+      "normal_minus_zero": -18.58194051195172,
+      "normal_minus_reverse": -41.54657839476746,
+      "normal_minus_batch_roll": -6.249662373692081,
+      "q0_radians": [
+        1.190304823700339,
+        0.8321405261425536,
+        0.21605383081087914,
+        1.1042771309061963,
+        -2.460069964403323,
+        -0.11122706233054618
+      ],
+      "camera_ortho": {
+        "euler": [
+          0.6254443994726105,
+          -0.2168433453464416,
+          0.9973597134526389
+        ],
+        "pixels_per_meter": 318.39389638381107,
+        "translation": [
+          64.69508746642424,
+          109.68974941527001
+        ]
+      }
+    },
+    {
+      "sample_id": "holdout_0004",
+      "status": "OK",
+      "matched_tracks": 10,
+      "fit_even_rmse": 9.115066940593405,
+      "normal_odd_motion_rmse": 7.052903702645662,
+      "zero_odd_motion_rmse": 5.3011269236723155,
+      "reverse_odd_motion_rmse": 14.995037247792443,
+      "batch_roll_odd_motion_rmse": 35.262143407549544,
+      "normal_minus_zero": 1.7517767789733467,
+      "normal_minus_reverse": -7.94213354514678,
+      "normal_minus_batch_roll": -28.209239704903883,
+      "q0_radians": [
+        0.7111155165653827,
+        -0.5753352501019745,
+        -1.0824547055832985,
+        1.778524259113608,
+        -1.5192944107120911,
+        -0.22721139615437144
+      ],
+      "camera_ortho": {
+        "euler": [
+          2.0890564060627224,
+          0.5969964309003897,
+          0.3574175121291676
+        ],
+        "pixels_per_meter": 402.5518534867836,
+        "translation": [
+          50.22303802444592,
+          139.51125731577866
+        ]
+      }
+    },
+    {
+      "sample_id": "holdout_0005",
+      "status": "OK",
+      "matched_tracks": 10,
+      "fit_even_rmse": 5.615061679785954,
+      "normal_odd_motion_rmse": 1.2931870283852,
+      "zero_odd_motion_rmse": 1.4052262920478653,
+      "reverse_odd_motion_rmse": 1.5006921101905824,
+      "batch_roll_odd_motion_rmse": 1.413795082445715,
+      "normal_minus_zero": -0.11203926366266526,
+      "normal_minus_reverse": -0.2075050818053823,
+      "normal_minus_batch_roll": -0.120608054060515,
+      "q0_radians": [
+        0.5160149220144069,
+        1.2768943499696033,
+        -0.38178298646039166,
+        -0.075233379253296,
+        1.111306034342869,
+        0.0538814392499195
+      ],
+      "camera_ortho": {
+        "euler": [
+          -2.4988077839937315,
+          1.4764110174805207,
+          2.7712008264848853
+        ],
+        "pixels_per_meter": 442.3271493631252,
+        "translation": [
+          184.51661877477528,
+          144.52062152142466
+        ]
+      }
+    },
+    {
+      "sample_id": "holdout_0006",
+      "status": "OK",
+      "matched_tracks": 10,
+      "fit_even_rmse": 5.590478380270969,
+      "normal_odd_motion_rmse": 2.851578741953406,
+      "zero_odd_motion_rmse": 4.904134836017974,
+      "reverse_odd_motion_rmse": 14.129517115141255,
+      "batch_roll_odd_motion_rmse": 4.904134836017974,
+      "normal_minus_zero": -2.0525560940645677,
+      "normal_minus_reverse": -11.277938373187848,
+      "normal_minus_batch_roll": -2.0525560940645677,
+      "q0_radians": [
+        -0.8662581470642677,
+        1.3600329755985323,
+        1.0124309832197471,
+        0.4052309680832372,
+        -2.3933980014451786,
+        0.2283156988614086
+      ],
+      "camera_ortho": {
+        "euler": [
+          0.0009197536880708707,
+          -3.141592653589793,
+          -1.3842754116161737
+        ],
+        "pixels_per_meter": 750.0836670419676,
+        "translation": [
+          197.47742130231322,
+          54.36182832333171
+        ]
+      }
+    },
+    {
+      "sample_id": "holdout_0007",
+      "status": "SKIP_UNIDENTIFIABLE"
+    }
+  ]
+}

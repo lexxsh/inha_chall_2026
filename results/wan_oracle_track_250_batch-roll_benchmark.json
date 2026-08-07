@@ -1,0 +1,8 @@
+{
+  "samples": 8,
+  "seconds": 8.776067071012221,
+  "seconds_per_sample": 1.0970083838765277,
+  "peak_gpu_gib": 23.11154556274414,
+  "ablation": "batch-roll",
+  "adapter_output_abs_mean": 0.01532902242615819
+}

@@ -1,0 +1,9 @@
+{
+  "samples": 8,
+  "seconds": 15.984077896922827,
+  "seconds_per_sample": 1.9980097371153533,
+  "num_inference_steps": 50,
+  "frames_saved": 16,
+  "frame_layout": "source_0_plus_generated_1_to_15",
+  "peak_gpu_gib": 1.6852641105651855
+}

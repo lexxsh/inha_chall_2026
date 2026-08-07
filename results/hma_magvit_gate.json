@@ -1,0 +1,99 @@
+{
+  "checkpoint": "/nfsdata/home/lexxsh/workspace/inha/models/HMA/magvit/magvit2.ckpt",
+  "checkpoint_bytes": 1151275392,
+  "checkpoint_tensors": 420,
+  "encoder_tensors": 87,
+  "decoder_tensors": 88,
+  "ema_tensors": 190,
+  "latent_channels": 18,
+  "token_grid": [
+    16,
+    16
+  ],
+  "codebook_size": 262144,
+  "valset": "/nfsdata/home/lexxsh/workspace/inha/diagnostics/spatial_control_gate/valset",
+  "sample_count": 8,
+  "scope_warning": "Train-only future frames are reconstruction targets. This gate validates only HMA MagViT; it does not validate action conditioning or generated dynamics.",
+  "preprocess": "official HMA short-side-256 plus 256x256 center crop",
+  "decode": "quantized LFQ indices through released MagViT decoder",
+  "samples": [
+    {
+      "sample_id": "holdout_0000",
+      "frames": 16,
+      "median_psnr": 26.501415252685547,
+      "p10_psnr": 26.17215347290039,
+      "median_mae_255": 7.2194695472717285,
+      "median_gradient_energy_ratio": 0.78642737865448
+    },
+    {
+      "sample_id": "holdout_0001",
+      "frames": 16,
+      "median_psnr": 24.511432647705078,
+      "p10_psnr": 24.32769012451172,
+      "median_mae_255": 8.261368751525879,
+      "median_gradient_energy_ratio": 0.8319323658943176
+    },
+    {
+      "sample_id": "holdout_0002",
+      "frames": 16,
+      "median_psnr": 24.30841636657715,
+      "p10_psnr": 24.037376403808594,
+      "median_mae_255": 8.845566749572754,
+      "median_gradient_energy_ratio": 0.7827346324920654
+    },
+    {
+      "sample_id": "holdout_0003",
+      "frames": 16,
+      "median_psnr": 29.470338821411133,
+      "p10_psnr": 28.222576141357422,
+      "median_mae_255": 4.363685607910156,
+      "median_gradient_energy_ratio": 0.7973869442939758
+    },
+    {
+      "sample_id": "holdout_0004",
+      "frames": 16,
+      "median_psnr": 29.05828285217285,
+      "p10_psnr": 28.410057067871094,
+      "median_mae_255": 5.00245475769043,
+      "median_gradient_energy_ratio": 0.7860352993011475
+    },
+    {
+      "sample_id": "holdout_0005",
+      "frames": 16,
+      "median_psnr": 30.647281646728516,
+      "p10_psnr": 30.04462432861328,
+      "median_mae_255": 4.1178460121154785,
+      "median_gradient_energy_ratio": 0.7969340682029724
+    },
+    {
+      "sample_id": "holdout_0006",
+      "frames": 16,
+      "median_psnr": 27.52654266357422,
+      "p10_psnr": 27.021865844726562,
+      "median_mae_255": 5.543676376342773,
+      "median_gradient_energy_ratio": 0.7636804580688477
+    },
+    {
+      "sample_id": "holdout_0007",
+      "frames": 16,
+      "median_psnr": 29.584856033325195,
+      "p10_psnr": 29.002971649169922,
+      "median_mae_255": 4.03704309463501,
+      "median_gradient_energy_ratio": 1.006905198097229
+    }
+  ],
+  "median_psnr": 28.292412757873535,
+  "median_p10_psnr": 27.622220993041992,
+  "median_mae_255": 5.273065567016602,
+  "median_gradient_energy_ratio": 0.7916807234287262,
+  "thresholds": {
+    "median_psnr_min": 24.0,
+    "median_p10_psnr_min": 20.0,
+    "gradient_energy_ratio": [
+      0.7,
+      1.3
+    ]
+  },
+  "verdict": "PASS_HMA_MAGVIT",
+  "next_step": "Audit and adapt the released HMA action dynamics checkpoint."
+}

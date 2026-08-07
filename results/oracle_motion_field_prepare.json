@@ -1,0 +1,20 @@
+{
+  "scope": "train-only oracle; future RGB/RAFT flow unavailable at evaluation",
+  "count": 72,
+  "train_count": 64,
+  "holdout_count": 8,
+  "control_channels": [
+    "appearance_delta_r",
+    "appearance_delta_g",
+    "appearance_delta_b",
+    "backward_flow_x_norm",
+    "backward_flow_y_norm",
+    "visibility",
+    "occlusion"
+  ],
+  "median_confidence": 0.8451929688453674,
+  "median_motion_fraction": 0.33852627873420715,
+  "median_oracle_warp_gain": 0.053152069449424744,
+  "manifest": "diagnostics/oracle_motion_field_gate/manifest.json",
+  "valset": "diagnostics/oracle_motion_field_gate/valset"
+}

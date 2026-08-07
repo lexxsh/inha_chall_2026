@@ -1,0 +1,149 @@
+{
+  "valset": "/nfsdata/home/lexxsh/workspace/inha/diagnostics/oracle_motion_field_gate/valset",
+  "prediction_root": "/nfsdata/home/lexxsh/workspace/inha/diagnostics/wan21_oracle_motion_refiner_250/zero",
+  "count": 8,
+  "prediction": {
+    "dino": 0.23659825697541237,
+    "video": 0.12044452130794525,
+    "action": 1.2968377843499184,
+    "weighted": 0.6258479472249747
+  },
+  "static": {
+    "dino": 0.10302853491157293,
+    "video": 0.07974298298358917,
+    "action": 1.3235260397195816,
+    "weighted": 0.5842418712563813
+  },
+  "per_sample": [
+    {
+      "sample_id": "holdout_0000",
+      "dataset": "sihyun77/suho_3_17_1",
+      "dino": 0.17380136251449585,
+      "video": 0.06247037649154663,
+      "action": 1.4123023748397827,
+      "weighted": 0.6358024716377259
+    },
+    {
+      "sample_id": "holdout_0001",
+      "dataset": "pranavsaroha/so100_carrot_5",
+      "dino": 0.11037451028823853,
+      "video": 0.07402688264846802,
+      "action": 1.588991403579712,
+      "weighted": 0.6909169793128968
+    },
+    {
+      "sample_id": "holdout_0002",
+      "dataset": "pranavsaroha/so100_carrot_5",
+      "dino": 0.17271234095096588,
+      "video": 0.07291197776794434,
+      "action": 1.0683634281158447,
+      "weighted": 0.501032666862011
+    },
+    {
+      "sample_id": "holdout_0003",
+      "dataset": "samsam0510/glove_reorientation_1",
+      "dino": 0.1295834481716156,
+      "video": 0.16923117637634277,
+      "action": 1.2051419019699097,
+      "weighted": 0.5717011481523514
+    },
+    {
+      "sample_id": "holdout_0004",
+      "dataset": "samsam0510/glove_reorientation_1",
+      "dino": 0.2549354135990143,
+      "video": 0.17257452011108398,
+      "action": 1.0741547346115112,
+      "weighted": 0.5579148739576341
+    },
+    {
+      "sample_id": "holdout_0005",
+      "dataset": "samsam0510/glove_reorientation_1",
+      "dino": 0.16588155925273895,
+      "video": 0.09587585926055908,
+      "action": 1.4357366561889648,
+      "weighted": 0.6528218880295753
+    },
+    {
+      "sample_id": "holdout_0006",
+      "dataset": "samsam0510/glove_reorientation_1",
+      "dino": 0.3398696482181549,
+      "video": 0.18954992294311523,
+      "action": 0.9322559237480164,
+      "weighted": 0.5317282408475876
+    },
+    {
+      "sample_id": "holdout_0007",
+      "dataset": "tkc79/so100_lego_box_2",
+      "dino": 0.545627772808075,
+      "video": 0.12691545486450195,
+      "action": 1.6577558517456055,
+      "weighted": 0.8648653090000153
+    }
+  ],
+  "static_per_sample": [
+    {
+      "sample_id": "holdout_0000",
+      "dataset": "sihyun77/suho_3_17_1",
+      "dino": 0.02805137261748314,
+      "video": 0.050104618072509766,
+      "action": 1.185807466506958,
+      "weighted": 0.4977697838097811
+    },
+    {
+      "sample_id": "holdout_0001",
+      "dataset": "pranavsaroha/so100_carrot_5",
+      "dino": 0.07461351156234741,
+      "video": 0.03605383634567261,
+      "action": 1.5464357137680054,
+      "weighted": 0.6517744898796082
+    },
+    {
+      "sample_id": "holdout_0002",
+      "dataset": "pranavsaroha/so100_carrot_5",
+      "dino": 0.1393287032842636,
+      "video": 0.0653335452079773,
+      "action": 1.1565879583358765,
+      "weighted": 0.5240338578820228
+    },
+    {
+      "sample_id": "holdout_0003",
+      "dataset": "samsam0510/glove_reorientation_1",
+      "dino": 0.08710375428199768,
+      "video": 0.13851195573806763,
+      "action": 1.3471558094024658,
+      "weighted": 0.6065470367670059
+    },
+    {
+      "sample_id": "holdout_0004",
+      "dataset": "samsam0510/glove_reorientation_1",
+      "dino": 0.18506398797035217,
+      "video": 0.1745678186416626,
+      "action": 1.2720568180084229,
+      "weighted": 0.6167122691869736
+    },
+    {
+      "sample_id": "holdout_0005",
+      "dataset": "samsam0510/glove_reorientation_1",
+      "dino": 0.08865844458341599,
+      "video": 0.07849568128585815,
+      "action": 1.4345438480377197,
+      "weighted": 0.6239637769758701
+    },
+    {
+      "sample_id": "holdout_0006",
+      "dataset": "samsam0510/glove_reorientation_1",
+      "dino": 0.2181943953037262,
+      "video": 0.08843004703521729,
+      "action": 1.0142616033554077,
+      "weighted": 0.49769197404384613
+    },
+    {
+      "sample_id": "holdout_0007",
+      "dataset": "tkc79/so100_lego_box_2",
+      "dino": 0.0032141096889972687,
+      "video": 0.006446361541748047,
+      "action": 1.6313591003417969,
+      "weighted": 0.6554417815059425
+    }
+  ]
+}

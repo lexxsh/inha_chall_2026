@@ -1,0 +1,21 @@
+{
+  "normal_weighted": 0.636729044187814,
+  "static_weighted": 0.5924055496230722,
+  "normal_minus_static": 0.04432349456474172,
+  "normal_action_minus_zero": -0.018620476126670837,
+  "normal_action_minus_zero_ci95": [
+    -0.041183292865753174,
+    0.0010075651109217082
+  ],
+  "normal_action_minus_batch_roll": -0.028382733464241028,
+  "normal_action_minus_batch_roll_ci95": [
+    -0.05211617052555084,
+    -0.007856354117393494
+  ],
+  "normal_minus_incumbent": 0.02394578056409953,
+  "normal_minus_incumbent_ci95": [
+    -0.03826054353266957,
+    0.10615002542734132
+  ],
+  "verdict": "REJECT"
+}

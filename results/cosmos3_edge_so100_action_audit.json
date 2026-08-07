@@ -1,0 +1,72 @@
+{
+  "scope": "CPU codec audit only; no generator or GPU executed",
+  "model_contract": "Cosmos3 bridge_orig_lerobot forward_dynamics: image + normalized [16,10] -> 17 frames",
+  "action_contract": "backward_framewise [dxyz3, column_rot6d6, gripper1]",
+  "submission_alignment": "save generated frames 0..15; visible transitions use challenge actions 0..14; action15 is generated then dropped",
+  "source_state_proxy": "action[0] plus train-only median state[0]-action[0] offset",
+  "stats_path": "/nfsdata/home/lexxsh/workspace/inha/third_party/cosmos-framework/cosmos_framework/data/generator/action/normalizer_stats/bridge_orig_lerobot_stats.json",
+  "stats_sha256": "e673c112e9809a2dc3ac4fffd42896c0a3c7538d4808eae35d62059af65cb267",
+  "urdf_path": "/nfsdata/home/lexxsh/workspace/inha/third_party/ManiSkill/mani_skill/assets/robots/so100/so100.urdf",
+  "urdf_sha256": "dee987ca9b5a7e961a6bc87eb71c3b00922968f77214527cddd4cfc860822abc",
+  "samples": 8,
+  "sample_ids": [
+    "val_000000",
+    "val_000001",
+    "val_000002",
+    "val_000003",
+    "val_000004",
+    "val_000005",
+    "val_000006",
+    "val_000007"
+  ],
+  "normal_shape": [
+    8,
+    16,
+    10
+  ],
+  "normalized_abs_max": 6.78419828414917,
+  "median_first_transition_pose_identity_error": 0.007201811298727989,
+  "raw_in_bridge_q01_q99_fraction": 0.9625,
+  "translation_step_mm": {
+    "median": 6.229944705963135,
+    "p95": 49.25482177734375,
+    "max": 74.1982650756836
+  },
+  "rotation_step_degrees": {
+    "median": 2.3804702758789062,
+    "p95": 12.219059944152832,
+    "max": 24.808813095092773
+  },
+  "gripper_raw_range": [
+    0.4971482753753662,
+    1.0
+  ],
+  "normal_minus_zero_abs_mean": 0.24691195785999298,
+  "normal_minus_reverse_abs_mean": 0.7411003112792969,
+  "normal_minus_batch_roll_abs_mean": 1.4392454624176025,
+  "preclip_arm_limit_violation_by_joint": {
+    "shoulder_pan": 0.0,
+    "shoulder_lift": 0.0,
+    "elbow_flex": 0.0,
+    "wrist_flex": 0.0,
+    "wrist_roll": 0.0
+  },
+  "aggregate_preclip_arm_limit_violation_fraction": 0.0,
+  "max_sample_preclip_arm_limit_violation_fraction": 0.0,
+  "note": "FK clips rare arm-limit tails; gripper uses its separate [0,1] command mapping.",
+  "criteria": {
+    "shape_16x10": true,
+    "all_finite": true,
+    "source_is_exact_gt_frame0": true,
+    "first_transition_not_forced_identity": true,
+    "zero_motion_is_identity": true,
+    "gripper_bounded": true,
+    "normal_differs_from_zero": true,
+    "normal_differs_from_reverse": true,
+    "normal_differs_from_batch_roll": true,
+    "unclamped_affine_actions_finite_and_nonexplosive": true,
+    "most_raw_values_within_bridge_q01_q99": true,
+    "aggregate_preclip_arm_limit_violations_below_5pct": true
+  },
+  "verdict": "PASS_COSMOS3_ACTION_CODEC"
+}

@@ -1,0 +1,191 @@
+{
+  "dataset_windows": 203579,
+  "episodes": 10712,
+  "sample_stride": 4,
+  "heldout_episodes": 24,
+  "heldout_overlap": 0,
+  "median_correct_action0_pose_abs_mean": 0.021861985267605633,
+  "median_old_bug_action0_pose_abs_mean": 1.6882520218927677e-23,
+  "median_deploy_source_state_mae": 2.258810520172119,
+  "median_normalized_outside_unit_fraction": 0.0625,
+  "criteria": {
+    "shape_contract_17_video_16_action": true,
+    "all_finite": true,
+    "holdout_episode_overlap_zero": true,
+    "first_transition_not_forced_identity": true,
+    "old_identity_bug_reproduced": true,
+    "fixed_camera_viewpoint": true,
+    "official_bridge_domain": true
+  },
+  "samples": [
+    {
+      "dataset": "00ri/so100_battery",
+      "episode": 0,
+      "start": 0,
+      "video_shape": [
+        3,
+        17,
+        480,
+        640
+      ],
+      "action_shape": [
+        16,
+        10
+      ],
+      "frame0_to_frame1_abs_mean": 0.6565972222222223,
+      "correct_action0_pose_abs_mean": 0.00239997935447415,
+      "old_bug_action0_pose_abs_mean": 1.6882520218927677e-23,
+      "deploy_source_state_mae": 0.3261299083630244,
+      "normalized_outside_unit_fraction": 0.0,
+      "all_finite": true
+    },
+    {
+      "dataset": "Chojins/chess_game_001_red_stereo",
+      "episode": 394,
+      "start": 8,
+      "video_shape": [
+        3,
+        17,
+        480,
+        640
+      ],
+      "action_shape": [
+        16,
+        10
+      ],
+      "frame0_to_frame1_abs_mean": 1.0815505642361112,
+      "correct_action0_pose_abs_mean": 0.0027864484226382854,
+      "old_bug_action0_pose_abs_mean": 1.6882520218927677e-23,
+      "deploy_source_state_mae": 0.3813895086447398,
+      "normalized_outside_unit_fraction": 0.08125,
+      "all_finite": true
+    },
+    {
+      "dataset": "Loki0929/so100_duck",
+      "episode": 257,
+      "start": 0,
+      "video_shape": [
+        3,
+        17,
+        480,
+        640
+      ],
+      "action_shape": [
+        16,
+        10
+      ],
+      "frame0_to_frame1_abs_mean": 1.1521820746527778,
+      "correct_action0_pose_abs_mean": 0.011293304692824475,
+      "old_bug_action0_pose_abs_mean": 1.6882520218927677e-23,
+      "deploy_source_state_mae": 0.8488263438145319,
+      "normalized_outside_unit_fraction": 0.0,
+      "all_finite": true
+    },
+    {
+      "dataset": "dragon-95/so100_sorting_3",
+      "episode": 78,
+      "start": 8,
+      "video_shape": [
+        3,
+        17,
+        480,
+        640
+      ],
+      "action_shape": [
+        16,
+        10
+      ],
+      "frame0_to_frame1_abs_mean": 5.387526041666667,
+      "correct_action0_pose_abs_mean": 0.04564391583618191,
+      "old_bug_action0_pose_abs_mean": 1.6882520218927677e-23,
+      "deploy_source_state_mae": 4.654504936188459,
+      "normalized_outside_unit_fraction": 0.0625,
+      "all_finite": true
+    },
+    {
+      "dataset": "nbaron99/so100_pick_and_place4",
+      "episode": 26,
+      "start": 20,
+      "video_shape": [
+        3,
+        17,
+        480,
+        640
+      ],
+      "action_shape": [
+        16,
+        10
+      ],
+      "frame0_to_frame1_abs_mean": 0.8805848524305555,
+      "correct_action0_pose_abs_mean": 0.03162356322314332,
+      "old_bug_action0_pose_abs_mean": 1.6882520218927677e-23,
+      "deploy_source_state_mae": 3.6687946965297065,
+      "normalized_outside_unit_fraction": 0.13125,
+      "all_finite": true
+    },
+    {
+      "dataset": "pranavsaroha/so100_onelego3",
+      "episode": 37,
+      "start": 40,
+      "video_shape": [
+        3,
+        17,
+        1080,
+        1920
+      ],
+      "action_shape": [
+        16,
+        10
+      ],
+      "frame0_to_frame1_abs_mean": 2.451434381430041,
+      "correct_action0_pose_abs_mean": 0.06360240492116039,
+      "old_bug_action0_pose_abs_mean": 1.6882520218927677e-23,
+      "deploy_source_state_mae": 4.355093168715636,
+      "normalized_outside_unit_fraction": 0.19375,
+      "all_finite": true
+    },
+    {
+      "dataset": "samsam0510/glove_reorientation_1",
+      "episode": 23,
+      "start": 4,
+      "video_shape": [
+        3,
+        17,
+        480,
+        640
+      ],
+      "action_shape": [
+        16,
+        10
+      ],
+      "frame0_to_frame1_abs_mean": 1.0184505208333334,
+      "correct_action0_pose_abs_mean": 0.01210040731206795,
+      "old_bug_action0_pose_abs_mean": 1.6882520218927677e-23,
+      "deploy_source_state_mae": 0.61029930661122,
+      "normalized_outside_unit_fraction": 0.0625,
+      "all_finite": true
+    },
+    {
+      "dataset": "weiye11/so100_410_zwy",
+      "episode": 100,
+      "start": 40,
+      "video_shape": [
+        3,
+        17,
+        480,
+        640
+      ],
+      "action_shape": [
+        16,
+        10
+      ],
+      "frame0_to_frame1_abs_mean": 3.1591883680555557,
+      "correct_action0_pose_abs_mean": 0.03407203206895954,
+      "old_bug_action0_pose_abs_mean": 1.6882520218927677e-23,
+      "deploy_source_state_mae": 4.380945906043053,
+      "normalized_outside_unit_fraction": 0.03125,
+      "all_finite": true
+    }
+  ],
+  "verdict": "PASS_NATIVE_COSMOS3_CONTRACT"
+}

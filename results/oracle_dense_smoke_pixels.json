@@ -1,0 +1,28 @@
+{
+  "scope": "train-only oracle; future GT flow is unavailable at evaluation",
+  "count": 1,
+  "prediction_root": "diagnostics/oracle_dense_smoke/predictions",
+  "median_full_l1_reduction_fraction": 0.14004708120545467,
+  "median_motion_l1_reduction_fraction": 0.2387138667754101,
+  "median_cycle_confidence": 0.9312536716461182,
+  "median_control_mask_fraction": 0.07201690673828125,
+  "pixel_gate": true,
+  "verdict": "PASS_PIXEL_GATE_NEEDS_OFFICIAL_FEATURE_SCORE",
+  "per_sample": [
+    {
+      "sample_id": "holdout_0000",
+      "dataset": "sihyun77/suho_3_17_1",
+      "static_l1": 0.0218685083091259,
+      "oracle_warp_l1": 0.018805887550115585,
+      "full_l1_reduction_fraction": 0.14004708120545467,
+      "static_motion_l1": 0.25198984146118164,
+      "oracle_warp_motion_l1": 0.1918363720178604,
+      "motion_l1_reduction_fraction": 0.2387138667754101,
+      "mean_cycle_confidence": 0.9312536716461182,
+      "control_mask_fraction": 0.07201690673828125,
+      "median_flow_px": 0.12239678204059601,
+      "prediction": "diagnostics/oracle_dense_smoke/predictions/holdout_0000.mp4",
+      "artifact": "diagnostics/oracle_dense_smoke/artifacts/holdout_0000.npz"
+    }
+  ]
+}

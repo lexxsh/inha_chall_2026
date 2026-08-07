@@ -1,0 +1,38 @@
+{
+  "scope": "train-only oracle; invalid for competition submission",
+  "checkpoint": "/nfsdata/home/lexxsh/workspace/inha/open/baseline/outputs/wan21_oracle_motion_refiner_250/step-250.safetensors",
+  "rank": 0,
+  "world_size": 4,
+  "samples": 6,
+  "seconds": 171.93212030711584,
+  "seconds_per_sample": 28.655353384519305,
+  "peak_gpu_gib": 43.663044452667236,
+  "control_dim": 7,
+  "hidden_dim": 192,
+  "injection_layers": [
+    0,
+    10,
+    20,
+    30
+  ],
+  "ablation": "all",
+  "modes": {
+    "none": {
+      "samples": 2,
+      "seconds": 57.51819333503954,
+      "prediction_root": "/nfsdata/home/lexxsh/workspace/inha/diagnostics/wan21_oracle_motion_refiner_250/none"
+    },
+    "zero": {
+      "samples": 2,
+      "seconds": 57.17604077397846,
+      "prediction_root": "/nfsdata/home/lexxsh/workspace/inha/diagnostics/wan21_oracle_motion_refiner_250/zero"
+    },
+    "batch-roll": {
+      "samples": 2,
+      "seconds": 57.236389748053625,
+      "prediction_root": "/nfsdata/home/lexxsh/workspace/inha/diagnostics/wan21_oracle_motion_refiner_250/batch-roll"
+    }
+  },
+  "num_inference_steps": 30,
+  "source_frame_zero_replaced": true
+}

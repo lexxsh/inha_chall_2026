@@ -1,0 +1,52 @@
+{
+  "scope": "train-only oracle; never submit these predictions",
+  "normal_weighted": 0.5923355470877141,
+  "static_weighted": 0.5842418712563813,
+  "normal_minus_static": 0.008093675831332803,
+  "normal_minus_zero_weighted": 0.006714992318302394,
+  "normal_minus_zero_weighted_ci95": [
+    -0.006524338107556128,
+    0.023923840271309012
+  ],
+  "normal_minus_batch_roll_weighted": 0.005581379402428865,
+  "normal_minus_batch_roll_weighted_ci95": [
+    -0.016261720843613173,
+    0.034827238204889
+  ],
+  "normal_minus_zero_dino": 0.04101868253201246,
+  "normal_minus_zero_dino_ci95": [
+    0.007099864014890046,
+    0.09312176331877708
+  ],
+  "normal_minus_batch_roll_dino": -0.0008717337623238564,
+  "normal_minus_batch_roll_dino_ci95": [
+    -0.048800596967339516,
+    0.067118464037776
+  ],
+  "normal_minus_zero_video": -0.009459637105464935,
+  "normal_minus_zero_video_ci95": [
+    -0.028463199734687805,
+    0.011678382754325867
+  ],
+  "normal_minus_batch_roll_video": -0.014442525804042816,
+  "normal_minus_batch_roll_video_ci95": [
+    -0.04187098145484924,
+    0.013028264045715332
+  ],
+  "normal_minus_zero_action": -0.006881803274154663,
+  "normal_minus_zero_action_ci95": [
+    -0.02015596628189087,
+    0.005172654986381531
+  ],
+  "normal_minus_batch_roll_action": 0.025439143180847168,
+  "normal_minus_batch_roll_action_ci95": [
+    0.003190860152244568,
+    0.04836167395114899
+  ],
+  "criteria": {
+    "weighted_normal_better_than_zero_and_roll_ci95": false,
+    "dino_and_action_point_sanity": false,
+    "normal_beats_static": false
+  },
+  "verdict": "REJECT_MOTION_FIELD_REFINER"
+}

@@ -1,0 +1,53 @@
+{
+  "verdict": "PASS_STRUCTURE",
+  "adapter": {
+    "exact_zero_init": true,
+    "output_projection_gradient_l1": 2.1218605041503906,
+    "action_gradient_l1_after_warmup": 8.296560594089897e-08,
+    "source_gradient_l1_after_warmup": 1.8703601654124213e-06,
+    "reverse_action_sensitivity": 2.124697857652791e-05,
+    "temporal_alignment_guard": true,
+    "latent_mask_shape": [
+      1,
+      1,
+      5,
+      4,
+      6
+    ]
+  },
+  "paired_loss": {
+    "finite_scalar": true,
+    "value": 5.0545759201049805,
+    "action_gradient_l1": 0.5933411121368408
+  },
+  "local_model_components": 4,
+  "local_tokenizer": "/nfsdata/home/lexxsh/workspace/inha/checkpoints/Wan2.1-I2V-14B-480P/google/umt5-xxl",
+  "dataset": {
+    "groups": 121,
+    "holdout_groups": [
+      "DorayakiLin/so100_pick_charger_on_tissue",
+      "ganker5/so100_dataline_0328",
+      "pranavsaroha/so100_carrot_5",
+      "samsam0510/glove_reorientation_1",
+      "sihyun77/suho_3_17_1",
+      "tkc79/so100_lego_box_2"
+    ],
+    "holdout_matches_manifest": true,
+    "train_holdout_overlap": 0,
+    "base_clips": 10697,
+    "action_shape": [
+      16,
+      18
+    ],
+    "video_frames": 17,
+    "motion_mask_shape": [
+      1,
+      17,
+      64,
+      80
+    ],
+    "static_exact_repeat": true,
+    "static_mask_sum": 0.0,
+    "dynamic_ranking_valid": 1.0
+  }
+}

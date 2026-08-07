@@ -1,0 +1,149 @@
+{
+  "valset": "/nfsdata/home/lexxsh/workspace/inha/valset_holdout",
+  "prediction_root": "/nfsdata/home/lexxsh/workspace/inha/diagnostics/wan21_spatial_action_250/batch-roll",
+  "count": 8,
+  "prediction": {
+    "dino": 0.18891061702743173,
+    "video": 0.09748078137636185,
+    "action": 1.4179196953773499,
+    "weighted": 0.653085297672078
+  },
+  "static": {
+    "dino": 0.059196433052420616,
+    "video": 0.06257151812314987,
+    "action": 1.3896879106760025,
+    "weighted": 0.5924055496230722
+  },
+  "per_sample": [
+    {
+      "sample_id": "val_000000",
+      "dataset": "sihyun77/suho_3_17_1",
+      "dino": 0.3753460645675659,
+      "video": 0.10024988651275635,
+      "action": 1.4603030681610107,
+      "weighted": 0.726800012588501
+    },
+    {
+      "sample_id": "val_000001",
+      "dataset": "pranavsaroha/so100_carrot_5",
+      "dino": 0.19450195133686066,
+      "video": 0.1237136721611023,
+      "action": 1.1792490482330322,
+      "weighted": 0.5671643063426017
+    },
+    {
+      "sample_id": "val_000002",
+      "dataset": "ganker5/so100_dataline_0328",
+      "dino": 0.06108022853732109,
+      "video": 0.05526745319366455,
+      "action": 1.3730682134628296,
+      "weighted": 0.5841315899044276
+    },
+    {
+      "sample_id": "val_000003",
+      "dataset": "DorayakiLin/so100_pick_charger_on_tissue",
+      "dino": 0.18291455507278442,
+      "video": 0.08510798215866089,
+      "action": 1.2062829732894897,
+      "weighted": 0.5629199504852295
+    },
+    {
+      "sample_id": "val_000004",
+      "dataset": "tkc79/so100_lego_box_2",
+      "dino": 0.1669815480709076,
+      "video": 0.06353104114532471,
+      "action": 1.2516587972640991,
+      "weighted": 0.5698172956705093
+    },
+    {
+      "sample_id": "val_000005",
+      "dataset": "samsam0510/glove_reorientation_1",
+      "dino": 0.09427639096975327,
+      "video": 0.06149870157241821,
+      "action": 1.3877041339874268,
+      "weighted": 0.6018141813576222
+    },
+    {
+      "sample_id": "val_000006",
+      "dataset": "sihyun77/suho_3_17_1",
+      "dino": 0.2534888982772827,
+      "video": 0.15140730142593384,
+      "action": 1.9057220220565796,
+      "weighted": 0.8837576687335968
+    },
+    {
+      "sample_id": "val_000007",
+      "dataset": "pranavsaroha/so100_carrot_5",
+      "dino": 0.18269529938697815,
+      "video": 0.13907021284103394,
+      "action": 1.579369306564331,
+      "weighted": 0.728277376294136
+    }
+  ],
+  "static_per_sample": [
+    {
+      "sample_id": "val_000000",
+      "dataset": "sihyun77/suho_3_17_1",
+      "dino": 0.05138047784566879,
+      "video": 0.0953606367111206,
+      "action": 1.5674419403076172,
+      "weighted": 0.6709991104900838
+    },
+    {
+      "sample_id": "val_000001",
+      "dataset": "pranavsaroha/so100_carrot_5",
+      "dino": 0.11251778900623322,
+      "video": 0.07881122827529907,
+      "action": 1.117628574371338,
+      "weighted": 0.5044501349329948
+    },
+    {
+      "sample_id": "val_000002",
+      "dataset": "ganker5/so100_dataline_0328",
+      "dino": 0.015757061541080475,
+      "video": 0.041939496994018555,
+      "action": 1.4978694915771484,
+      "weighted": 0.6164567641913891
+    },
+    {
+      "sample_id": "val_000003",
+      "dataset": "DorayakiLin/so100_pick_charger_on_tissue",
+      "dino": 0.0024959854781627655,
+      "video": 0.006295680999755859,
+      "action": 1.0946459770202637,
+      "weighted": 0.4404958907514811
+    },
+    {
+      "sample_id": "val_000004",
+      "dataset": "tkc79/so100_lego_box_2",
+      "dino": 0.13799911737442017,
+      "video": 0.12320441007614136,
+      "action": 1.3255290985107422,
+      "weighted": 0.6085726976394654
+    },
+    {
+      "sample_id": "val_000005",
+      "dataset": "samsam0510/glove_reorientation_1",
+      "dino": 0.0562942735850811,
+      "video": 0.06360942125320435,
+      "action": 1.52438485622406,
+      "weighted": 0.6457250509411098
+    },
+    {
+      "sample_id": "val_000006",
+      "dataset": "sihyun77/suho_3_17_1",
+      "dino": 0.028746619820594788,
+      "video": 0.019590020179748535,
+      "action": 1.3400027751922607,
+      "weighted": 0.5505021020770073
+    },
+    {
+      "sample_id": "val_000007",
+      "dataset": "pranavsaroha/so100_carrot_5",
+      "dino": 0.06838013976812363,
+      "video": 0.07176125049591064,
+      "action": 1.6500005722045898,
+      "weighted": 0.7020426459610463
+    }
+  ]
+}

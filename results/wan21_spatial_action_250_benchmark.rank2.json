@@ -1,0 +1,44 @@
+{
+  "checkpoint": "/nfsdata/home/lexxsh/workspace/inha/open/baseline/outputs/wan21_spatial_action_250/step-250.safetensors",
+  "base_model": "/nfsdata/home/lexxsh/workspace/inha/checkpoints/Wan2.1-I2V-14B-480P",
+  "rank": 2,
+  "world_size": 8,
+  "assigned_ids": [
+    "val_000002"
+  ],
+  "samples": 3,
+  "seconds": 138.35592670366168,
+  "seconds_per_sample": 46.118642234553896,
+  "peak_gpu_gib": 43.68232011795044,
+  "action_mode": "hybrid",
+  "action_dim": 18,
+  "control_hidden_dim": 192,
+  "injection_layers": [
+    0,
+    10,
+    20,
+    30
+  ],
+  "action_ablation": "all",
+  "modes": {
+    "none": {
+      "samples": 1,
+      "seconds": 46.59520538896322,
+      "prediction_root": "/nfsdata/home/lexxsh/workspace/inha/diagnostics/wan21_spatial_action_250/none"
+    },
+    "zero-motion": {
+      "samples": 1,
+      "seconds": 45.86327871307731,
+      "prediction_root": "/nfsdata/home/lexxsh/workspace/inha/diagnostics/wan21_spatial_action_250/zero-motion"
+    },
+    "batch-roll": {
+      "samples": 1,
+      "seconds": 45.89741448685527,
+      "prediction_root": "/nfsdata/home/lexxsh/workspace/inha/diagnostics/wan21_spatial_action_250/batch-roll"
+    }
+  },
+  "num_inference_steps": 50,
+  "cfg_scale": 5.0,
+  "source_frame_zero_replaced": true,
+  "video_quality": 9
+}

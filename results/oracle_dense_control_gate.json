@@ -1,0 +1,33 @@
+{
+  "scope_warning": "Future GT optical flow was used. PASS validates only the dense spatial representation; it does not validate joint-action-to-control prediction or a video generator.",
+  "count": 8,
+  "pixel_gate": false,
+  "median_full_l1_reduction_fraction": 0.004720928316872536,
+  "median_motion_l1_reduction_fraction": 0.07368276226059282,
+  "oracle_weighted": 0.6010282088536769,
+  "static_weighted": 0.5862202293239535,
+  "oracle_minus_static_weighted": 0.014807979529723493,
+  "oracle_minus_static_weighted_ci95": [
+    -0.0014576774672605606,
+    0.034296501422067915
+  ],
+  "oracle_action": 1.3087130710482597,
+  "static_action": 1.315415859222412,
+  "oracle_minus_static_action": -0.006702788174152374,
+  "oracle_minus_static_action_ci95": [
+    -0.02863677591085434,
+    0.009621962904930115
+  ],
+  "strict_metric_gate": false,
+  "point_metric_gate": false,
+  "incumbent_weighted": 0.6429474970325828,
+  "oracle_minus_incumbent_weighted": -0.04191928817890584,
+  "oracle_minus_incumbent_weighted_ci95": [
+    -0.06002928782254457,
+    -0.022550655083032334
+  ],
+  "strict_incumbent_gate": true,
+  "point_incumbent_gate": true,
+  "verdict": "STOP_DENSE_WARP_PATH",
+  "next_step": "Do not build the Dream spatial adapter; keep Dream/static incumbent and revisit representation."
+}

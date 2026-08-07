@@ -1,0 +1,150 @@
+{
+  "method": "VAP-style MatchAnything render-to-real homography; train-only gate",
+  "pass_rate": 0.2857142857142857,
+  "verdict": "REJECT_MATCHANYTHING_ALIGNMENT",
+  "samples": [
+    {
+      "sample_id": "holdout_0000",
+      "status": "FAIL",
+      "self_match_count": 8791,
+      "total_matches": 5840,
+      "foreground_matches": 128,
+      "inlier_count": 105,
+      "inlier_ratio": 0.8203125,
+      "median_reprojection_px": 0.41674673557281494,
+      "source_hull_coverage": 0.37399117276166455,
+      "target_median_edge_distance_px": 4.648600101470947,
+      "homography": [
+        [
+          1.0310336244078897,
+          -0.028789094300542394,
+          0.4913425363556812
+        ],
+        [
+          0.010538577260664029,
+          1.0112255668397985,
+          -0.8689129401404728
+        ],
+        [
+          0.00021117527944403123,
+          -0.0001091064263767654,
+          1.0
+        ]
+      ]
+    },
+    {
+      "sample_id": "holdout_0001",
+      "status": "PASS",
+      "self_match_count": 8765,
+      "total_matches": 6922,
+      "foreground_matches": 159,
+      "inlier_count": 159,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0436527244746685,
+      "source_hull_coverage": 0.3842095404595405,
+      "target_median_edge_distance_px": 1.3693000078201294,
+      "homography": [
+        [
+          0.9914714125264881,
+          -0.00010760961948213266,
+          0.5703198894728382
+        ],
+        [
+          -0.001992449636767697,
+          0.9957360001502082,
+          0.3068624861853958
+        ],
+        [
+          -2.8915765128861124e-05,
+          -1.0530689600700346e-06,
+          1.0
+        ]
+      ]
+    },
+    {
+      "sample_id": "holdout_0002",
+      "status": "PASS",
+      "self_match_count": 9237,
+      "total_matches": 7756,
+      "foreground_matches": 156,
+      "inlier_count": 156,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.011589309200644493,
+      "source_hull_coverage": 0.7380382775119617,
+      "target_median_edge_distance_px": 0.9549999833106995,
+      "homography": [
+        [
+          0.9997287698019242,
+          -0.0008739661610075327,
+          0.051389267945277206
+        ],
+        [
+          3.529848185865056e-05,
+          0.999691381970282,
+          -4.1311398768011604e-05
+        ],
+        [
+          3.7681733221124914e-07,
+          -4.5502536872128e-06,
+          1.0
+        ]
+      ]
+    },
+    {
+      "sample_id": "holdout_0003",
+      "status": "FAIL",
+      "self_match_count": 2331,
+      "total_matches": 335,
+      "foreground_matches": 0,
+      "inlier_count": 0,
+      "inlier_ratio": 0.0,
+      "median_reprojection_px": Infinity,
+      "source_hull_coverage": 0.0,
+      "target_median_edge_distance_px": Infinity,
+      "homography": null
+    },
+    {
+      "sample_id": "holdout_0004",
+      "status": "FAIL",
+      "self_match_count": 3,
+      "total_matches": 4,
+      "foreground_matches": 0,
+      "inlier_count": 0,
+      "inlier_ratio": 0.0,
+      "median_reprojection_px": Infinity,
+      "source_hull_coverage": 0.0,
+      "target_median_edge_distance_px": Infinity,
+      "homography": null
+    },
+    {
+      "sample_id": "holdout_0005",
+      "status": "FAIL",
+      "self_match_count": 2,
+      "total_matches": 28,
+      "foreground_matches": 0,
+      "inlier_count": 0,
+      "inlier_ratio": 0.0,
+      "median_reprojection_px": Infinity,
+      "source_hull_coverage": 0.0,
+      "target_median_edge_distance_px": Infinity,
+      "homography": null
+    },
+    {
+      "sample_id": "holdout_0006",
+      "status": "FAIL",
+      "self_match_count": 4509,
+      "total_matches": 1325,
+      "foreground_matches": 0,
+      "inlier_count": 0,
+      "inlier_ratio": 0.0,
+      "median_reprojection_px": Infinity,
+      "source_hull_coverage": 0.0,
+      "target_median_edge_distance_px": Infinity,
+      "homography": null
+    },
+    {
+      "sample_id": "holdout_0007",
+      "status": "SKIP_NO_ROUGH_ALIGNMENT"
+    }
+  ]
+}

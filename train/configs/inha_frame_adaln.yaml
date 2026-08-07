@@ -1,0 +1,36 @@
+# inha_full_unet.yaml 위에 merge하는 Frame-Ada short-screen overlay.
+# 단독 config가 아니므로 학습/추론 모두 두 파일을 왼쪽부터 순서대로 넘긴다.
+name: inha_frame_adaln_action_only
+group: inha_frame_adaln
+logdir: ../outputs/frame_adaln
+
+model:
+  # Conditioner-only 첫 screen은 backbone보다 조금 높은 LR을 쓰되,
+  # 결과가 나쁘면 LR/step을 늘리기 전에 구조 가설을 먼저 기각한다.
+  base_learning_rate: 2e-5
+  params:
+    linear_warmup_steps: 200
+    unet_config:
+      params:
+        action_injection: frame_adaln
+
+lightning:
+  trainer:
+    max_steps: 2000
+    max_time: "00:08:00:00"
+    check_val_every_n_epoch: 1
+    limit_val_batches: 8
+    logger:
+      target: pytorch_lightning.loggers.CSVLogger
+      params:
+        save_dir: ../outputs/logs/
+        name: inha_frame_adaln_action_only
+  callbacks:
+    model_checkpoint:
+      target: pytorch_lightning.callbacks.ModelCheckpoint
+      params:
+        filename: "{epoch}-{step}"
+        save_weights_only: True
+        every_n_train_steps: 1000
+        save_top_k: -1
+        save_last: True

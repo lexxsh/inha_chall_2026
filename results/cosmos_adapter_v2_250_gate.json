@@ -1,0 +1,15 @@
+{
+  "checkpoint": "/nfsdata/home/lexxsh/workspace/inha/open/baseline/outputs/cosmos_action/inha_cosmos/so100_joint_adapter_v2/cosmos_predict2p5_so100_joint_adapter_v2_17f/checkpoints/iter_000000250",
+  "bias": false,
+  "parameter_count": 1216,
+  "zero_output_abs_mean": 0.0,
+  "adapter_output_abs_mean": 0.028182866983115673,
+  "normal_minus_zero_abs_mean": 0.028182866983115673,
+  "normal_minus_reverse_abs_mean": 0.024307843414135277,
+  "adapter_temporal_std": 0.018644084106199443,
+  "saturation_fraction": 0.0,
+  "num_samples": 8,
+  "structural_zero_gate": true,
+  "adapter_sensitivity_gate": true,
+  "verdict": "PASS_ADAPTER_ONLY"
+}

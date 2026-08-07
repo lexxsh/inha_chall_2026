@@ -1,0 +1,1082 @@
+[
+  {
+    "sample": "sample_000000",
+    "match": "aractingi/push_cube_offline_data#episode_000015",
+    "sim": 0.6263338327407837
+  },
+  {
+    "sample": "sample_000001",
+    "match": "roboticshack/team-7-right-arm-grasp-tape#episode_000009",
+    "sim": 0.6977546811103821
+  },
+  {
+    "sample": "sample_000002",
+    "match": "aractingi/push_cube_offline_data#episode_000015",
+    "sim": 0.6417385935783386
+  },
+  {
+    "sample": "sample_000003",
+    "match": "aractingi/push_cube_offline_data#episode_000007",
+    "sim": 0.6882667541503906
+  },
+  {
+    "sample": "sample_000004",
+    "match": "roboticshack/team-7-left-arm-grasp-motor#episode_000099",
+    "sim": 0.5224038362503052
+  },
+  {
+    "sample": "sample_000005",
+    "match": "aractingi/push_cube_offline_data#episode_000015",
+    "sim": 0.6123824715614319
+  },
+  {
+    "sample": "sample_000006",
+    "match": "roboticshack/team-7-left-arm-grasp-motor#episode_000099",
+    "sim": 0.6200111508369446
+  },
+  {
+    "sample": "sample_000007",
+    "match": "vladfatu/so100_office#episode_000000",
+    "sim": 0.6175554394721985
+  },
+  {
+    "sample": "sample_000008",
+    "match": "Loki0929/so100_duck#episode_000054",
+    "sim": 0.6480218768119812
+  },
+  {
+    "sample": "sample_000009",
+    "match": "aractingi/push_cube_offline_data#episode_000015",
+    "sim": 0.6076221466064453
+  },
+  {
+    "sample": "sample_000010",
+    "match": "dragon-95/so100_sorting_2#episode_000119",
+    "sim": 0.5804612040519714
+  },
+  {
+    "sample": "sample_000011",
+    "match": "dragon-95/so100_sorting_2#episode_000119",
+    "sim": 0.5908804535865784
+  },
+  {
+    "sample": "sample_000012",
+    "match": "Loki0929/so100_duck#episode_000299",
+    "sim": 0.650246798992157
+  },
+  {
+    "sample": "sample_000013",
+    "match": "aractingi/push_cube_offline_data#episode_000015",
+    "sim": 0.6070130467414856
+  },
+  {
+    "sample": "sample_000014",
+    "match": "Loki0929/so100_duck#episode_000299",
+    "sim": 0.6728525161743164
+  },
+  {
+    "sample": "sample_000015",
+    "match": "roboticshack/team-7-right-arm-grasp-tape#episode_000009",
+    "sim": 0.7104763984680176
+  },
+  {
+    "sample": "sample_000016",
+    "match": "dragon-95/so100_sorting_2#episode_000119",
+    "sim": 0.6012575030326843
+  },
+  {
+    "sample": "sample_000017",
+    "match": "aractingi/push_cube_offline_data#episode_000015",
+    "sim": 0.6634376645088196
+  },
+  {
+    "sample": "sample_000018",
+    "match": "aractingi/push_cube_offline_data#episode_000015",
+    "sim": 0.6080348491668701
+  },
+  {
+    "sample": "sample_000019",
+    "match": "aractingi/push_cube_offline_data#episode_000021",
+    "sim": 0.5766358971595764
+  },
+  {
+    "sample": "sample_000020",
+    "match": "Odog16/so100_cube_drop_pick_v1#episode_000031",
+    "sim": 0.7191895246505737
+  },
+  {
+    "sample": "sample_000021",
+    "match": "aractingi/push_cube_offline_data#episode_000007",
+    "sim": 0.7147849798202515
+  },
+  {
+    "sample": "sample_000022",
+    "match": "Odog16/so100_cube_drop_pick_v1#episode_000024",
+    "sim": 0.6366877555847168
+  },
+  {
+    "sample": "sample_000023",
+    "match": "aractingi/push_cube_offline_data#episode_000015",
+    "sim": 0.5707205533981323
+  },
+  {
+    "sample": "sample_000024",
+    "match": "dragon-95/so100_sorting_2#episode_000119",
+    "sim": 0.6199017763137817
+  },
+  {
+    "sample": "sample_000025",
+    "match": "Odog16/so100_cube_drop_pick_v1#episode_000031",
+    "sim": 0.6844233274459839
+  },
+  {
+    "sample": "sample_000026",
+    "match": "lirislab/red_cube_into_green_lego_block#episode_000000",
+    "sim": 0.6096108555793762
+  },
+  {
+    "sample": "sample_000027",
+    "match": "Loki0929/so100_duck#episode_000000",
+    "sim": 0.6806976199150085
+  },
+  {
+    "sample": "sample_000028",
+    "match": "Odog16/so100_cube_drop_pick_v1#episode_000021",
+    "sim": 0.6392567157745361
+  },
+  {
+    "sample": "sample_000029",
+    "match": "shreyasgite/so100_legocube_50#episode_000008",
+    "sim": 0.6975041031837463
+  },
+  {
+    "sample": "sample_000030",
+    "match": "aractingi/push_cube_offline_data#episode_000015",
+    "sim": 0.5537111163139343
+  },
+  {
+    "sample": "sample_000031",
+    "match": "Ityl/so100_recording2#episode_000000",
+    "sim": 0.6117315292358398
+  },
+  {
+    "sample": "sample_000032",
+    "match": "aractingi/push_cube_offline_data#episode_000010",
+    "sim": 0.701904296875
+  },
+  {
+    "sample": "sample_000033",
+    "match": "aractingi/push_cube_offline_data#episode_000015",
+    "sim": 0.5805937647819519
+  },
+  {
+    "sample": "sample_000034",
+    "match": "tkc79/so100_lego_box_2#episode_000018",
+    "sim": 0.5668087601661682
+  },
+  {
+    "sample": "sample_000035",
+    "match": "dragon-95/so100_sorting_2#episode_000119",
+    "sim": 0.628598690032959
+  },
+  {
+    "sample": "sample_000036",
+    "match": "aractingi/push_cube_offline_data#episode_000010",
+    "sim": 0.6888629198074341
+  },
+  {
+    "sample": "sample_000037",
+    "match": "Odog16/so100_cube_drop_pick_v1#episode_000021",
+    "sim": 0.7183488607406616
+  },
+  {
+    "sample": "sample_000038",
+    "match": "jlesein/TestBoulon7#episode_000036",
+    "sim": 0.5944589376449585
+  },
+  {
+    "sample": "sample_000039",
+    "match": "Loki0929/so100_duck#episode_000054",
+    "sim": 0.6736371517181396
+  },
+  {
+    "sample": "sample_000040",
+    "match": "aractingi/push_cube_offline_data#episode_000015",
+    "sim": 0.60188227891922
+  },
+  {
+    "sample": "sample_000041",
+    "match": "triton7777/so100_dataset_mix#episode_000005",
+    "sim": 0.5710842609405518
+  },
+  {
+    "sample": "sample_000042",
+    "match": "aractingi/push_cube_offline_data#episode_000002",
+    "sim": 0.6810920834541321
+  },
+  {
+    "sample": "sample_000043",
+    "match": "dragon-95/so100_sorting_2#episode_000119",
+    "sim": 0.6045535802841187
+  },
+  {
+    "sample": "sample_000044",
+    "match": "Odog16/so100_cube_drop_pick_v1#episode_000021",
+    "sim": 0.69890958070755
+  },
+  {
+    "sample": "sample_000045",
+    "match": "Odog16/so100_cube_drop_pick_v1#episode_000021",
+    "sim": 0.6856887936592102
+  },
+  {
+    "sample": "sample_000046",
+    "match": "aractingi/push_cube_offline_data#episode_000023",
+    "sim": 0.6684668660163879
+  },
+  {
+    "sample": "sample_000047",
+    "match": "aractingi/push_cube_offline_data#episode_000007",
+    "sim": 0.6860567331314087
+  },
+  {
+    "sample": "sample_000048",
+    "match": "pranavsaroha/so100_legos4#episode_000015",
+    "sim": 0.5769295692443848
+  },
+  {
+    "sample": "sample_000049",
+    "match": "aractingi/push_cube_offline_data#episode_000007",
+    "sim": 0.5971417427062988
+  },
+  {
+    "sample": "sample_000050",
+    "match": "aractingi/push_cube_offline_data#episode_000023",
+    "sim": 0.551274836063385
+  },
+  {
+    "sample": "sample_000051",
+    "match": "aractingi/push_cube_offline_data#episode_000015",
+    "sim": 0.6230490803718567
+  },
+  {
+    "sample": "sample_000052",
+    "match": "aractingi/push_cube_offline_data#episode_000007",
+    "sim": 0.6525316834449768
+  },
+  {
+    "sample": "sample_000053",
+    "match": "Loki0929/so100_duck#episode_000000",
+    "sim": 0.6552731990814209
+  },
+  {
+    "sample": "sample_000054",
+    "match": "aractingi/push_cube_offline_data#episode_000015",
+    "sim": 0.6399576663970947
+  },
+  {
+    "sample": "sample_000055",
+    "match": "Loki0929/so100_duck#episode_000000",
+    "sim": 0.6385276317596436
+  },
+  {
+    "sample": "sample_000056",
+    "match": "Odog16/so100_cube_drop_pick_v1#episode_000024",
+    "sim": 0.7025176286697388
+  },
+  {
+    "sample": "sample_000057",
+    "match": "aractingi/push_cube_offline_data#episode_000015",
+    "sim": 0.6499433517456055
+  },
+  {
+    "sample": "sample_000058",
+    "match": "Odog16/so100_cube_drop_pick_v1#episode_000021",
+    "sim": 0.6766948103904724
+  },
+  {
+    "sample": "sample_000059",
+    "match": "aractingi/push_cube_offline_data#episode_000015",
+    "sim": 0.6117565631866455
+  },
+  {
+    "sample": "sample_000060",
+    "match": "Odog16/so100_cube_drop_pick_v1#episode_000031",
+    "sim": 0.7206135988235474
+  },
+  {
+    "sample": "sample_000061",
+    "match": "Odog16/so100_cube_drop_pick_v1#episode_000031",
+    "sim": 0.6456501483917236
+  },
+  {
+    "sample": "sample_000062",
+    "match": "Odog16/so100_cube_drop_pick_v1#episode_000031",
+    "sim": 0.6885945200920105
+  },
+  {
+    "sample": "sample_000063",
+    "match": "Odog16/so100_cube_drop_pick_v1#episode_000031",
+    "sim": 0.6369445323944092
+  },
+  {
+    "sample": "sample_000064",
+    "match": "Odog16/so100_cube_drop_pick_v1#episode_000031",
+    "sim": 0.6802806854248047
+  },
+  {
+    "sample": "sample_000065",
+    "match": "Odog16/so100_cube_drop_pick_v1#episode_000031",
+    "sim": 0.7188838124275208
+  },
+  {
+    "sample": "sample_000066",
+    "match": "aractingi/push_cube_offline_data#episode_000015",
+    "sim": 0.6127060651779175
+  },
+  {
+    "sample": "sample_000067",
+    "match": "aractingi/push_cube_offline_data#episode_000007",
+    "sim": 0.7159659266471863
+  },
+  {
+    "sample": "sample_000068",
+    "match": "aractingi/push_cube_offline_data#episode_000002",
+    "sim": 0.6764251589775085
+  },
+  {
+    "sample": "sample_000069",
+    "match": "aractingi/push_cube_offline_data#episode_000015",
+    "sim": 0.6647586822509766
+  },
+  {
+    "sample": "sample_000070",
+    "match": "aractingi/push_cube_offline_data#episode_000015",
+    "sim": 0.6655086874961853
+  },
+  {
+    "sample": "sample_000071",
+    "match": "aractingi/push_cube_offline_data#episode_000015",
+    "sim": 0.5957292914390564
+  },
+  {
+    "sample": "sample_000072",
+    "match": "aractingi/push_cube_offline_data#episode_000015",
+    "sim": 0.6191989183425903
+  },
+  {
+    "sample": "sample_000073",
+    "match": "Odog16/so100_cube_drop_pick_v1#episode_000031",
+    "sim": 0.6382229328155518
+  },
+  {
+    "sample": "sample_000074",
+    "match": "aractingi/push_cube_offline_data#episode_000002",
+    "sim": 0.6707569360733032
+  },
+  {
+    "sample": "sample_000075",
+    "match": "aractingi/push_cube_offline_data#episode_000015",
+    "sim": 0.703701913356781
+  },
+  {
+    "sample": "sample_000076",
+    "match": "aractingi/push_cube_offline_data#episode_000015",
+    "sim": 0.6460216045379639
+  },
+  {
+    "sample": "sample_000077",
+    "match": "Odog16/so100_cube_drop_pick_v1#episode_000024",
+    "sim": 0.7175531387329102
+  },
+  {
+    "sample": "sample_000078",
+    "match": "Odog16/so100_cube_drop_pick_v1#episode_000031",
+    "sim": 0.6826176047325134
+  },
+  {
+    "sample": "sample_000079",
+    "match": "Odog16/so100_cube_drop_pick_v1#episode_000031",
+    "sim": 0.7066781520843506
+  },
+  {
+    "sample": "sample_000080",
+    "match": "aractingi/push_cube_offline_data#episode_000007",
+    "sim": 0.7177299857139587
+  },
+  {
+    "sample": "sample_000081",
+    "match": "roboticshack/team-7-right-arm-grasp-tape#episode_000009",
+    "sim": 0.7137406468391418
+  },
+  {
+    "sample": "sample_000082",
+    "match": "aractingi/push_cube_offline_data#episode_000010",
+    "sim": 0.7303402423858643
+  },
+  {
+    "sample": "sample_000083",
+    "match": "aractingi/push_cube_offline_data#episode_000015",
+    "sim": 0.5959675908088684
+  },
+  {
+    "sample": "sample_000084",
+    "match": "aractingi/push_cube_offline_data#episode_000015",
+    "sim": 0.649300754070282
+  },
+  {
+    "sample": "sample_000085",
+    "match": "aractingi/push_cube_offline_data#episode_000015",
+    "sim": 0.6058249473571777
+  },
+  {
+    "sample": "sample_000086",
+    "match": "aractingi/push_cube_offline_data#episode_000015",
+    "sim": 0.5937976241111755
+  },
+  {
+    "sample": "sample_000087",
+    "match": "aractingi/push_cube_offline_data#episode_000015",
+    "sim": 0.6038002371788025
+  },
+  {
+    "sample": "sample_000088",
+    "match": "Odog16/so100_cube_drop_pick_v1#episode_000031",
+    "sim": 0.6901079416275024
+  },
+  {
+    "sample": "sample_000089",
+    "match": "Odog16/so100_cube_drop_pick_v1#episode_000021",
+    "sim": 0.6916834115982056
+  },
+  {
+    "sample": "sample_000090",
+    "match": "Odog16/so100_cube_drop_pick_v1#episode_000021",
+    "sim": 0.6985043883323669
+  },
+  {
+    "sample": "sample_000091",
+    "match": "Odog16/so100_cube_drop_pick_v1#episode_000021",
+    "sim": 0.719801664352417
+  },
+  {
+    "sample": "sample_000092",
+    "match": "Odog16/so100_cube_drop_pick_v1#episode_000021",
+    "sim": 0.7065520286560059
+  },
+  {
+    "sample": "sample_000093",
+    "match": "Odog16/so100_cube_drop_pick_v1#episode_000031",
+    "sim": 0.5862234234809875
+  },
+  {
+    "sample": "sample_000094",
+    "match": "aractingi/push_cube_offline_data#episode_000002",
+    "sim": 0.5362812280654907
+  },
+  {
+    "sample": "sample_000095",
+    "match": "aractingi/push_cube_offline_data#episode_000002",
+    "sim": 0.6950829029083252
+  },
+  {
+    "sample": "sample_000096",
+    "match": "aractingi/push_cube_offline_data#episode_000023",
+    "sim": 0.6172104477882385
+  },
+  {
+    "sample": "sample_000097",
+    "match": "aractingi/push_cube_offline_data#episode_000002",
+    "sim": 0.6852805018424988
+  },
+  {
+    "sample": "sample_000098",
+    "match": "aractingi/push_cube_offline_data#episode_000010",
+    "sim": 0.6782166361808777
+  },
+  {
+    "sample": "sample_000099",
+    "match": "aractingi/push_cube_offline_data#episode_000002",
+    "sim": 0.5897492170333862
+  },
+  {
+    "sample": "sample_000100",
+    "match": "aractingi/push_cube_offline_data#episode_000015",
+    "sim": 0.6577507853507996
+  },
+  {
+    "sample": "sample_000101",
+    "match": "aractingi/push_cube_offline_data#episode_000010",
+    "sim": 0.7113080024719238
+  },
+  {
+    "sample": "sample_000102",
+    "match": "aractingi/push_cube_offline_data#episode_000015",
+    "sim": 0.5472366213798523
+  },
+  {
+    "sample": "sample_000103",
+    "match": "aractingi/push_cube_offline_data#episode_000010",
+    "sim": 0.7164565920829773
+  },
+  {
+    "sample": "sample_000104",
+    "match": "aractingi/push_cube_offline_data#episode_000029",
+    "sim": 0.6264028549194336
+  },
+  {
+    "sample": "sample_000105",
+    "match": "aractingi/push_cube_offline_data#episode_000002",
+    "sim": 0.7302810549736023
+  },
+  {
+    "sample": "sample_000106",
+    "match": "aractingi/push_cube_offline_data#episode_000010",
+    "sim": 0.7267751097679138
+  },
+  {
+    "sample": "sample_000107",
+    "match": "aractingi/push_cube_offline_data#episode_000015",
+    "sim": 0.6201534867286682
+  },
+  {
+    "sample": "sample_000108",
+    "match": "aractingi/push_cube_offline_data#episode_000029",
+    "sim": 0.5843372344970703
+  },
+  {
+    "sample": "sample_000109",
+    "match": "aractingi/push_cube_offline_data#episode_000029",
+    "sim": 0.6319997310638428
+  },
+  {
+    "sample": "sample_000110",
+    "match": "aractingi/push_cube_offline_data#episode_000015",
+    "sim": 0.6987767219543457
+  },
+  {
+    "sample": "sample_000111",
+    "match": "aractingi/push_cube_offline_data#episode_000029",
+    "sim": 0.6024416089057922
+  },
+  {
+    "sample": "sample_000112",
+    "match": "aractingi/push_cube_offline_data#episode_000010",
+    "sim": 0.7355527877807617
+  },
+  {
+    "sample": "sample_000113",
+    "match": "aractingi/push_cube_offline_data#episode_000029",
+    "sim": 0.5569301247596741
+  },
+  {
+    "sample": "sample_000114",
+    "match": "aractingi/push_cube_offline_data#episode_000015",
+    "sim": 0.701340913772583
+  },
+  {
+    "sample": "sample_000115",
+    "match": "aractingi/push_cube_offline_data#episode_000029",
+    "sim": 0.5325589776039124
+  },
+  {
+    "sample": "sample_000116",
+    "match": "Odog16/so100_cube_drop_pick_v1#episode_000031",
+    "sim": 0.7418020367622375
+  },
+  {
+    "sample": "sample_000117",
+    "match": "aractingi/push_cube_offline_data#episode_000029",
+    "sim": 0.5914652347564697
+  },
+  {
+    "sample": "sample_000118",
+    "match": "aractingi/push_cube_offline_data#episode_000015",
+    "sim": 0.6348186135292053
+  },
+  {
+    "sample": "sample_000119",
+    "match": "Odog16/so100_cube_drop_pick_v1#episode_000021",
+    "sim": 0.7278906106948853
+  },
+  {
+    "sample": "sample_000120",
+    "match": "aractingi/push_cube_offline_data#episode_000029",
+    "sim": 0.625871479511261
+  },
+  {
+    "sample": "sample_000121",
+    "match": "aractingi/push_cube_offline_data#episode_000015",
+    "sim": 0.60003662109375
+  },
+  {
+    "sample": "sample_000122",
+    "match": "aractingi/push_cube_offline_data#episode_000029",
+    "sim": 0.5635251998901367
+  },
+  {
+    "sample": "sample_000123",
+    "match": "aractingi/push_cube_offline_data#episode_000015",
+    "sim": 0.6287790536880493
+  },
+  {
+    "sample": "sample_000124",
+    "match": "aractingi/push_cube_offline_data#episode_000029",
+    "sim": 0.5761029124259949
+  },
+  {
+    "sample": "sample_000125",
+    "match": "aractingi/push_cube_offline_data#episode_000029",
+    "sim": 0.6126123666763306
+  },
+  {
+    "sample": "sample_000126",
+    "match": "aractingi/push_cube_offline_data#episode_000002",
+    "sim": 0.6503547430038452
+  },
+  {
+    "sample": "sample_000127",
+    "match": "aractingi/push_cube_offline_data#episode_000029",
+    "sim": 0.6266559958457947
+  },
+  {
+    "sample": "sample_000128",
+    "match": "aractingi/push_cube_offline_data#episode_000002",
+    "sim": 0.6553756594657898
+  },
+  {
+    "sample": "sample_000129",
+    "match": "aractingi/push_cube_offline_data#episode_000029",
+    "sim": 0.5148991942405701
+  },
+  {
+    "sample": "sample_000130",
+    "match": "AndrejOrsula/lerobot_double_ball_stacking_random#episode_000029",
+    "sim": 0.5225962996482849
+  },
+  {
+    "sample": "sample_000131",
+    "match": "aractingi/push_cube_offline_data#episode_000015",
+    "sim": 0.642069935798645
+  },
+  {
+    "sample": "sample_000132",
+    "match": "Odog16/so100_cube_drop_pick_v1#episode_000021",
+    "sim": 0.6954214572906494
+  },
+  {
+    "sample": "sample_000133",
+    "match": "aractingi/push_cube_offline_data#episode_000023",
+    "sim": 0.6954056620597839
+  },
+  {
+    "sample": "sample_000134",
+    "match": "aractingi/push_cube_offline_data#episode_000029",
+    "sim": 0.625160813331604
+  },
+  {
+    "sample": "sample_000135",
+    "match": "aractingi/push_cube_offline_data#episode_000002",
+    "sim": 0.6778948307037354
+  },
+  {
+    "sample": "sample_000136",
+    "match": "aractingi/push_cube_offline_data#episode_000029",
+    "sim": 0.5811707973480225
+  },
+  {
+    "sample": "sample_000137",
+    "match": "aractingi/push_cube_offline_data#episode_000029",
+    "sim": 0.6277027726173401
+  },
+  {
+    "sample": "sample_000138",
+    "match": "Odog16/so100_cube_drop_pick_v1#episode_000021",
+    "sim": 0.7055700421333313
+  },
+  {
+    "sample": "sample_000139",
+    "match": "aractingi/push_cube_offline_data#episode_000023",
+    "sim": 0.6763280630111694
+  },
+  {
+    "sample": "sample_000140",
+    "match": "aractingi/push_cube_offline_data#episode_000029",
+    "sim": 0.601050615310669
+  },
+  {
+    "sample": "sample_000141",
+    "match": "Odog16/so100_cube_drop_pick_v1#episode_000021",
+    "sim": 0.6985213160514832
+  },
+  {
+    "sample": "sample_000142",
+    "match": "aractingi/push_cube_offline_data#episode_000015",
+    "sim": 0.5833246111869812
+  },
+  {
+    "sample": "sample_000143",
+    "match": "aractingi/push_cube_offline_data#episode_000029",
+    "sim": 0.5794541239738464
+  },
+  {
+    "sample": "sample_000144",
+    "match": "aractingi/push_cube_offline_data#episode_000029",
+    "sim": 0.5984545946121216
+  },
+  {
+    "sample": "sample_000145",
+    "match": "aractingi/push_cube_offline_data#episode_000029",
+    "sim": 0.59392911195755
+  },
+  {
+    "sample": "sample_000146",
+    "match": "aractingi/push_cube_offline_data#episode_000015",
+    "sim": 0.6515176296234131
+  },
+  {
+    "sample": "sample_000147",
+    "match": "aractingi/push_cube_offline_data#episode_000029",
+    "sim": 0.5724352598190308
+  },
+  {
+    "sample": "sample_000148",
+    "match": "Odog16/so100_cube_drop_pick_v1#episode_000021",
+    "sim": 0.674268901348114
+  },
+  {
+    "sample": "sample_000149",
+    "match": "aractingi/push_cube_offline_data#episode_000029",
+    "sim": 0.537658154964447
+  },
+  {
+    "sample": "sample_000150",
+    "match": "Odog16/so100_cube_drop_pick_v1#episode_000021",
+    "sim": 0.6556731462478638
+  },
+  {
+    "sample": "sample_000151",
+    "match": "aractingi/push_cube_offline_data#episode_000029",
+    "sim": 0.5941011905670166
+  },
+  {
+    "sample": "sample_000152",
+    "match": "aractingi/push_cube_offline_data#episode_000029",
+    "sim": 0.6392792463302612
+  },
+  {
+    "sample": "sample_000153",
+    "match": "aractingi/push_cube_offline_data#episode_000015",
+    "sim": 0.5645898580551147
+  },
+  {
+    "sample": "sample_000154",
+    "match": "aractingi/push_cube_offline_data#episode_000005",
+    "sim": 0.7200860977172852
+  },
+  {
+    "sample": "sample_000155",
+    "match": "aractingi/push_cube_offline_data#episode_000023",
+    "sim": 0.7051101326942444
+  },
+  {
+    "sample": "sample_000156",
+    "match": "DorayakiLin/so100_pick_charger_on_tissue#episode_000017",
+    "sim": 0.6774805188179016
+  },
+  {
+    "sample": "sample_000157",
+    "match": "aractingi/push_cube_offline_data#episode_000026",
+    "sim": 0.6991471648216248
+  },
+  {
+    "sample": "sample_000158",
+    "match": "Loki0929/so100_duck#episode_000000",
+    "sim": 0.6849451661109924
+  },
+  {
+    "sample": "sample_000159",
+    "match": "aractingi/push_cube_offline_data#episode_000023",
+    "sim": 0.7402902841567993
+  },
+  {
+    "sample": "sample_000160",
+    "match": "pierfabre/horse#episode_000026",
+    "sim": 0.6362349390983582
+  },
+  {
+    "sample": "sample_000161",
+    "match": "aractingi/push_cube_offline_data#episode_000005",
+    "sim": 0.6695269346237183
+  },
+  {
+    "sample": "sample_000162",
+    "match": "dragon-95/so100_sorting#episode_000027",
+    "sim": 0.6677086353302002
+  },
+  {
+    "sample": "sample_000163",
+    "match": "aractingi/push_cube_offline_data#episode_000026",
+    "sim": 0.65065598487854
+  },
+  {
+    "sample": "sample_000164",
+    "match": "frk2/so100largediffcam#episode_000031",
+    "sim": 0.5704137682914734
+  },
+  {
+    "sample": "sample_000165",
+    "match": "aractingi/push_cube_offline_data#episode_000023",
+    "sim": 0.6642857193946838
+  },
+  {
+    "sample": "sample_000166",
+    "match": "aractingi/push_cube_offline_data#episode_000023",
+    "sim": 0.7158066034317017
+  },
+  {
+    "sample": "sample_000167",
+    "match": "aractingi/push_cube_offline_data#episode_000023",
+    "sim": 0.6472339630126953
+  },
+  {
+    "sample": "sample_000168",
+    "match": "tkc79/so100_lego_box_2#episode_000000",
+    "sim": 0.6017982363700867
+  },
+  {
+    "sample": "sample_000169",
+    "match": "frk2/so100large#episode_000000",
+    "sim": 0.6518251895904541
+  },
+  {
+    "sample": "sample_000170",
+    "match": "aractingi/push_cube_offline_data#episode_000023",
+    "sim": 0.7361848950386047
+  },
+  {
+    "sample": "sample_000171",
+    "match": "tkc79/so100_lego_box_2#episode_000000",
+    "sim": 0.6655332446098328
+  },
+  {
+    "sample": "sample_000172",
+    "match": "aractingi/push_cube_offline_data#episode_000005",
+    "sim": 0.7270594239234924
+  },
+  {
+    "sample": "sample_000173",
+    "match": "Loki0929/so100_duck#episode_000000",
+    "sim": 0.7168059945106506
+  },
+  {
+    "sample": "sample_000174",
+    "match": "aractingi/push_cube_offline_data#episode_000005",
+    "sim": 0.6996945738792419
+  },
+  {
+    "sample": "sample_000175",
+    "match": "aractingi/push_cube_offline_data#episode_000023",
+    "sim": 0.6818315386772156
+  },
+  {
+    "sample": "sample_000176",
+    "match": "aractingi/push_cube_offline_data#episode_000023",
+    "sim": 0.7548015117645264
+  },
+  {
+    "sample": "sample_000177",
+    "match": "aractingi/push_cube_offline_data#episode_000005",
+    "sim": 0.645298182964325
+  },
+  {
+    "sample": "sample_000178",
+    "match": "aractingi/push_cube_offline_data#episode_000023",
+    "sim": 0.7041897773742676
+  },
+  {
+    "sample": "sample_000179",
+    "match": "aractingi/push_cube_offline_data#episode_000023",
+    "sim": 0.6426063776016235
+  },
+  {
+    "sample": "sample_000180",
+    "match": "Loki0929/so100_duck#episode_000000",
+    "sim": 0.7058934569358826
+  },
+  {
+    "sample": "sample_000181",
+    "match": "tkc79/so100_lego_box_2#episode_000000",
+    "sim": 0.6986923813819885
+  },
+  {
+    "sample": "sample_000182",
+    "match": "aractingi/push_cube_offline_data#episode_000005",
+    "sim": 0.7110381126403809
+  },
+  {
+    "sample": "sample_000183",
+    "match": "aractingi/push_cube_offline_data#episode_000023",
+    "sim": 0.718242883682251
+  },
+  {
+    "sample": "sample_000184",
+    "match": "Loki0929/so100_duck#episode_000000",
+    "sim": 0.7000536918640137
+  },
+  {
+    "sample": "sample_000185",
+    "match": "tkc79/so100_lego_box_2#episode_000000",
+    "sim": 0.6858320236206055
+  },
+  {
+    "sample": "sample_000186",
+    "match": "Loki0929/so100_duck#episode_000000",
+    "sim": 0.7221550345420837
+  },
+  {
+    "sample": "sample_000187",
+    "match": "aractingi/push_cube_offline_data#episode_000023",
+    "sim": 0.7199649810791016
+  },
+  {
+    "sample": "sample_000188",
+    "match": "DorayakiLin/so100_pick_charger_on_tissue#episode_000000",
+    "sim": 0.7148798704147339
+  },
+  {
+    "sample": "sample_000189",
+    "match": "tkc79/so100_lego_box_2#episode_000000",
+    "sim": 0.6706108450889587
+  },
+  {
+    "sample": "sample_000190",
+    "match": "Loki0929/so100_duck#episode_000000",
+    "sim": 0.6881664991378784
+  },
+  {
+    "sample": "sample_000191",
+    "match": "aractingi/push_cube_offline_data#episode_000023",
+    "sim": 0.7453065514564514
+  },
+  {
+    "sample": "sample_000192",
+    "match": "tkc79/so100_lego_box_2#episode_000000",
+    "sim": 0.7173596024513245
+  },
+  {
+    "sample": "sample_000193",
+    "match": "aractingi/push_cube_offline_data#episode_000023",
+    "sim": 0.7621226906776428
+  },
+  {
+    "sample": "sample_000194",
+    "match": "Loki0929/so100_duck#episode_000190",
+    "sim": 0.6880512237548828
+  },
+  {
+    "sample": "sample_000195",
+    "match": "aractingi/push_cube_offline_data#episode_000023",
+    "sim": 0.781450629234314
+  },
+  {
+    "sample": "sample_000196",
+    "match": "aractingi/push_cube_offline_data#episode_000007",
+    "sim": 0.7325276732444763
+  },
+  {
+    "sample": "sample_000197",
+    "match": "aractingi/push_cube_offline_data#episode_000026",
+    "sim": 0.6878858208656311
+  },
+  {
+    "sample": "sample_000198",
+    "match": "Loki0929/so100_duck#episode_000000",
+    "sim": 0.6873390674591064
+  },
+  {
+    "sample": "sample_000199",
+    "match": "aractingi/push_cube_offline_data#episode_000023",
+    "sim": 0.7109344601631165
+  },
+  {
+    "sample": "sample_000200",
+    "match": "Loki0929/so100_duck#episode_000000",
+    "sim": 0.6444637179374695
+  },
+  {
+    "sample": "sample_000201",
+    "match": "aractingi/push_cube_offline_data#episode_000023",
+    "sim": 0.6596802473068237
+  },
+  {
+    "sample": "sample_000202",
+    "match": "Odog16/so100_cube_drop_pick_v1#episode_000021",
+    "sim": 0.6980241537094116
+  },
+  {
+    "sample": "sample_000203",
+    "match": "aractingi/push_cube_offline_data#episode_000023",
+    "sim": 0.7185134887695312
+  },
+  {
+    "sample": "sample_000204",
+    "match": "aractingi/push_cube_offline_data#episode_000023",
+    "sim": 0.7396910190582275
+  },
+  {
+    "sample": "sample_000205",
+    "match": "DorayakiLin/so100_pick_charger_on_tissue#episode_000004",
+    "sim": 0.6850398778915405
+  },
+  {
+    "sample": "sample_000206",
+    "match": "DorayakiLin/so100_pick_charger_on_tissue#episode_000049",
+    "sim": 0.7037384510040283
+  },
+  {
+    "sample": "sample_000207",
+    "match": "Loki0929/so100_duck#episode_000000",
+    "sim": 0.7643359899520874
+  },
+  {
+    "sample": "sample_000208",
+    "match": "aractingi/push_cube_offline_data#episode_000023",
+    "sim": 0.756755530834198
+  },
+  {
+    "sample": "sample_000209",
+    "match": "DorayakiLin/so100_pick_charger_on_tissue#episode_000035",
+    "sim": 0.7032729387283325
+  },
+  {
+    "sample": "sample_000210",
+    "match": "aractingi/push_cube_offline_data#episode_000023",
+    "sim": 0.7541628479957581
+  },
+  {
+    "sample": "sample_000211",
+    "match": "aractingi/push_cube_offline_data#episode_000023",
+    "sim": 0.7452803254127502
+  },
+  {
+    "sample": "sample_000212",
+    "match": "DorayakiLin/so100_pick_charger_on_tissue#episode_000049",
+    "sim": 0.7005788087844849
+  },
+  {
+    "sample": "sample_000213",
+    "match": "aractingi/push_cube_offline_data#episode_000005",
+    "sim": 0.7093870043754578
+  },
+  {
+    "sample": "sample_000214",
+    "match": "DorayakiLin/so100_pick_charger_on_tissue#episode_000017",
+    "sim": 0.6630535125732422
+  },
+  {
+    "sample": "sample_000215",
+    "match": "DorayakiLin/so100_pick_charger_on_tissue#episode_000035",
+    "sim": 0.6657459735870361
+  }
+]

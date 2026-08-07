@@ -1,0 +1,98 @@
+{
+  "bwm_checkpoint": "/nfsdata/home/lexxsh/workspace/inha/checkpoints/Boundless-World-Model/step-12000.safetensors",
+  "bwm_checkpoint_bytes": 10051484872,
+  "bwm_checkpoint_tensors": 829,
+  "bwm_dit_blocks": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29
+  ],
+  "public_action_shapes": {
+    "pipe.action_encoder.action_mlp1.0.bias": [
+      3072
+    ],
+    "pipe.action_encoder.action_mlp1.0.weight": [
+      3072,
+      14
+    ],
+    "pipe.action_encoder.action_mlp1.2.bias": [
+      3072
+    ],
+    "pipe.action_encoder.action_mlp1.2.weight": [
+      3072,
+      3072
+    ],
+    "pipe.action_encoder.action_mlp2.0.bias": [
+      12288
+    ],
+    "pipe.action_encoder.action_mlp2.0.weight": [
+      12288,
+      56
+    ],
+    "pipe.action_encoder.action_mlp2.2.bias": [
+      3072
+    ],
+    "pipe.action_encoder.action_mlp2.2.weight": [
+      3072,
+      12288
+    ]
+  },
+  "base_model_shards": [
+    "/nfsdata/home/lexxsh/workspace/inha/models/Wan-AI/Wan2.2-TI2V-5B/diffusion_pytorch_model-00001-of-00003.safetensors",
+    "/nfsdata/home/lexxsh/workspace/inha/models/Wan-AI/Wan2.2-TI2V-5B/diffusion_pytorch_model-00002-of-00003.safetensors",
+    "/nfsdata/home/lexxsh/workspace/inha/models/Wan-AI/Wan2.2-TI2V-5B/diffusion_pytorch_model-00003-of-00003.safetensors"
+  ],
+  "vae": "/nfsdata/home/lexxsh/workspace/inha/models/Wan-AI/Wan2.2-TI2V-5B/Wan2.2_VAE.pth",
+  "train_datasets": 119,
+  "train_clips": 10640,
+  "sample_video_shape": [
+    1,
+    3,
+    17,
+    64,
+    96
+  ],
+  "sample_action_shape": [
+    1,
+    17,
+    18
+  ],
+  "normal_minus_zero_abs_mean": 0.33965370059013367,
+  "normal_minus_roll_abs_mean": 0.4665549397468567,
+  "action_abs_max": 1.0,
+  "criteria": {
+    "assets_gate": true,
+    "public_checkpoint_gate": true,
+    "action_encoder_expansion_gate": true,
+    "action_contract_gate": true,
+    "dataset_gate": true
+  },
+  "verdict": "PASS_BWM_SO100_CONTRACT"
+}

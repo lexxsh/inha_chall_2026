@@ -1,0 +1,45 @@
+{
+  "checkpoint": "/nfsdata/home/lexxsh/workspace/inha/models/IRASim/0300000.pt",
+  "checkpoint_report": {
+    "format": "public_rt1",
+    "matched": 297,
+    "missing": [
+      "action_adapter.weight"
+    ],
+    "unexpected": [],
+    "mismatched": []
+  },
+  "official_video_frames": 16,
+  "official_temporal_embedding_shape": [
+    1,
+    16,
+    1152
+  ],
+  "official_action_mlp_input_shape": [
+    4608,
+    7
+  ],
+  "so100_adapter_shape": [
+    7,
+    6
+  ],
+  "so100_adapter_zero_abs_max": 0.0,
+  "so100_adapter_first_backward_grad_abs_sum": 0.10630035400390625,
+  "train_video_shape": [
+    16,
+    3,
+    256,
+    320
+  ],
+  "train_action_shape": [
+    15,
+    6
+  ],
+  "eval_action_shape": [
+    15,
+    6
+  ],
+  "source_png_exactly_equals_gt_frame0": true,
+  "official_direct_resize_exact": true,
+  "verdict": "PASS"
+}

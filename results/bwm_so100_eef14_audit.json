@@ -1,0 +1,61 @@
+{
+  "scope": "CPU contract audit; no generator or GPU executed",
+  "contract": "source-anchored SO100 joint-target deltas -> bounded corrected-URDF EEF14",
+  "canonical_q": [
+    0.0,
+    -0.5,
+    0.5,
+    0.5,
+    0.0,
+    0.0
+  ],
+  "stats_count": 3419414,
+  "sampled_windows": 201142,
+  "joint_limit_violation_fraction_before_clip": {
+    "shoulder_pan": 0.0008460513994503152,
+    "shoulder_lift": 0.061512879107355825,
+    "elbow_flex": 0.04653545899969995,
+    "wrist_flex": 0.007111744877923527,
+    "wrist_roll": 6.784788270738787e-05,
+    "gripper": 0.025493841927300993
+  },
+  "public_checkpoint_input_shapes": {
+    "pipe.action_encoder.action_mlp1.0.weight": [
+      3072,
+      14
+    ],
+    "pipe.action_encoder.action_mlp2.0.weight": [
+      12288,
+      56
+    ]
+  },
+  "dataset_video_shape": [
+    1,
+    3,
+    17,
+    64,
+    96
+  ],
+  "dataset_action_shape": [
+    1,
+    17,
+    14
+  ],
+  "token_abs_max": 1.0,
+  "inactive_arm_abs_max": 0.0,
+  "normal_minus_zero_abs_mean": 0.09349608421325684,
+  "normal_minus_batch_roll_abs_mean": 0.1458352506160736,
+  "normal_temporal_abs_mean": 0.017058473080396652,
+  "criteria": {
+    "source_anchored_stats": true,
+    "original_bwm_input_shapes": true,
+    "dataset_contract": true,
+    "finite_and_bounded": true,
+    "inactive_arm_is_zero": true,
+    "canonical_source_is_stable": true,
+    "normal_differs_from_zero": true,
+    "normal_differs_from_roll": true,
+    "preclip_limit_violations_below_10pct": true
+  },
+  "verdict": "PASS_EEF14_CONTRACT"
+}

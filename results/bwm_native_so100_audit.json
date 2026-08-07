@@ -1,0 +1,44 @@
+{
+  "scope": "CPU-only; no GPU/model weights loaded",
+  "initialization": "vanilla Wan2.2-TI2V-5B + fresh 6D action encoder",
+  "base_model_shards": [
+    "/nfsdata/home/lexxsh/workspace/inha/models/Wan-AI/Wan2.2-TI2V-5B/diffusion_pytorch_model-00001-of-00003.safetensors",
+    "/nfsdata/home/lexxsh/workspace/inha/models/Wan-AI/Wan2.2-TI2V-5B/diffusion_pytorch_model-00002-of-00003.safetensors",
+    "/nfsdata/home/lexxsh/workspace/inha/models/Wan-AI/Wan2.2-TI2V-5B/diffusion_pytorch_model-00003-of-00003.safetensors"
+  ],
+  "vae": "/nfsdata/home/lexxsh/workspace/inha/models/Wan-AI/Wan2.2-TI2V-5B/Wan2.2_VAE.pth",
+  "train_datasets": 119,
+  "train_clips": 10640,
+  "sample_video_shape": [
+    1,
+    3,
+    17,
+    64,
+    96
+  ],
+  "sample_action_shape": [
+    1,
+    17,
+    6
+  ],
+  "action_context_shape": [
+    1,
+    17,
+    32
+  ],
+  "action_modulation_shape": [
+    1,
+    5,
+    32
+  ],
+  "normal_minus_zero_abs_mean": 0.8916409015655518,
+  "normal_minus_reverse_abs_mean": 1.0625386238098145,
+  "criteria": {
+    "vanilla_wan22_assets": true,
+    "dataset_contract": true,
+    "action_contract": true,
+    "exact_17rgb_to_5latent_grouping": true,
+    "public_bwm_checkpoint_not_required": true
+  },
+  "verdict": "PASS_BWM_NATIVE_SO100"
+}

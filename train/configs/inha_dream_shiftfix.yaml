@@ -1,0 +1,30 @@
+# Short continuation of the submitted Dream 10k model with the audited
+# frame/action contract.  Merge on top of inha_full_unet.yaml.
+name: inha_dream_shiftfix
+group: inha_dream_shiftfix
+logdir: ../outputs/dream_shiftfix
+
+data:
+  params:
+    # Output frame 0 is the source. Future frame 1 uses command 0, ..., frame
+    # 15 uses command 14. transform_actions implements this as [0,0,1,...,14].
+    action_shift: -1
+
+model:
+  # Small continuation LR: retain the only video prior that produced a useful
+  # public submission while correcting temporal action assignment.
+  base_learning_rate: 2.0e-6
+
+lightning:
+  trainer:
+    max_steps: 500
+    max_time: "00:06:00:00"
+    check_val_every_n_epoch: 1
+    log_every_n_steps: 25
+  callbacks:
+    model_checkpoint:
+      params:
+        filename: "{epoch}-{step}"
+        every_n_train_steps: 250
+        save_top_k: -1
+        save_last: true

@@ -1,0 +1,8 @@
+{
+  "samples": 24,
+  "seconds": 45.315398322069086,
+  "seconds_per_sample": 1.8881415967528785,
+  "num_inference_steps": 50,
+  "frames_saved": 16,
+  "peak_gpu_gib": 1.6862587928771973
+}

@@ -1,0 +1,39 @@
+# SPDX-FileCopyrightText: Copyright (c) 2026 NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+# SPDX-License-Identifier: OpenMDW-1.1
+
+# SO-100 native Cosmos3-Edge forward-dynamics full-SFT screen.
+
+[job]
+task       = "vfm"
+experiment = "action_fd_so100_edge"
+project    = "cosmos3_action_fd"
+group      = "action_sft"
+name       = "cosmos3_edge_so100_native"
+wandb_mode = "disabled"
+
+[model]
+precision = "bfloat16"
+
+[model.parallelism]
+data_parallel_shard_degree     = 8
+data_parallel_replicate_degree = 1
+
+[model.activation_checkpointing]
+mode = "full"
+
+[model.tokenizer]
+vae_path = "${oc.env:WAN_VAE_PATH}"
+
+[optimizer]
+lr = 1.0e-4
+
+[scheduler]
+cycle_lengths = [20000]
+
+[trainer]
+max_iter     = 500
+logging_iter = 10
+
+[checkpoint]
+load_path = "${oc.env:BASE_CHECKPOINT_PATH}"
+save_iter = 250

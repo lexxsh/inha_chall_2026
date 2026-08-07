@@ -1,0 +1,33 @@
+{
+  "records": 72,
+  "train_records": 64,
+  "holdout_records": 8,
+  "control_shapes": [
+    [
+      7,
+      17,
+      320,
+      432
+    ]
+  ],
+  "missing_artifacts": [],
+  "all_finite": true,
+  "max_frame0_abs": 0.0,
+  "median_future_abs_mean": 0.057573338970541954,
+  "first_pair_abs_difference": 0.03222271054983139,
+  "adapter_parameters_test_shape": 84068,
+  "zero_hidden_abs_max": 0.0,
+  "signal_hidden_abs_mean": 0.3811882436275482,
+  "zero_residual_abs_max": 0.0,
+  "pipeline_output_shape": [
+    1,
+    16,
+    5,
+    8,
+    12
+  ],
+  "pipeline_output_finite": true,
+  "structural_zero_gate": true,
+  "data_gate": true,
+  "verdict": "PASS_CPU_AUDIT"
+}

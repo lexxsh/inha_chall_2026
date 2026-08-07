@@ -1,0 +1,57 @@
+# Python and local environments
+.venv*/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+.uv-cache/
+.omc/
+
+# Local agent/editor state
+.agents/
+.codex/
+.claude/
+.vscode/
+.idea/
+
+# Data, model weights, caches, and generated artifacts
+/models/
+/checkpoints/
+/cache/
+/diagnostics/
+/submissions/
+/output/
+/outputs/
+/baseline_videos/
+/eval_videos_10k/
+/valset/
+/valset_*/
+open/data/
+open/baseline/outputs/
+/third_party/
+
+# Heavy ML artifacts
+*.ckpt
+*.safetensors
+*.pt
+*.pth
+*.bin
+*.npy
+*.npz
+*.mp4
+*.avi
+*.mov
+*.zip
+*.tar
+*.tar.gz
+*.parquet
+wandb/
+
+# Scratch-training products
+inha_worldmodel_scratch_training/cosmos/checkpoints/
+inha_worldmodel_scratch_training/cosmos/train/latents/
+inha_worldmodel_scratch_training/cosmos/train/val_latents/
+inha_worldmodel_scratch_training/cosmos/train/runs/
+inha_worldmodel_scratch_training/submission_*.csv

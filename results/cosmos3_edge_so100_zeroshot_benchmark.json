@@ -1,0 +1,36 @@
+{
+  "model": "/nfsdata/home/lexxsh/workspace/inha/checkpoints/Cosmos3-Edge",
+  "challenge_root": "/nfsdata/home/lexxsh/workspace/inha/valset_holdout",
+  "samples": 8,
+  "generated_mode_samples": 32,
+  "seconds": 58.583188485354185,
+  "peak_gpu_gib": 11.938226222991943,
+  "num_inference_steps": 30,
+  "resolution_tier": 480,
+  "fps": 6,
+  "domain_name": "bridge_orig_lerobot",
+  "action_contract": "normalized backward_framewise [dxyz3, column_rot6d6, gripper1]",
+  "source_frame_zero_replaced": true,
+  "modes": {
+    "none": {
+      "samples": 8,
+      "seconds": 17.357329688966274,
+      "prediction_root": "/nfsdata/home/lexxsh/workspace/inha/diagnostics/cosmos3_edge_so100_zeroshot/none"
+    },
+    "zero-motion": {
+      "samples": 8,
+      "seconds": 13.559619128704071,
+      "prediction_root": "/nfsdata/home/lexxsh/workspace/inha/diagnostics/cosmos3_edge_so100_zeroshot/zero-motion"
+    },
+    "reverse": {
+      "samples": 8,
+      "seconds": 13.690292980521917,
+      "prediction_root": "/nfsdata/home/lexxsh/workspace/inha/diagnostics/cosmos3_edge_so100_zeroshot/reverse"
+    },
+    "batch-roll": {
+      "samples": 8,
+      "seconds": 13.965252004563808,
+      "prediction_root": "/nfsdata/home/lexxsh/workspace/inha/diagnostics/cosmos3_edge_so100_zeroshot/batch-roll"
+    }
+  }
+}

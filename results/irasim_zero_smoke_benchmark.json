@@ -1,0 +1,7 @@
+{
+  "samples": 1,
+  "seconds": 1.2513088270789012,
+  "seconds_per_sample": 1.2513088270789012,
+  "num_inference_steps": 4,
+  "frames_saved": 16
+}

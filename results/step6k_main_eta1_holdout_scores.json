@@ -1,0 +1,211 @@
+{
+  "valset": "/nfsdata/home/lexxsh/workspace/inha/valset_holdout",
+  "prediction_root": "/nfsdata/home/lexxsh/workspace/inha/diagnostics/step_screen/step6k_main_eta1",
+  "count": 24,
+  "prediction": {
+    "dino": 0.2084265872836113,
+    "video": 0.06767688443263371,
+    "action": 1.2840824723243713,
+    "weighted": 0.596464030444622
+  },
+  "static": {
+    "dino": 0.07768927530075113,
+    "video": 0.07193643599748611,
+    "action": 1.2761469235022862,
+    "weighted": 0.5553464827903857
+  },
+  "per_sample": [
+    {
+      "sample_id": "val_000000",
+      "dataset": "sihyun77/suho_3_17_1",
+      "dino": 0.1200122982263565,
+      "video": 0.08693438768386841,
+      "action": 1.57242751121521,
+      "weighted": 0.6910550102591515
+    },
+    {
+      "sample_id": "val_000001",
+      "dataset": "pranavsaroha/so100_carrot_5",
+      "dino": 0.2314063310623169,
+      "video": 0.08232438564300537,
+      "action": 1.12502121925354,
+      "weighted": 0.5441277027130127
+    },
+    {
+      "sample_id": "val_000002",
+      "dataset": "ganker5/so100_dataline_0328",
+      "dino": 0.10813398659229279,
+      "video": 0.03997480869293213,
+      "action": 1.4810943603515625,
+      "weighted": 0.6368703827261925
+    },
+    {
+      "sample_id": "val_000003",
+      "dataset": "DorayakiLin/so100_pick_charger_on_tissue",
+      "dino": 0.14013256132602692,
+      "video": 0.03337275981903076,
+      "action": 1.110694169998169,
+      "weighted": 0.4963292643427849
+    },
+    {
+      "sample_id": "val_000004",
+      "dataset": "tkc79/so100_lego_box_2",
+      "dino": 0.39266279339790344,
+      "video": 0.09150278568267822,
+      "action": 1.3404945135116577,
+      "weighted": 0.6814474791288376
+    },
+    {
+      "sample_id": "val_000005",
+      "dataset": "samsam0510/glove_reorientation_1",
+      "dino": 0.17851758003234863,
+      "video": 0.09961730241775513,
+      "action": 1.4358720779418945,
+      "weighted": 0.6577892959117889
+    },
+    {
+      "sample_id": "val_000006",
+      "dataset": "sihyun77/suho_3_17_1",
+      "dino": 0.15796679258346558,
+      "video": 0.02165508270263672,
+      "action": 1.305088758468628,
+      "weighted": 0.5759220659732819
+    },
+    {
+      "sample_id": "val_000007",
+      "dataset": "pranavsaroha/so100_carrot_5",
+      "dino": 0.14572857320308685,
+      "video": 0.06081265211105347,
+      "action": 1.6621017456054688,
+      "weighted": 0.7268030658364296
+    },
+    {
+      "sample_id": "val_000008",
+      "dataset": "ganker5/so100_dataline_0328",
+      "dino": 0.25459977984428406,
+      "video": 0.05784952640533447,
+      "action": 1.2302041053771973,
+      "weighted": 0.5858164340257644
+    },
+    {
+      "sample_id": "val_000009",
+      "dataset": "DorayakiLin/so100_pick_charger_on_tissue",
+      "dino": 0.3247469365596771,
+      "video": 0.047961533069610596,
+      "action": 1.0604418516159058,
+      "weighted": 0.5359892815351487
+    },
+    {
+      "sample_id": "val_000010",
+      "dataset": "tkc79/so100_lego_box_2",
+      "dino": 0.33101242780685425,
+      "video": 0.1140945553779602,
+      "action": 1.0040967464447021,
+      "weighted": 0.5351707935333252
+    },
+    {
+      "sample_id": "val_000011",
+      "dataset": "samsam0510/glove_reorientation_1",
+      "dino": 0.2204214632511139,
+      "video": 0.07095509767532349,
+      "action": 1.5183237791061401,
+      "weighted": 0.6947424799203873
+    },
+    {
+      "sample_id": "val_000012",
+      "dataset": "sihyun77/suho_3_17_1",
+      "dino": 0.17843568325042725,
+      "video": 0.04531222581863403,
+      "action": 1.4455465078353882,
+      "weighted": 0.6453429758548737
+    },
+    {
+      "sample_id": "val_000013",
+      "dataset": "pranavsaroha/so100_carrot_5",
+      "dino": 0.2417205423116684,
+      "video": 0.09243154525756836,
+      "action": 1.1314128637313843,
+      "weighted": 0.5528107717633247
+    },
+    {
+      "sample_id": "val_000014",
+      "dataset": "ganker5/so100_dataline_0328",
+      "dino": 0.1383167803287506,
+      "video": 0.10469108819961548,
+      "action": 0.7729808688163757,
+      "weighted": 0.3820947080850602
+    },
+    {
+      "sample_id": "val_000015",
+      "dataset": "DorayakiLin/so100_pick_charger_on_tissue",
+      "dino": 0.2633693218231201,
+      "video": 0.04336273670196533,
+      "action": 1.24155592918396,
+      "weighted": 0.5886419892311097
+    },
+    {
+      "sample_id": "val_000016",
+      "dataset": "tkc79/so100_lego_box_2",
+      "dino": 0.26373177766799927,
+      "video": 0.1403571367263794,
+      "action": 0.9833003878593445,
+      "weighted": 0.5145468294620514
+    },
+    {
+      "sample_id": "val_000017",
+      "dataset": "samsam0510/glove_reorientation_1",
+      "dino": 0.46801692247390747,
+      "video": 0.11441892385482788,
+      "action": 1.3263447284698486,
+      "weighted": 0.7052686452865601
+    },
+    {
+      "sample_id": "val_000018",
+      "dataset": "sihyun77/suho_3_17_1",
+      "dino": 0.0964965671300888,
+      "video": 0.047507643699645996,
+      "action": 0.9959920644760132,
+      "weighted": 0.44159808903932574
+    },
+    {
+      "sample_id": "val_000019",
+      "dataset": "pranavsaroha/so100_carrot_5",
+      "dino": 0.14299669861793518,
+      "video": 0.03975629806518555,
+      "action": 1.498260498046875,
+      "weighted": 0.6541300982236862
+    },
+    {
+      "sample_id": "val_000020",
+      "dataset": "ganker5/so100_dataline_0328",
+      "dino": 0.06488002836704254,
+      "video": 0.0464816689491272,
+      "action": 1.3976895809173584,
+      "weighted": 0.5924843415617943
+    },
+    {
+      "sample_id": "val_000021",
+      "dataset": "DorayakiLin/so100_pick_charger_on_tissue",
+      "dino": 0.26333314180374146,
+      "video": 0.05480390787124634,
+      "action": 1.0290062427520752,
+      "weighted": 0.5070436120033264
+    },
+    {
+      "sample_id": "val_000022",
+      "dataset": "tkc79/so100_lego_box_2",
+      "dino": 0.12269620597362518,
+      "video": 0.03829735517501831,
+      "action": 1.662103533744812,
+      "weighted": 0.7131394818425179
+    },
+    {
+      "sample_id": "val_000023",
+      "dataset": "samsam0510/glove_reorientation_1",
+      "dino": 0.15290290117263794,
+      "video": 0.049769818782806396,
+      "action": 1.4879252910614014,
+      "weighted": 0.6559719324111938
+    }
+  ]
+}

@@ -1,0 +1,192 @@
+name: inha_full_unet
+group: inha_full_unet
+logdir: ../outputs/full_unet
+
+# 베이스라인과의 차이
+#  1) UNet을 11M 신규 학습 -> 사전학습 DynamiCrafter UNet(1.44B) 파인튜닝
+#     제공 baseline보다 붕괴가 줄어드는 후보지만, 원인이 용량 하나인지는 아직 입증되지 않았다.
+#  2) 액션을 절대 관절각 -> 첫 스텝 대비 delta. 유력 가설이며 absolute/step delta보다 낫다고 확정하지 않는다.
+#  3) 같은 장면의 train/val 중복을 막기 위해 검증을 dataset 통째 홀드아웃으로 둔다.
+#
+# UNet 하이퍼파라미터는 backbone.ckpt에서 역추출해 맞췄다. 특히 use_scale_shift_norm은
+# 베이스라인이 True였으나 체크포인트는 False다. strict=False라 어긋나면 조용히 로드 실패하므로
+# train/verify_checkpoint_load.py 로 로드율을 반드시 확인할 것.
+
+data:
+  target: data_module.SO100DeltaDataModule
+  params:
+    root: ../../data/train
+    remote: False
+    dataset_paths: auto
+    action_stats_path: ../../data/train/so100_action_statistics.json
+    delta_stats_path: ../../../train/delta_action_stats.json
+    action_mode: delta
+    holdout_datasets: 6
+    normalize_actions: True
+    # 벤치마크: batch 4에서 2.22s/step, 최대 57.6GB. 목표 GPU(96GB)에 여유 있게 들어간다.
+    batch_size: 4
+    num_workers: 8
+    pin_memory: True
+    target_height: 320
+    target_width: 512
+    pad: True
+    camera_key: auto
+    traj_len: 16
+    downsample: 1
+    use_language: False
+
+model:
+  pretrained_checkpoint: ../checkpoints/backbone.ckpt
+  # 베이스라인은 UNet을 제외했다. 우리는 사전학습 UNet을 함께 불러온다.
+  only_reload_modules:
+    [
+      "first_stage_model",
+      "cond_stage_model",
+      "embedder",
+      "image_proj_model",
+      "model.diffusion_model",
+    ]
+  base_learning_rate: 1e-5 # 사전학습 파인튜닝이므로 베이스라인(1e-4)보다 낮춘다
+  scale_lr: False
+  target: lvdm.models.ddpm3d.LatentVisualDiffusion
+  params:
+    save_only_unet: True
+    linear_warmup_steps: 500
+    rescale_betas_zero_snr: True
+    parameterization: "v"
+    linear_start: 0.00085
+    linear_end: 0.012
+    num_timesteps_cond: 1
+    log_every_t: 200
+    timesteps: 1000
+    first_stage_key: video
+    cond_stage_key: caption
+    cond_stage_trainable: False
+    image_proj_model_trainable: False
+    conditioning_key: hybrid
+    image_size: [40, 64]
+    channels: 4
+    scale_by_std: False
+    scale_factor: 0.18215
+    use_ema: True
+    uncond_prob: 0.05
+    uncond_type: "empty_seq"
+    rand_cond_frame: false
+    use_dynamic_rescale: true
+    base_scale: 0.7
+    fps_condition_type: "fps"
+    perframe_ae: True
+
+    unet_config:
+      target: lvdm.modules.networks.openaimodel3d.UNetModel
+      params:
+        # --- 액션 조건 (우리가 추가하는 유일한 신규 파라미터) ---
+        action_conditioned: True
+        action_dims: 6 # delta 6차원. delta_anchor 모드면 12로 바꿀 것
+        add_act_time_emb: True # time_embed 형상 보존 -> 사전학습 로드 가능
+        action_injection: additive # 기존 10k 재현 경로; challenger는 frame_adaln overlay 사용
+        action_dropout_prob: 0.1 # 액션 CFG 실험 여지 + 정규화
+        # --- 아래는 backbone.ckpt와 정확히 일치해야 하는 값들 ---
+        use_scale_shift_norm: False # emb_layers가 (320,1280)이므로 False
+        in_channels: 8
+        out_channels: 4
+        model_channels: 320
+        attention_resolutions: [4, 2, 1]
+        num_res_blocks: 2
+        channel_mult: [1, 2, 4, 4]
+        dropout: 0.0
+        num_head_channels: 64
+        transformer_depth: 1
+        context_dim: 1024
+        use_linear: true
+        use_checkpoint: True
+        temporal_conv: True
+        temporal_attention: True
+        temporal_selfatt_only: true
+        use_relative_position: false
+        use_causal_attention: False
+        temporal_length: 16
+        addition_attention: true
+        image_cross_attention: true
+        default_fs: 6
+        fs_condition: false
+
+    first_stage_config:
+      target: lvdm.models.autoencoder.AutoencoderKL
+      params:
+        embed_dim: 4
+        monitor: val/rec_loss
+        ddconfig:
+          double_z: True
+          z_channels: 4
+          resolution: 256
+          in_channels: 3
+          out_ch: 3
+          ch: 128
+          ch_mult: [1, 2, 4, 4]
+          num_res_blocks: 2
+          attn_resolutions: []
+          dropout: 0.0
+        lossconfig:
+          target: torch.nn.Identity
+
+    cond_stage_config:
+      target: lvdm.modules.encoders.condition.FrozenOpenCLIPEmbedder
+      params:
+        freeze: true
+        layer: "penultimate"
+
+    img_cond_stage_config:
+      target: lvdm.modules.encoders.condition.FrozenOpenCLIPImageEmbedderV2
+      params:
+        freeze: true
+
+    image_proj_stage_config:
+      target: lvdm.modules.encoders.resampler.Resampler
+      params:
+        dim: 1024
+        depth: 4
+        dim_head: 64
+        heads: 12
+        num_queries: 16
+        embedding_dim: 1280
+        output_dim: 1024
+        ff_mult: 4
+        video_length: 16
+
+lightning:
+  precision: 16
+  trainer:
+    strategy: ddp
+    accelerator: "gpu"
+    devices: 1
+    limit_train_batches: 1.0
+    limit_val_batches: 8
+    check_val_every_n_epoch: 1
+    num_sanity_val_steps: 0
+    num_nodes: 1
+    benchmark: True
+    accumulate_grad_batches: 2 # 유효 배치 8
+    # Lightning의 step은 accumulation 이후 optimizer step이다. microbatch 2.22s × 2 accum이면
+    # 84시간에 약 68k step이 상한이므로 130k는 도달 불가였다. max_time이 실질 종료 조건이다.
+    max_steps: 68000
+    max_time: "03:12:00:00" # 84시간. 대회 한도 4일(96시간) 안쪽으로 여유를 둔다
+    log_every_n_steps: 25
+    gradient_clip_algorithm: "norm"
+    gradient_clip_val: 1.0
+    logger:
+      target: pytorch_lightning.loggers.CSVLogger
+      params:
+        save_dir: ../outputs/logs/
+        name: inha_full_unet
+  callbacks:
+    model_checkpoint:
+      target: pytorch_lightning.callbacks.ModelCheckpoint
+      params:
+        filename: "{epoch}-{step}"
+        save_weights_only: True
+        # 1.44B + partial EMA면 파일당 대략 8GB다. 1k 간격이면 68개 = 500GB를 넘겨
+        # 간격을 늘렸다. 첫 저장 후 실제 크기를 확인하고 필요하면 더 늘릴 것.
+        every_n_train_steps: 5000
+        save_top_k: -1
+        save_last: True

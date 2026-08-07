@@ -1,0 +1,189 @@
+{
+  "scope": "train-only oracle support; invalid for submission",
+  "samples_per_mode": 8,
+  "modes": [
+    "none",
+    "zero",
+    "batch-roll"
+  ],
+  "median_normal_future_edit_fraction": 0.7704045474529266,
+  "min_normal_future_edit_fraction": 0.0952146053314209,
+  "max_normal_future_edit_fraction": 0.86328125,
+  "mask_parameters": {
+    "threshold": 0.25,
+    "close": 7,
+    "dilate": 11,
+    "feather": 17,
+    "temporal_union": true
+  },
+  "rows": [
+    {
+      "sample_id": "holdout_0000",
+      "mode": "none",
+      "future_edit_fraction": 0.16930773854255676,
+      "generated_to_anchored_mae": 0.010502432473003864,
+      "output": "/nfsdata/home/lexxsh/workspace/inha/diagnostics/wan21_oracle_motion_refiner_250_anchored/none/holdout_0000.mp4"
+    },
+    {
+      "sample_id": "holdout_0001",
+      "mode": "none",
+      "future_edit_fraction": 0.5342970490455627,
+      "generated_to_anchored_mae": 0.0046846275217831135,
+      "output": "/nfsdata/home/lexxsh/workspace/inha/diagnostics/wan21_oracle_motion_refiner_250_anchored/none/holdout_0001.mp4"
+    },
+    {
+      "sample_id": "holdout_0002",
+      "mode": "none",
+      "future_edit_fraction": 0.740131139755249,
+      "generated_to_anchored_mae": 0.0010749805951490998,
+      "output": "/nfsdata/home/lexxsh/workspace/inha/diagnostics/wan21_oracle_motion_refiner_250_anchored/none/holdout_0002.mp4"
+    },
+    {
+      "sample_id": "holdout_0003",
+      "mode": "none",
+      "future_edit_fraction": 0.86328125,
+      "generated_to_anchored_mae": 4.859512614530104e-07,
+      "output": "/nfsdata/home/lexxsh/workspace/inha/diagnostics/wan21_oracle_motion_refiner_250_anchored/none/holdout_0003.mp4"
+    },
+    {
+      "sample_id": "holdout_0004",
+      "mode": "none",
+      "future_edit_fraction": 0.86328125,
+      "generated_to_anchored_mae": 1.070965936378343e-06,
+      "output": "/nfsdata/home/lexxsh/workspace/inha/diagnostics/wan21_oracle_motion_refiner_250_anchored/none/holdout_0004.mp4"
+    },
+    {
+      "sample_id": "holdout_0005",
+      "mode": "none",
+      "future_edit_fraction": 0.8006779551506042,
+      "generated_to_anchored_mae": 0.0004960323567502201,
+      "output": "/nfsdata/home/lexxsh/workspace/inha/diagnostics/wan21_oracle_motion_refiner_250_anchored/none/holdout_0005.mp4"
+    },
+    {
+      "sample_id": "holdout_0006",
+      "mode": "none",
+      "future_edit_fraction": 0.86328125,
+      "generated_to_anchored_mae": 1.243268570760847e-06,
+      "output": "/nfsdata/home/lexxsh/workspace/inha/diagnostics/wan21_oracle_motion_refiner_250_anchored/none/holdout_0006.mp4"
+    },
+    {
+      "sample_id": "holdout_0007",
+      "mode": "none",
+      "future_edit_fraction": 0.0952146053314209,
+      "generated_to_anchored_mae": 0.06202377378940582,
+      "output": "/nfsdata/home/lexxsh/workspace/inha/diagnostics/wan21_oracle_motion_refiner_250_anchored/none/holdout_0007.mp4"
+    },
+    {
+      "sample_id": "holdout_0000",
+      "mode": "zero",
+      "future_edit_fraction": 0.0,
+      "generated_to_anchored_mae": 0.037334803491830826,
+      "output": "/nfsdata/home/lexxsh/workspace/inha/diagnostics/wan21_oracle_motion_refiner_250_anchored/zero/holdout_0000.mp4"
+    },
+    {
+      "sample_id": "holdout_0001",
+      "mode": "zero",
+      "future_edit_fraction": 0.0,
+      "generated_to_anchored_mae": 0.01528084371238947,
+      "output": "/nfsdata/home/lexxsh/workspace/inha/diagnostics/wan21_oracle_motion_refiner_250_anchored/zero/holdout_0001.mp4"
+    },
+    {
+      "sample_id": "holdout_0002",
+      "mode": "zero",
+      "future_edit_fraction": 0.0,
+      "generated_to_anchored_mae": 0.020575813949108124,
+      "output": "/nfsdata/home/lexxsh/workspace/inha/diagnostics/wan21_oracle_motion_refiner_250_anchored/zero/holdout_0002.mp4"
+    },
+    {
+      "sample_id": "holdout_0003",
+      "mode": "zero",
+      "future_edit_fraction": 0.0,
+      "generated_to_anchored_mae": 0.09276284277439117,
+      "output": "/nfsdata/home/lexxsh/workspace/inha/diagnostics/wan21_oracle_motion_refiner_250_anchored/zero/holdout_0003.mp4"
+    },
+    {
+      "sample_id": "holdout_0004",
+      "mode": "zero",
+      "future_edit_fraction": 0.0,
+      "generated_to_anchored_mae": 0.051101550459861755,
+      "output": "/nfsdata/home/lexxsh/workspace/inha/diagnostics/wan21_oracle_motion_refiner_250_anchored/zero/holdout_0004.mp4"
+    },
+    {
+      "sample_id": "holdout_0005",
+      "mode": "zero",
+      "future_edit_fraction": 0.0,
+      "generated_to_anchored_mae": 0.022044861689209938,
+      "output": "/nfsdata/home/lexxsh/workspace/inha/diagnostics/wan21_oracle_motion_refiner_250_anchored/zero/holdout_0005.mp4"
+    },
+    {
+      "sample_id": "holdout_0006",
+      "mode": "zero",
+      "future_edit_fraction": 0.0,
+      "generated_to_anchored_mae": 0.0960589200258255,
+      "output": "/nfsdata/home/lexxsh/workspace/inha/diagnostics/wan21_oracle_motion_refiner_250_anchored/zero/holdout_0006.mp4"
+    },
+    {
+      "sample_id": "holdout_0007",
+      "mode": "zero",
+      "future_edit_fraction": 0.0,
+      "generated_to_anchored_mae": 0.08360692113637924,
+      "output": "/nfsdata/home/lexxsh/workspace/inha/diagnostics/wan21_oracle_motion_refiner_250_anchored/zero/holdout_0007.mp4"
+    },
+    {
+      "sample_id": "holdout_0000",
+      "mode": "batch-roll",
+      "future_edit_fraction": 0.5342970490455627,
+      "generated_to_anchored_mae": 0.03510834276676178,
+      "output": "/nfsdata/home/lexxsh/workspace/inha/diagnostics/wan21_oracle_motion_refiner_250_anchored/batch-roll/holdout_0000.mp4"
+    },
+    {
+      "sample_id": "holdout_0001",
+      "mode": "batch-roll",
+      "future_edit_fraction": 0.740131139755249,
+      "generated_to_anchored_mae": 0.0010974319884553552,
+      "output": "/nfsdata/home/lexxsh/workspace/inha/diagnostics/wan21_oracle_motion_refiner_250_anchored/batch-roll/holdout_0001.mp4"
+    },
+    {
+      "sample_id": "holdout_0002",
+      "mode": "batch-roll",
+      "future_edit_fraction": 0.86328125,
+      "generated_to_anchored_mae": 4.421869093107489e-08,
+      "output": "/nfsdata/home/lexxsh/workspace/inha/diagnostics/wan21_oracle_motion_refiner_250_anchored/batch-roll/holdout_0002.mp4"
+    },
+    {
+      "sample_id": "holdout_0003",
+      "mode": "batch-roll",
+      "future_edit_fraction": 0.86328125,
+      "generated_to_anchored_mae": 1.1195462548130308e-06,
+      "output": "/nfsdata/home/lexxsh/workspace/inha/diagnostics/wan21_oracle_motion_refiner_250_anchored/batch-roll/holdout_0003.mp4"
+    },
+    {
+      "sample_id": "holdout_0004",
+      "mode": "batch-roll",
+      "future_edit_fraction": 0.8006779551506042,
+      "generated_to_anchored_mae": 0.0009041227167472243,
+      "output": "/nfsdata/home/lexxsh/workspace/inha/diagnostics/wan21_oracle_motion_refiner_250_anchored/batch-roll/holdout_0004.mp4"
+    },
+    {
+      "sample_id": "holdout_0005",
+      "mode": "batch-roll",
+      "future_edit_fraction": 0.86328125,
+      "generated_to_anchored_mae": 5.816376642542309e-07,
+      "output": "/nfsdata/home/lexxsh/workspace/inha/diagnostics/wan21_oracle_motion_refiner_250_anchored/batch-roll/holdout_0005.mp4"
+    },
+    {
+      "sample_id": "holdout_0006",
+      "mode": "batch-roll",
+      "future_edit_fraction": 0.0952146053314209,
+      "generated_to_anchored_mae": 0.058326948434114456,
+      "output": "/nfsdata/home/lexxsh/workspace/inha/diagnostics/wan21_oracle_motion_refiner_250_anchored/batch-roll/holdout_0006.mp4"
+    },
+    {
+      "sample_id": "holdout_0007",
+      "mode": "batch-roll",
+      "future_edit_fraction": 0.16930773854255676,
+      "generated_to_anchored_mae": 0.05024179071187973,
+      "output": "/nfsdata/home/lexxsh/workspace/inha/diagnostics/wan21_oracle_motion_refiner_250_anchored/batch-roll/holdout_0007.mp4"
+    }
+  ]
+}

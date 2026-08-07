@@ -1,0 +1,1343 @@
+{
+  "scope": "skeleton calibration only; OSCAR/video generator not run",
+  "split": "holdout",
+  "methods": [
+    "multiframe",
+    "singleframe",
+    "mask"
+  ],
+  "response": 1.0,
+  "temporal_contract": "frame0=source_pose; frame1..15=action0..14",
+  "deployable_source_state_offset": [
+    -0.2197265625,
+    -0.703125,
+    0.6591796875,
+    -0.087890625,
+    0.1318359375,
+    0.5254341065883636
+  ],
+  "aggregate": {
+    "multiframe": {
+      "available": 7,
+      "deployable": false,
+      "median_differences": {
+        "state_normal_minus_zero": -14.207951297223856,
+        "state_normal_minus_reverse": -16.323404260634415,
+        "state_normal_minus_batch_roll": -26.762380904210648
+      },
+      "win_rates": {
+        "state_normal_minus_zero": 1.0,
+        "state_normal_minus_reverse": 1.0,
+        "state_normal_minus_batch_roll": 1.0
+      },
+      "median_source_alignment": {
+        "inside_frame_fraction": 1.0,
+        "inside_robot_mask_fraction": 1.0,
+        "median_centerline_distance_px": 2.865000009536743,
+        "robot_box_iou": 0.523958551001169
+      },
+      "source_alignment_gate": true,
+      "verdict": "PASS_SKELETON_GEOMETRY"
+    },
+    "singleframe": {
+      "available": 8,
+      "deployable": true,
+      "median_differences": {
+        "state_normal_minus_zero": -6.8764287186314785,
+        "state_normal_minus_reverse": -6.369278806795185,
+        "state_normal_minus_batch_roll": -23.8528064606164
+      },
+      "win_rates": {
+        "state_normal_minus_zero": 0.875,
+        "state_normal_minus_reverse": 0.875,
+        "state_normal_minus_batch_roll": 1.0
+      },
+      "median_source_alignment": {
+        "inside_frame_fraction": 1.0,
+        "inside_robot_mask_fraction": 0.9315068493150684,
+        "median_centerline_distance_px": 5.270050048828125,
+        "robot_box_iou": 0.5964433916698892
+      },
+      "source_alignment_gate": true,
+      "verdict": "PASS_SKELETON_GEOMETRY"
+    },
+    "mask": {
+      "available": 8,
+      "deployable": true,
+      "median_differences": {
+        "state_normal_minus_zero": -7.286471974537006,
+        "state_normal_minus_reverse": -4.328597598841922,
+        "state_normal_minus_batch_roll": -19.01720594297677
+      },
+      "win_rates": {
+        "state_normal_minus_zero": 0.875,
+        "state_normal_minus_reverse": 0.875,
+        "state_normal_minus_batch_roll": 1.0
+      },
+      "median_source_alignment": {
+        "inside_frame_fraction": 1.0,
+        "inside_robot_mask_fraction": 1.0,
+        "median_centerline_distance_px": 3.6935999393463135,
+        "robot_box_iou": 0.56086805509637
+      },
+      "source_alignment_gate": true,
+      "verdict": "PASS_SKELETON_GEOMETRY"
+    }
+  },
+  "samples": [
+    {
+      "sample_id": "holdout_0000",
+      "dataset": "sihyun77/suho_3_17_1",
+      "methods": {
+        "multiframe": {
+          "method": "multiframe_state_track",
+          "deployable": false,
+          "objective": 7.0382845923975985,
+          "q0_radians": [
+            -0.6305877486047821,
+            -0.5457983040017614,
+            -0.0042362053627552935,
+            1.5166148546275342,
+            0.19263658610875128,
+            0.2577885324638873
+          ],
+          "camera_ortho": {
+            "euler": [
+              -2.428065573143004,
+              -0.41822451227406193,
+              -2.1160054266022392
+            ],
+            "pixels_per_meter": 175.03547860420193,
+            "translation": [
+              58.324532225901734,
+              47.245945002610796
+            ]
+          },
+          "motion_track_rmse": {
+            "normal": 4.505030494933956,
+            "zero": 4.0593894516029545,
+            "reverse": 4.66901576823827,
+            "batch_roll": 5.469306455304025
+          },
+          "state_projection_rmse": {
+            "normal": 1.0505740337801281,
+            "zero": 2.0281743472789877,
+            "reverse": 3.3279336630848158,
+            "batch_roll": 9.30560041170693
+          },
+          "normal_minus_zero": 0.4456410433310012,
+          "normal_minus_reverse": -0.16398527330431456,
+          "normal_minus_batch_roll": -0.9642759603700695,
+          "state_normal_minus_zero": -0.9776003134988596,
+          "state_normal_minus_reverse": -2.2773596293046876,
+          "state_normal_minus_batch_roll": -8.255026377926802,
+          "source_alignment": {
+            "inside_frame_fraction": 1.0,
+            "robot_box_iou": 0.3926029815592419,
+            "inside_robot_mask_fraction": 1.0,
+            "median_centerline_distance_px": 0.9549999833106995
+          },
+          "source_state_policy": "oracle_observation_state"
+        },
+        "singleframe": {
+          "method": "singleframe_render_compare",
+          "deployable": true,
+          "objective": 3.1672546606335112,
+          "q0_radians": [
+            -0.6603110192528728,
+            -1.296765842491421,
+            1.3180489922939762,
+            0.5579931743052111,
+            -0.6707541539104475,
+            -0.6539795827459973
+          ],
+          "camera_ortho": {
+            "euler": [
+              -2.2294877915948206,
+              -0.479159273731733,
+              1.0183383091595113
+            ],
+            "pixels_per_meter": 275.64739531716293,
+            "translation": [
+              100.88357134451702,
+              20.803565446428294
+            ]
+          },
+          "motion_track_rmse": {
+            "normal": 4.390861663780881,
+            "zero": 4.081150971105042,
+            "reverse": 4.593186150862512,
+            "batch_roll": 4.950221983676237
+          },
+          "state_projection_rmse": {
+            "normal": 1.3725869586705168,
+            "zero": 4.817876025101656,
+            "reverse": 6.351427332629232,
+            "batch_roll": 16.989574686765412
+          },
+          "normal_minus_zero": 0.3097106926758393,
+          "normal_minus_reverse": -0.20232448708163098,
+          "normal_minus_batch_roll": -0.5593603198953563,
+          "state_normal_minus_zero": -3.445289066431139,
+          "state_normal_minus_reverse": -4.978840373958715,
+          "state_normal_minus_batch_roll": -15.616987728094895,
+          "source_alignment": {
+            "inside_frame_fraction": 1.0,
+            "robot_box_iou": 0.47014277825371437,
+            "inside_robot_mask_fraction": 0.9178082191780822,
+            "median_centerline_distance_px": 3.819999933242798
+          },
+          "source_state_policy": "train_median_state_minus_action"
+        },
+        "mask": {
+          "method": "singleframe_mask_refine",
+          "deployable": true,
+          "objective": 2.0323942725775526,
+          "q0_radians": [
+            -0.8264320725028702,
+            -0.9701962385688014,
+            1.038159715653926,
+            0.17016698589308688,
+            -0.6881724402368207,
+            -0.20403881593309123
+          ],
+          "camera_ortho": {
+            "euler": [
+              -2.3183922133569888,
+              -0.5537616619061871,
+              1.0290223254353266
+            ],
+            "pixels_per_meter": 236.7794272452228,
+            "translation": [
+              98.65083723247524,
+              6.116650472905741
+            ]
+          },
+          "motion_track_rmse": {
+            "normal": 4.511329753151669,
+            "zero": 3.680862334317227,
+            "reverse": 4.6342851642592064,
+            "batch_roll": 5.215563403347034
+          },
+          "state_projection_rmse": {
+            "normal": 1.0981896216754954,
+            "zero": 4.076282578336215,
+            "reverse": 5.415240222912086,
+            "batch_roll": 17.936159617382618
+          },
+          "normal_minus_zero": 0.8304674188344419,
+          "normal_minus_reverse": -0.1229554111075375,
+          "normal_minus_batch_roll": -0.7042336501953654,
+          "state_normal_minus_zero": -2.9780929566607197,
+          "state_normal_minus_reverse": -4.31705060123659,
+          "state_normal_minus_batch_roll": -16.837969995707123,
+          "source_alignment": {
+            "inside_frame_fraction": 1.0,
+            "robot_box_iou": 0.539845882766412,
+            "inside_robot_mask_fraction": 1.0,
+            "median_centerline_distance_px": 0.9549999833106995
+          },
+          "source_state_policy": "train_median_state_minus_action"
+        }
+      },
+      "robot_box": [
+        54.2393913269043,
+        0.007908344268798828,
+        116.72679138183594,
+        63.6872673034668
+      ],
+      "detection_score": 0.5320703387260437
+    },
+    {
+      "sample_id": "holdout_0001",
+      "dataset": "pranavsaroha/so100_carrot_5",
+      "methods": {
+        "multiframe": {
+          "method": "multiframe_state_track",
+          "deployable": false,
+          "objective": 9.683050190037466,
+          "q0_radians": [
+            1.5053343239211756,
+            -0.09703885816927967,
+            -0.1601001489372777,
+            -0.6643225309624411,
+            -0.6075413270002757,
+            -0.13984853202730324
+          ],
+          "camera_ortho": {
+            "euler": [
+              1.1809624463304857,
+              0.4225723578226368,
+              -2.2448564177926396
+            ],
+            "pixels_per_meter": 199.88985723614977,
+            "translation": [
+              174.24522819950326,
+              14.127735898108511
+            ]
+          },
+          "motion_track_rmse": {
+            "normal": 4.939297194036622,
+            "zero": 3.6252823561728715,
+            "reverse": 5.068130230046657,
+            "batch_roll": 6.841809474636408
+          },
+          "state_projection_rmse": {
+            "normal": 2.580814027032063,
+            "zero": 19.091658472678233,
+            "reverse": 18.904218287666477,
+            "batch_roll": 29.34319493124271
+          },
+          "normal_minus_zero": 1.3140148378637506,
+          "normal_minus_reverse": -0.12883303601003515,
+          "normal_minus_batch_roll": -1.9025122805997858,
+          "state_normal_minus_zero": -16.51084444564617,
+          "state_normal_minus_reverse": -16.323404260634415,
+          "state_normal_minus_batch_roll": -26.762380904210648,
+          "source_alignment": {
+            "inside_frame_fraction": 1.0,
+            "robot_box_iou": 0.276597707962248,
+            "inside_robot_mask_fraction": 1.0,
+            "median_centerline_distance_px": 4.107900142669678
+          },
+          "source_state_policy": "oracle_observation_state"
+        },
+        "singleframe": {
+          "method": "singleframe_render_compare",
+          "deployable": true,
+          "objective": 3.254914320686411,
+          "q0_radians": [
+            -0.1740893257899951,
+            -0.898499302675174,
+            1.4553435062864524,
+            1.2823968812199031,
+            -0.7238366868269122,
+            -0.26588303009167247
+          ],
+          "camera_ortho": {
+            "euler": [
+              -0.9742829708818355,
+              -2.1481813519854382,
+              0.11743029891500109
+            ],
+            "pixels_per_meter": 476.0149851350749,
+            "translation": [
+              214.4610683061092,
+              26.853323993623924
+            ]
+          },
+          "motion_track_rmse": {
+            "normal": 5.561098075067493,
+            "zero": 2.585115218837899,
+            "reverse": 5.564742368404294,
+            "batch_roll": 7.888642455257862
+          },
+          "state_projection_rmse": {
+            "normal": 4.199324425653705,
+            "zero": 43.953048569005446,
+            "reverse": 43.631632968714,
+            "batch_roll": 66.42916319955627
+          },
+          "normal_minus_zero": 2.975982856229594,
+          "normal_minus_reverse": -0.003644293336800608,
+          "normal_minus_batch_roll": -2.3275443801903686,
+          "state_normal_minus_zero": -39.75372414335174,
+          "state_normal_minus_reverse": -39.432308543060294,
+          "state_normal_minus_batch_roll": -62.229838773902564,
+          "source_alignment": {
+            "inside_frame_fraction": 1.0,
+            "robot_box_iou": 0.724464899451405,
+            "inside_robot_mask_fraction": 0.8493150684931506,
+            "median_centerline_distance_px": 4.648600101470947
+          },
+          "source_state_policy": "train_median_state_minus_action"
+        },
+        "mask": {
+          "method": "singleframe_mask_refine",
+          "deployable": true,
+          "objective": 6.619343143525171,
+          "q0_radians": [
+            -0.09872739771707767,
+            -0.6399282019846545,
+            1.5353014319131455,
+            1.676235819425203,
+            -1.0887698330881057,
+            0.11716120138674763
+          ],
+          "camera_ortho": {
+            "euler": [
+              -0.8151656819055777,
+              -2.244742267671486,
+              0.13673338198501853
+            ],
+            "pixels_per_meter": 472.3709624197452,
+            "translation": [
+              218.82698739304467,
+              25.193398412399503
+            ]
+          },
+          "motion_track_rmse": {
+            "normal": 5.402557893875062,
+            "zero": 3.437821505823979,
+            "reverse": 5.231683229985066,
+            "batch_roll": 9.073478061147044
+          },
+          "state_projection_rmse": {
+            "normal": 3.5521231629992602,
+            "zero": 36.45174154771947,
+            "reverse": 35.977626789273025,
+            "batch_roll": 58.27963681204132
+          },
+          "normal_minus_zero": 1.9647363880510826,
+          "normal_minus_reverse": 0.17087466388999584,
+          "normal_minus_batch_roll": -3.6709201672719827,
+          "state_normal_minus_zero": -32.89961838472021,
+          "state_normal_minus_reverse": -32.425503626273766,
+          "state_normal_minus_batch_roll": -54.72751364904206,
+          "source_alignment": {
+            "inside_frame_fraction": 1.0,
+            "robot_box_iou": 0.622556485475374,
+            "inside_robot_mask_fraction": 1.0,
+            "median_centerline_distance_px": 3.6935999393463135
+          },
+          "source_state_policy": "train_median_state_minus_action"
+        }
+      },
+      "robot_box": [
+        134.45265197753906,
+        7.994518280029297,
+        229.11070251464844,
+        94.64542388916016
+      ],
+      "detection_score": 0.39527979493141174
+    },
+    {
+      "sample_id": "holdout_0002",
+      "dataset": "pranavsaroha/so100_carrot_5",
+      "methods": {
+        "multiframe": {
+          "method": "multiframe_state_track",
+          "deployable": false,
+          "objective": 8.056427272792085,
+          "q0_radians": [
+            -1.811986028317483,
+            -0.0009876477316342652,
+            1.2204393880040245,
+            -0.4177110848259187,
+            -1.3891902682602353,
+            0.1347310987407694
+          ],
+          "camera_ortho": {
+            "euler": [
+              0.3094798014156553,
+              2.028302274315038,
+              2.6787146544768046
+            ],
+            "pixels_per_meter": 428.40282152900386,
+            "translation": [
+              138.88676971921552,
+              26.790374899753253
+            ]
+          },
+          "motion_track_rmse": {
+            "normal": 9.443597935741918,
+            "zero": 8.662772370951819,
+            "reverse": 10.338307229708697,
+            "batch_roll": 10.685051627940332
+          },
+          "state_projection_rmse": {
+            "normal": 1.552373826217394,
+            "zero": 13.929224103787803,
+            "reverse": 21.978917810387898,
+            "batch_roll": 61.34623750012329
+          },
+          "normal_minus_zero": 0.7808255647900992,
+          "normal_minus_reverse": -0.8947092939667787,
+          "normal_minus_batch_roll": -1.241453692198414,
+          "state_normal_minus_zero": -12.376850277570409,
+          "state_normal_minus_reverse": -20.426543984170504,
+          "state_normal_minus_batch_roll": -59.793863673905896,
+          "source_alignment": {
+            "inside_frame_fraction": 1.0,
+            "robot_box_iou": 0.523958551001169,
+            "inside_robot_mask_fraction": 0.958904109589041,
+            "median_centerline_distance_px": 2.865000009536743
+          },
+          "source_state_policy": "oracle_observation_state"
+        },
+        "singleframe": {
+          "method": "singleframe_render_compare",
+          "deployable": true,
+          "objective": 3.0585711491253207,
+          "q0_radians": [
+            0.01486098323242424,
+            -1.2857914455417825,
+            1.2502723295970042,
+            0.6101023935404528,
+            -0.1453625501769884,
+            -0.7001017918560609
+          ],
+          "camera_ortho": {
+            "euler": [
+              -2.496828153771241,
+              1.1490921653230222,
+              1.0456550290844067
+            ],
+            "pixels_per_meter": 398.8794674448551,
+            "translation": [
+              207.37586547337068,
+              58.47409719173127
+            ]
+          },
+          "motion_track_rmse": {
+            "normal": 10.3600394761211,
+            "zero": 7.873728620977373,
+            "reverse": 11.04434444353107,
+            "batch_roll": 10.588240585573084
+          },
+          "state_projection_rmse": {
+            "normal": 1.921798751650165,
+            "zero": 12.65348329784093,
+            "reverse": 19.78692648856852,
+            "batch_roll": 65.4625995680419
+          },
+          "normal_minus_zero": 2.486310855143727,
+          "normal_minus_reverse": -0.6843049674099699,
+          "normal_minus_batch_roll": -0.2282011094519838,
+          "state_normal_minus_zero": -10.731684546190765,
+          "state_normal_minus_reverse": -17.865127736918353,
+          "state_normal_minus_batch_roll": -63.54080081639173,
+          "source_alignment": {
+            "inside_frame_fraction": 1.0,
+            "robot_box_iou": 0.7381276189432512,
+            "inside_robot_mask_fraction": 0.7808219178082192,
+            "median_centerline_distance_px": 4.107900142669678
+          },
+          "source_state_policy": "train_median_state_minus_action"
+        },
+        "mask": {
+          "method": "singleframe_mask_refine",
+          "deployable": true,
+          "objective": 8.703096270446467,
+          "q0_radians": [
+            0.18866629363000365,
+            -1.230149512035934,
+            1.3108728625667663,
+            0.7309438752300252,
+            -0.011824112236851078,
+            -0.2541296064433914
+          ],
+          "camera_ortho": {
+            "euler": [
+              -2.536312953070314,
+              1.1160493102541016,
+              1.027639796792572
+            ],
+            "pixels_per_meter": 398.3057355242305,
+            "translation": [
+              196.700080152229,
+              57.07578803606132
+            ]
+          },
+          "motion_track_rmse": {
+            "normal": 10.020464419496504,
+            "zero": 7.87063342852717,
+            "reverse": 10.45180690467948,
+            "batch_roll": 10.002059772988325
+          },
+          "state_projection_rmse": {
+            "normal": 1.7775783454614247,
+            "zero": 11.330034607012637,
+            "reverse": 17.705918179081692,
+            "batch_roll": 62.45835654618146
+          },
+          "normal_minus_zero": 2.149830990969334,
+          "normal_minus_reverse": -0.43134248518297547,
+          "normal_minus_batch_roll": 0.018404646508178857,
+          "state_normal_minus_zero": -9.552456261551212,
+          "state_normal_minus_reverse": -15.928339833620267,
+          "state_normal_minus_batch_roll": -60.68077820072004,
+          "source_alignment": {
+            "inside_frame_fraction": 1.0,
+            "robot_box_iou": 0.7677691023533934,
+            "inside_robot_mask_fraction": 0.9041095890410958,
+            "median_centerline_distance_px": 3.6935999393463135
+          },
+          "source_state_policy": "train_median_state_minus_action"
+        }
+      },
+      "robot_box": [
+        101.05863952636719,
+        25.157608032226562,
+        201.5662078857422,
+        101.2479248046875
+      ],
+      "detection_score": 0.5421150326728821
+    },
+    {
+      "sample_id": "holdout_0003",
+      "dataset": "samsam0510/glove_reorientation_1",
+      "methods": {
+        "multiframe": {
+          "method": "multiframe_state_track",
+          "deployable": false,
+          "objective": 10.58197233614574,
+          "q0_radians": [
+            0.7103571794672471,
+            1.369989626965361,
+            0.38410798886201786,
+            1.6933700136958065,
+            -0.6296689110202267,
+            0.9906736483507875
+          ],
+          "camera_ortho": {
+            "euler": [
+              2.240767927061245,
+              -0.44963519941163355,
+              0.3080958240434735
+            ],
+            "pixels_per_meter": 449.67955518138734,
+            "translation": [
+              107.8437134084179,
+              28.53657782340725
+            ]
+          },
+          "motion_track_rmse": {
+            "normal": 7.257429382903687,
+            "zero": 15.56574892775562,
+            "reverse": 18.0114319133122,
+            "batch_roll": 14.587726835226727
+          },
+          "state_projection_rmse": {
+            "normal": 2.916217884693589,
+            "zero": 17.124169181917445,
+            "reverse": 19.948066522909308,
+            "batch_roll": 15.21863479421575
+          },
+          "normal_minus_zero": -8.308319544851933,
+          "normal_minus_reverse": -10.754002530408513,
+          "normal_minus_batch_roll": -7.33029745232304,
+          "state_normal_minus_zero": -14.207951297223856,
+          "state_normal_minus_reverse": -17.03184863821572,
+          "state_normal_minus_batch_roll": -12.302416909522162,
+          "source_alignment": {
+            "inside_frame_fraction": 1.0,
+            "robot_box_iou": 0.5841794972124444,
+            "inside_robot_mask_fraction": 0.958904109589041,
+            "median_centerline_distance_px": 4.107900142669678
+          },
+          "source_state_policy": "oracle_observation_state"
+        },
+        "singleframe": {
+          "method": "singleframe_render_compare",
+          "deployable": true,
+          "objective": 4.429983046593862,
+          "q0_radians": [
+            0.12918424433079778,
+            -1.0889408484599625,
+            -0.030360662812619288,
+            0.5898109080827032,
+            -0.42848254306821865,
+            -0.1497603166944846
+          ],
+          "camera_ortho": {
+            "euler": [
+              -0.5059425097643754,
+              -3.0464409913937787,
+              0.48732444243136586
+            ],
+            "pixels_per_meter": 354.43537999945505,
+            "translation": [
+              129.10222699930114,
+              31.511355445987647
+            ]
+          },
+          "motion_track_rmse": {
+            "normal": 15.743664761622137,
+            "zero": 17.258935240607716,
+            "reverse": 18.63285514666367,
+            "batch_roll": 15.215006095871711
+          },
+          "state_projection_rmse": {
+            "normal": 3.8954514492162837,
+            "zero": 10.548889375422608,
+            "reverse": 6.827805869464071,
+            "batch_roll": 5.115068039324481
+          },
+          "normal_minus_zero": -1.5152704789855793,
+          "normal_minus_reverse": -2.889190385041532,
+          "normal_minus_batch_roll": 0.5286586657504255,
+          "state_normal_minus_zero": -6.653437926206324,
+          "state_normal_minus_reverse": -2.9323544202477874,
+          "state_normal_minus_batch_roll": -1.2196165901081977,
+          "source_alignment": {
+            "inside_frame_fraction": 1.0,
+            "robot_box_iou": 0.3411302898170068,
+            "inside_robot_mask_fraction": 0.9315068493150684,
+            "median_centerline_distance_px": 5.730000019073486
+          },
+          "source_state_policy": "train_median_state_minus_action"
+        },
+        "mask": {
+          "method": "singleframe_mask_refine",
+          "deployable": true,
+          "objective": 4.5434827143987135,
+          "q0_radians": [
+            0.2642139104387107,
+            -1.20896049555741,
+            0.23874031532143614,
+            0.5218762501509704,
+            -0.10080421784432092,
+            0.28908462541788255
+          ],
+          "camera_ortho": {
+            "euler": [
+              -0.4106162707674238,
+              -2.9425393725895637,
+              0.3693247970427217
+            ],
+            "pixels_per_meter": 456.2479183883216,
+            "translation": [
+              122.35863505112412,
+              34.83609975402435
+            ]
+          },
+          "motion_track_rmse": {
+            "normal": 13.512028944847408,
+            "zero": 15.24758018565284,
+            "reverse": 16.970368904717287,
+            "batch_roll": 13.480979657768449
+          },
+          "state_projection_rmse": {
+            "normal": 4.85267711496111,
+            "zero": 13.360844450540089,
+            "reverse": 8.777538340883979,
+            "batch_roll": 6.514202908216966
+          },
+          "normal_minus_zero": -1.7355512408054317,
+          "normal_minus_reverse": -3.4583399598698783,
+          "normal_minus_batch_roll": 0.031049287078959154,
+          "state_normal_minus_zero": -8.508167335578978,
+          "state_normal_minus_reverse": -3.924861225922869,
+          "state_normal_minus_batch_roll": -1.6615257932558558,
+          "source_alignment": {
+            "inside_frame_fraction": 1.0,
+            "robot_box_iou": 0.45744239866063485,
+            "inside_robot_mask_fraction": 1.0,
+            "median_centerline_distance_px": 1.3693000078201294
+          },
+          "source_state_policy": "train_median_state_minus_action"
+        }
+      },
+      "robot_box": [
+        60.424800872802734,
+        20.813026428222656,
+        131.01458740234375,
+        72.86813354492188
+      ],
+      "detection_score": 0.4728682041168213
+    },
+    {
+      "sample_id": "holdout_0004",
+      "dataset": "samsam0510/glove_reorientation_1",
+      "methods": {
+        "multiframe": {
+          "method": "multiframe_state_track",
+          "deployable": false,
+          "objective": 20.34237592272777,
+          "q0_radians": [
+            1.5530075740279399,
+            0.7266642753506367,
+            -1.3581021850241026,
+            0.7005742920724735,
+            1.5657751685161667,
+            0.5919945412108658
+          ],
+          "camera_ortho": {
+            "euler": [
+              -0.12951017087633704,
+              -1.5961492995678215,
+              3.0420520165359
+            ],
+            "pixels_per_meter": 251.5752480296628,
+            "translation": [
+              58.67400958457114,
+              31.779613231682198
+            ]
+          },
+          "motion_track_rmse": {
+            "normal": 15.10053948523967,
+            "zero": 19.988718242182145,
+            "reverse": 19.75703333359592,
+            "batch_roll": 20.10765635506564
+          },
+          "state_projection_rmse": {
+            "normal": 4.271392707316571,
+            "zero": 21.770268879898858,
+            "reverse": 20.34498877190298,
+            "batch_roll": 38.47376752217298
+          },
+          "normal_minus_zero": -4.888178756942475,
+          "normal_minus_reverse": -4.65649384835625,
+          "normal_minus_batch_roll": -5.007116869825969,
+          "state_normal_minus_zero": -17.498876172582285,
+          "state_normal_minus_reverse": -16.073596064586408,
+          "state_normal_minus_batch_roll": -34.202374814856405,
+          "source_alignment": {
+            "inside_frame_fraction": 1.0,
+            "robot_box_iou": 0.1312949857415137,
+            "inside_robot_mask_fraction": 1.0,
+            "median_centerline_distance_px": 2.738600015640259
+          },
+          "source_state_policy": "oracle_observation_state"
+        },
+        "singleframe": {
+          "method": "singleframe_render_compare",
+          "deployable": true,
+          "objective": 4.364335036853149,
+          "q0_radians": [
+            1.0279917333275912,
+            -0.4168716947865567,
+            0.22082772054231314,
+            0.4114524934535506,
+            0.5887051909487306,
+            -0.8104207354224621
+          ],
+          "camera_ortho": {
+            "euler": [
+              0.7908692246958953,
+              1.4759195663379485,
+              1.6882034023717076
+            ],
+            "pixels_per_meter": 272.3665268627932,
+            "translation": [
+              32.9393302099681,
+              22.102944458053866
+            ]
+          },
+          "motion_track_rmse": {
+            "normal": 18.4461315463959,
+            "zero": 17.96505158725195,
+            "reverse": 18.35608418990823,
+            "batch_roll": 19.698925690654768
+          },
+          "state_projection_rmse": {
+            "normal": 2.79934691573914,
+            "zero": 6.8401685277642,
+            "reverse": 10.559064155370795,
+            "batch_roll": 31.01499978526214
+          },
+          "normal_minus_zero": 0.4810799591439512,
+          "normal_minus_reverse": 0.09004735648766982,
+          "normal_minus_batch_roll": -1.2527941442588677,
+          "state_normal_minus_zero": -4.040821612025059,
+          "state_normal_minus_reverse": -7.759717239631655,
+          "state_normal_minus_batch_roll": -28.215652869523,
+          "source_alignment": {
+            "inside_frame_fraction": 1.0,
+            "robot_box_iou": 0.5438098731960751,
+            "inside_robot_mask_fraction": 0.9315068493150684,
+            "median_centerline_distance_px": 5.477200031280518
+          },
+          "source_state_policy": "train_median_state_minus_action"
+        },
+        "mask": {
+          "method": "singleframe_mask_refine",
+          "deployable": true,
+          "objective": 7.600648622635121,
+          "q0_radians": [
+            0.7060974268082696,
+            -0.3322637078969966,
+            0.47948456291146657,
+            0.2517142819981968,
+            0.7927431985884926,
+            -0.3604665099350474
+          ],
+          "camera_ortho": {
+            "euler": [
+              0.9181603041493145,
+              1.2299993956147453,
+              1.6808800137699265
+            ],
+            "pixels_per_meter": 244.6551122655718,
+            "translation": [
+              42.540998298238044,
+              29.932466650500768
+            ]
+          },
+          "motion_track_rmse": {
+            "normal": 18.805333919747515,
+            "zero": 18.978307683411394,
+            "reverse": 19.11478349111227,
+            "batch_roll": 19.662147099848042
+          },
+          "state_projection_rmse": {
+            "normal": 2.517408097204424,
+            "zero": 7.471087691470284,
+            "reverse": 6.857552693651677,
+            "batch_roll": 23.019176618412775
+          },
+          "normal_minus_zero": -0.1729737636638795,
+          "normal_minus_reverse": -0.30944957136475537,
+          "normal_minus_batch_roll": -0.8568131801005272,
+          "state_normal_minus_zero": -4.953679594265861,
+          "state_normal_minus_reverse": -4.340144596447253,
+          "state_normal_minus_batch_roll": -20.50176852120835,
+          "source_alignment": {
+            "inside_frame_fraction": 1.0,
+            "robot_box_iou": 0.5100111449387155,
+            "inside_robot_mask_fraction": 1.0,
+            "median_centerline_distance_px": 5.062900066375732
+          },
+          "source_state_policy": "train_median_state_minus_action"
+        }
+      },
+      "robot_box": [
+        20.49971580505371,
+        5.026798248291016,
+        132.6554412841797,
+        65.26752471923828
+      ],
+      "detection_score": 0.3436373472213745
+    },
+    {
+      "sample_id": "holdout_0005",
+      "dataset": "samsam0510/glove_reorientation_1",
+      "methods": {
+        "multiframe": {
+          "method": "multiframe_state_track",
+          "deployable": false,
+          "objective": 14.54608183842264,
+          "q0_radians": [
+            1.5984154816949412,
+            0.8053466312061327,
+            -1.2052994301437072,
+            -0.4155215136884937,
+            1.50330499266776,
+            -0.4027835970390916
+          ],
+          "camera_ortho": {
+            "euler": [
+              -1.8066758093345456,
+              1.3159954102278935,
+              1.7600266490838117
+            ],
+            "pixels_per_meter": 609.9533774653569,
+            "translation": [
+              194.06589913505144,
+              125.67249477248579
+            ]
+          },
+          "motion_track_rmse": {
+            "normal": 4.886307128888927,
+            "zero": 4.251742708361692,
+            "reverse": 4.8742074143215275,
+            "batch_roll": 5.054868609687011
+          },
+          "state_projection_rmse": {
+            "normal": 4.585714989993545,
+            "zero": 37.190513381818924,
+            "reverse": 44.30918647304834,
+            "batch_roll": 29.79126171565162
+          },
+          "normal_minus_zero": 0.6345644205272345,
+          "normal_minus_reverse": 0.012099714567399111,
+          "normal_minus_batch_roll": -0.16856148079808442,
+          "state_normal_minus_zero": -32.604798391825376,
+          "state_normal_minus_reverse": -39.723471483054794,
+          "state_normal_minus_batch_roll": -25.205546725658074,
+          "source_alignment": {
+            "inside_frame_fraction": 1.0,
+            "robot_box_iou": 0.6376094081581791,
+            "inside_robot_mask_fraction": 1.0,
+            "median_centerline_distance_px": 5.477200031280518
+          },
+          "source_state_policy": "oracle_observation_state"
+        },
+        "singleframe": {
+          "method": "singleframe_render_compare",
+          "deployable": true,
+          "objective": 8.051959427545956,
+          "q0_radians": [
+            -0.22017232822039623,
+            0.7031181032991476,
+            0.19261148226492492,
+            0.07870753065536584,
+            -0.14043559831506308,
+            -0.6294653681794493
+          ],
+          "camera_ortho": {
+            "euler": [
+              0.5950200926492766,
+              -2.573103655286587,
+              -1.0751977066920069
+            ],
+            "pixels_per_meter": 766.1566626931066,
+            "translation": [
+              208.21282852892364,
+              145.6204132208699
+            ]
+          },
+          "motion_track_rmse": {
+            "normal": 5.509024927666306,
+            "zero": 4.693184066671694,
+            "reverse": 5.487347750433444,
+            "batch_roll": 5.747108283856574
+          },
+          "state_projection_rmse": {
+            "normal": 6.228743322882887,
+            "zero": 37.149885791117626,
+            "reverse": 48.179145912224655,
+            "batch_roll": 58.0108632409491
+          },
+          "normal_minus_zero": 0.8158408609946113,
+          "normal_minus_reverse": 0.021677177232861666,
+          "normal_minus_batch_roll": -0.238083356190268,
+          "state_normal_minus_zero": -30.921142468234738,
+          "state_normal_minus_reverse": -41.95040258934177,
+          "state_normal_minus_batch_roll": -51.782119918066215,
+          "source_alignment": {
+            "inside_frame_fraction": 1.0,
+            "robot_box_iou": 0.7569013981158577,
+            "inside_robot_mask_fraction": 1.0,
+            "median_centerline_distance_px": 21.908803939819336
+          },
+          "source_state_policy": "train_median_state_minus_action"
+        },
+        "mask": {
+          "method": "singleframe_mask_refine",
+          "deployable": true,
+          "objective": 19.89573312823606,
+          "q0_radians": [
+            -0.21053831696067724,
+            0.5820817041775322,
+            0.29591077945663885,
+            0.03751074377550192,
+            0.23719642261939822,
+            -0.179524864444666
+          ],
+          "camera_ortho": {
+            "euler": [
+              0.601194499768444,
+              -2.574199850670886,
+              -1.0618198147018914
+            ],
+            "pixels_per_meter": 814.6685006935259,
+            "translation": [
+              219.60216419165693,
+              153.41785514914747
+            ]
+          },
+          "motion_track_rmse": {
+            "normal": 6.280038910161659,
+            "zero": 5.2353635797393325,
+            "reverse": 6.216260013343083,
+            "batch_roll": 7.10059338747731
+          },
+          "state_projection_rmse": {
+            "normal": 6.37679502733886,
+            "zero": 39.030064309327805,
+            "reverse": 50.81300713197962,
+            "batch_roll": 63.685618019345235
+          },
+          "normal_minus_zero": 1.0446753304223266,
+          "normal_minus_reverse": 0.06377889681857596,
+          "normal_minus_batch_roll": -0.8205544773156506,
+          "state_normal_minus_zero": -32.65326928198895,
+          "state_normal_minus_reverse": -44.43621210464076,
+          "state_normal_minus_batch_roll": -57.30882299200638,
+          "source_alignment": {
+            "inside_frame_fraction": 1.0,
+            "robot_box_iou": 0.8326060883662167,
+            "inside_robot_mask_fraction": 1.0,
+            "median_centerline_distance_px": 23.081499099731445
+          },
+          "source_state_policy": "train_median_state_minus_action"
+        }
+      },
+      "robot_box": [
+        20.71624755859375,
+        12.979378700256348,
+        227.9569854736328,
+        159.0
+      ],
+      "detection_score": 0.4299023449420929
+    },
+    {
+      "sample_id": "holdout_0006",
+      "dataset": "samsam0510/glove_reorientation_1",
+      "methods": {
+        "multiframe": {
+          "method": "multiframe_state_track",
+          "deployable": false,
+          "objective": 7.699155005436225,
+          "q0_radians": [
+            0.20444391918058236,
+            1.4054970152844186,
+            -1.4147969975352794,
+            0.07462316137686135,
+            -2.94984973104747,
+            0.2583801931787975
+          ],
+          "camera_ortho": {
+            "euler": [
+              -2.8803322620324097,
+              1.6153106774902575,
+              1.156767445708088
+            ],
+            "pixels_per_meter": 222.22367256798816,
+            "translation": [
+              197.76980106411656,
+              32.69068226105869
+            ]
+          },
+          "motion_track_rmse": {
+            "normal": 7.6454627790546965,
+            "zero": 5.252896267277438,
+            "reverse": 7.636434817591792,
+            "batch_roll": 7.895866410628373
+          },
+          "state_projection_rmse": {
+            "normal": 4.168138417120489,
+            "zero": 16.977057184283105,
+            "reverse": 6.762603243067647,
+            "batch_roll": 41.20080958278067
+          },
+          "normal_minus_zero": 2.3925665117772583,
+          "normal_minus_reverse": 0.009027961462904521,
+          "normal_minus_batch_roll": -0.2504036315736764,
+          "state_normal_minus_zero": -12.808918767162616,
+          "state_normal_minus_reverse": -2.594464825947158,
+          "state_normal_minus_batch_roll": -37.03267116566018,
+          "source_alignment": {
+            "inside_frame_fraction": 1.0,
+            "robot_box_iou": 0.8256136874481872,
+            "inside_robot_mask_fraction": 1.0,
+            "median_centerline_distance_px": 2.3243000507354736
+          },
+          "source_state_policy": "oracle_observation_state"
+        },
+        "singleframe": {
+          "method": "singleframe_render_compare",
+          "deployable": true,
+          "objective": 3.7976068540918657,
+          "q0_radians": [
+            1.060698100507983,
+            -0.6796670011578942,
+            0.35220975351435213,
+            0.4950705978335108,
+            0.7821707471856185,
+            -1.0345316967339326
+          ],
+          "camera_ortho": {
+            "euler": [
+              1.2287592658363355,
+              -0.18118049018067656,
+              -1.9699323722094322
+            ],
+            "pixels_per_meter": 189.74940680118547,
+            "translation": [
+              165.9859449994538,
+              21.906364649021075
+            ]
+          },
+          "motion_track_rmse": {
+            "normal": 7.751677708360085,
+            "zero": 6.583750508784444,
+            "reverse": 7.6807335515118815,
+            "batch_roll": 7.597946927424914
+          },
+          "state_projection_rmse": {
+            "normal": 2.9238469755454153,
+            "zero": 10.023266486602047,
+            "reverse": 4.147155250368104,
+            "batch_roll": 14.720214778720738
+          },
+          "normal_minus_zero": 1.167927199575641,
+          "normal_minus_reverse": 0.07094415684820365,
+          "normal_minus_batch_roll": 0.15373078093517112,
+          "state_normal_minus_zero": -7.099419511056632,
+          "state_normal_minus_reverse": -1.2233082748226884,
+          "state_normal_minus_batch_roll": -11.796367803175322,
+          "source_alignment": {
+            "inside_frame_fraction": 1.0,
+            "robot_box_iou": 0.42560442748592164,
+            "inside_robot_mask_fraction": 1.0,
+            "median_centerline_distance_px": 9.837900161743164
+          },
+          "source_state_policy": "train_median_state_minus_action"
+        },
+        "mask": {
+          "method": "singleframe_mask_refine",
+          "deployable": true,
+          "objective": 5.3559113684245325,
+          "q0_radians": [
+            0.6288273458067173,
+            -0.4899523687673545,
+            0.2521231643449106,
+            0.07241456877635383,
+            0.34193177105340505,
+            -0.5845868329300359
+          ],
+          "camera_ortho": {
+            "euler": [
+              1.1331314060433535,
+              -0.378607814805717,
+              -1.982829090768466
+            ],
+            "pixels_per_meter": 208.13637770793895,
+            "translation": [
+              178.1002366172712,
+              24.352353203718135
+            ]
+          },
+          "motion_track_rmse": {
+            "normal": 6.952264790073519,
+            "zero": 5.818598635014056,
+            "reverse": 6.854257793595585,
+            "batch_roll": 6.684711870599887
+          },
+          "state_projection_rmse": {
+            "normal": 2.854742295306337,
+            "zero": 8.919518908801372,
+            "reverse": 4.128677037629081,
+            "batch_roll": 9.765461447187425
+          },
+          "normal_minus_zero": 1.1336661550594629,
+          "normal_minus_reverse": 0.09800699647793376,
+          "normal_minus_batch_roll": 0.2675529194736317,
+          "state_normal_minus_zero": -6.0647766134950345,
+          "state_normal_minus_reverse": -1.2739347423227438,
+          "state_normal_minus_batch_roll": -6.9107191518810875,
+          "source_alignment": {
+            "inside_frame_fraction": 1.0,
+            "robot_box_iou": 0.5818902274263281,
+            "inside_robot_mask_fraction": 1.0,
+            "median_centerline_distance_px": 1.3693000078201294
+          },
+          "source_state_policy": "train_median_state_minus_action"
+        }
+      },
+      "robot_box": [
+        110.09899139404297,
+        20.07244110107422,
+        201.92208862304688,
+        74.86766052246094
+      ],
+      "detection_score": 0.37542885541915894
+    },
+    {
+      "sample_id": "holdout_0007",
+      "dataset": "tkc79/so100_lego_box_2",
+      "methods": {
+        "singleframe": {
+          "method": "singleframe_render_compare",
+          "deployable": true,
+          "objective": 3.2960076136342797,
+          "q0_radians": [
+            0.7694360837459153,
+            -0.3374047510352249,
+            -0.3416480686441714,
+            0.30400772479768956,
+            -0.1553127037164499,
+            -0.5703879341083009
+          ],
+          "camera_ortho": {
+            "euler": [
+              1.1720817548814884,
+              -1.287642343002274,
+              -0.6905345976978231
+            ],
+            "pixels_per_meter": 200.32670563334702,
+            "translation": [
+              232.77758147580656,
+              156.21380061371354
+            ]
+          },
+          "motion_track_rmse": {
+            "normal": 1000.0,
+            "zero": 1000.0,
+            "reverse": 1000.0,
+            "batch_roll": 1000.0
+          },
+          "state_projection_rmse": {
+            "normal": 0.5096571841725919,
+            "zero": 0.5096571841725919,
+            "reverse": 0.5096571841725919,
+            "batch_roll": 19.999617235882386
+          },
+          "normal_minus_zero": 0.0,
+          "normal_minus_reverse": 0.0,
+          "normal_minus_batch_roll": 0.0,
+          "state_normal_minus_zero": 0.0,
+          "state_normal_minus_reverse": 0.0,
+          "state_normal_minus_batch_roll": -19.489960051709794,
+          "source_alignment": {
+            "inside_frame_fraction": 1.0,
+            "robot_box_iou": 0.6490769101437035,
+            "inside_robot_mask_fraction": 0.9452054794520548,
+            "median_centerline_distance_px": 5.062900066375732
+          },
+          "source_state_policy": "train_median_state_minus_action"
+        },
+        "mask": {
+          "method": "singleframe_mask_refine",
+          "deployable": true,
+          "objective": 12.14391988087888,
+          "q0_radians": [
+            0.7682021609986218,
+            -0.3832935124305241,
+            -0.25241088158709324,
+            0.6333724118411058,
+            -0.1761500708341469,
+            -0.3167899904724981
+          ],
+          "camera_ortho": {
+            "euler": [
+              1.1388606677246016,
+              -1.174645430108982,
+              -0.748144087806471
+            ],
+            "pixels_per_meter": 180.75602573600833,
+            "translation": [
+              232.34422299612078,
+              156.37138708101156
+            ]
+          },
+          "motion_track_rmse": {
+            "normal": 1000.0,
+            "zero": 1000.0,
+            "reverse": 1000.0,
+            "batch_roll": 1000.0
+          },
+          "state_projection_rmse": {
+            "normal": 0.4217034371947217,
+            "zero": 0.4217034371947217,
+            "reverse": 0.4217034371947217,
+            "batch_roll": 17.95434680193991
+          },
+          "normal_minus_zero": 0.0,
+          "normal_minus_reverse": 0.0,
+          "normal_minus_batch_roll": 0.0,
+          "state_normal_minus_zero": 0.0,
+          "state_normal_minus_reverse": 0.0,
+          "state_normal_minus_batch_roll": -17.532643364745187,
+          "source_alignment": {
+            "inside_frame_fraction": 1.0,
+            "robot_box_iou": 0.4555658264047593,
+            "inside_robot_mask_fraction": 0.9041095890410958,
+            "median_centerline_distance_px": 4.775000095367432
+          },
+          "source_state_policy": "train_median_state_minus_action"
+        }
+      },
+      "robot_box": [
+        171.5194549560547,
+        74.01773071289062,
+        234.7644805908203,
+        159.0
+      ],
+      "detection_score": 0.664201557636261
+    }
+  ]
+}

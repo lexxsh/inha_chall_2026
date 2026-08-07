@@ -1,0 +1,70 @@
+{
+  "method": "released Ctrl-World single-view adaptation",
+  "train_datasets": 119,
+  "holdout_datasets": 8,
+  "episodes_times_cameras": 11071,
+  "history_frames": 6,
+  "prediction_frames": 5,
+  "tokens_per_sample": 11,
+  "action_dim": 6,
+  "rollout_chunks": 4,
+  "rollout_chunk_shapes": [
+    [
+      11,
+      6
+    ],
+    [
+      11,
+      6
+    ],
+    [
+      11,
+      6
+    ],
+    [
+      11,
+      6
+    ]
+  ],
+  "future_group_shapes": [
+    [
+      4,
+      6
+    ],
+    [
+      4,
+      6
+    ],
+    [
+      4,
+      6
+    ],
+    [
+      4,
+      6
+    ]
+  ],
+  "train_holdout_overlap": [],
+  "frozen_manifest_datasets": [
+    "DorayakiLin/so100_pick_charger_on_tissue",
+    "ganker5/so100_dataline_0328",
+    "pranavsaroha/so100_carrot_5",
+    "samsam0510/glove_reorientation_1",
+    "sihyun77/suho_3_17_1",
+    "tkc79/so100_lego_box_2"
+  ],
+  "frozen_manifest_leakage_into_train": [],
+  "missing_video_count": 0,
+  "missing_data_count": 0,
+  "missing_examples": [],
+  "architecture_contract": {
+    "backbone": "stabilityai/stable-video-diffusion-img2vid",
+    "trainable": "full SVD UNet + 3-layer action projection MLP",
+    "frozen": "SVD VAE and image encoder",
+    "conditioning": "per-frame cross-attention",
+    "loss": "released Ctrl-World EDM-preconditioned x0 MSE on current+future",
+    "text_conditioning": false,
+    "multi_view": false
+  },
+  "verdict": "PASS_CTRL_WORLD_DATA_CONTRACT"
+}

@@ -1,0 +1,904 @@
+{
+  "scope_warning": "All variants use held-out future GT and are diagnostics, never submissions.",
+  "count": 24,
+  "variant_roots": {
+    "gt": "/nfsdata/home/lexxsh/workspace/inha/diagnostics/metric_decomposition/gt",
+    "static": "/nfsdata/home/lexxsh/workspace/inha/diagnostics/metric_decomposition/static",
+    "local_oracle": "/nfsdata/home/lexxsh/workspace/inha/diagnostics/metric_decomposition/local_oracle",
+    "motion_blur": "/nfsdata/home/lexxsh/workspace/inha/diagnostics/metric_decomposition/motion_blur",
+    "background_blur": "/nfsdata/home/lexxsh/workspace/inha/diagnostics/metric_decomposition/background_blur",
+    "temporal_reverse": "/nfsdata/home/lexxsh/workspace/inha/diagnostics/metric_decomposition/temporal_reverse"
+  },
+  "median_changed_fraction": 0.12519245147705077,
+  "pixel_per_sample": [
+    {
+      "sample_id": "val_000000",
+      "dataset": "sihyun77/suho_3_17_1",
+      "changed_fraction": 0.10657234191894531,
+      "pixel": {
+        "gt": {
+          "mae": 0.0,
+          "motion_mae": 0.0,
+          "background_mae": 0.0
+        },
+        "static": {
+          "mae": 0.02303435280919075,
+          "motion_mae": 0.1852281540632248,
+          "background_mae": 0.0036871025804430246
+        },
+        "local_oracle": {
+          "mae": 0.00329416012391448,
+          "motion_mae": 0.0,
+          "background_mae": 0.0036871025804430246
+        },
+        "motion_blur": {
+          "mae": 0.0059102559462189674,
+          "motion_mae": 0.055457703769207,
+          "background_mae": 0.0
+        },
+        "background_blur": {
+          "mae": 0.02121354267001152,
+          "motion_mae": 0.0,
+          "background_mae": 0.023743998259305954
+        },
+        "temporal_reverse": {
+          "mae": 0.010979894548654556,
+          "motion_mae": 0.07743692398071289,
+          "background_mae": 0.0030525787733495235
+        }
+      }
+    },
+    {
+      "sample_id": "val_000001",
+      "dataset": "pranavsaroha/so100_carrot_5",
+      "changed_fraction": 0.13126716613769532,
+      "pixel": {
+        "gt": {
+          "mae": 0.0,
+          "motion_mae": 0.0,
+          "background_mae": 0.0
+        },
+        "static": {
+          "mae": 0.018650652840733528,
+          "motion_mae": 0.11232306063175201,
+          "background_mae": 0.004496571607887745
+        },
+        "local_oracle": {
+          "mae": 0.003906319383531809,
+          "motion_mae": 0.0,
+          "background_mae": 0.004496571607887745
+        },
+        "motion_blur": {
+          "mae": 0.007987765595316887,
+          "motion_mae": 0.06085118651390076,
+          "background_mae": 0.0
+        },
+        "background_blur": {
+          "mae": 0.020421257242560387,
+          "motion_mae": 0.0,
+          "background_mae": 0.02350694313645363
+        },
+        "temporal_reverse": {
+          "mae": 0.02180173434317112,
+          "motion_mae": 0.11287098377943039,
+          "background_mae": 0.008041000925004482
+        }
+      }
+    },
+    {
+      "sample_id": "val_000002",
+      "dataset": "ganker5/so100_dataline_0328",
+      "changed_fraction": 0.10810699462890624,
+      "pixel": {
+        "gt": {
+          "mae": 0.0,
+          "motion_mae": 0.0,
+          "background_mae": 0.0
+        },
+        "static": {
+          "mae": 0.014475686475634575,
+          "motion_mae": 0.10136550664901733,
+          "background_mae": 0.003943704534322023
+        },
+        "local_oracle": {
+          "mae": 0.003517362056300044,
+          "motion_mae": 0.0,
+          "background_mae": 0.003943704534322023
+        },
+        "motion_blur": {
+          "mae": 0.004531601909548044,
+          "motion_mae": 0.04191773384809494,
+          "background_mae": 0.0
+        },
+        "background_blur": {
+          "mae": 0.009655981324613094,
+          "motion_mae": 0.0,
+          "background_mae": 0.010826388373970985
+        },
+        "temporal_reverse": {
+          "mae": 0.008770760148763657,
+          "motion_mae": 0.05137595906853676,
+          "background_mae": 0.003606550395488739
+        }
+      }
+    },
+    {
+      "sample_id": "val_000003",
+      "dataset": "DorayakiLin/so100_pick_charger_on_tissue",
+      "changed_fraction": 0.003884124755859375,
+      "pixel": {
+        "gt": {
+          "mae": 0.0,
+          "motion_mae": 0.0,
+          "background_mae": 0.0
+        },
+        "static": {
+          "mae": 0.0037014647386968136,
+          "motion_mae": 0.03408629819750786,
+          "background_mae": 0.003582987003028393
+        },
+        "local_oracle": {
+          "mae": 0.0035690702497959137,
+          "motion_mae": 0.0,
+          "background_mae": 0.003582987003028393
+        },
+        "motion_blur": {
+          "mae": 0.0004523503012023866,
+          "motion_mae": 0.11646132171154022,
+          "background_mae": 0.0
+        },
+        "background_blur": {
+          "mae": 0.02871602773666382,
+          "motion_mae": 0.0,
+          "background_mae": 0.028828002512454987
+        },
+        "temporal_reverse": {
+          "mae": 0.0026476040948182344,
+          "motion_mae": 0.03336966782808304,
+          "background_mae": 0.0025278108660131693
+        }
+      }
+    },
+    {
+      "sample_id": "val_000004",
+      "dataset": "tkc79/so100_lego_box_2",
+      "changed_fraction": 0.24664306640625,
+      "pixel": {
+        "gt": {
+          "mae": 0.0,
+          "motion_mae": 0.0,
+          "background_mae": 0.0
+        },
+        "static": {
+          "mae": 0.050862617790699005,
+          "motion_mae": 0.16871608793735504,
+          "background_mae": 0.012278323993086815
+        },
+        "local_oracle": {
+          "mae": 0.009249964728951454,
+          "motion_mae": 0.0,
+          "background_mae": 0.012278323993086815
+        },
+        "motion_blur": {
+          "mae": 0.013958433642983437,
+          "motion_mae": 0.0565936341881752,
+          "background_mae": 0.0
+        },
+        "background_blur": {
+          "mae": 0.008793407119810581,
+          "motion_mae": 0.0,
+          "background_mae": 0.011672296561300755
+        },
+        "temporal_reverse": {
+          "mae": 0.043474189937114716,
+          "motion_mae": 0.1388462483882904,
+          "background_mae": 0.012250144965946674
+        }
+      }
+    },
+    {
+      "sample_id": "val_000005",
+      "dataset": "samsam0510/glove_reorientation_1",
+      "changed_fraction": 0.13160972595214843,
+      "pixel": {
+        "gt": {
+          "mae": 0.0,
+          "motion_mae": 0.0,
+          "background_mae": 0.0
+        },
+        "static": {
+          "mae": 0.013250613585114479,
+          "motion_mae": 0.07438919693231583,
+          "background_mae": 0.0039846994914114475
+        },
+        "local_oracle": {
+          "mae": 0.003460272680968046,
+          "motion_mae": 0.0,
+          "background_mae": 0.0039846994914114475
+        },
+        "motion_blur": {
+          "mae": 0.005739046260714531,
+          "motion_mae": 0.04360653832554817,
+          "background_mae": 0.0
+        },
+        "background_blur": {
+          "mae": 0.01925553008913994,
+          "motion_mae": 0.0,
+          "background_mae": 0.022173816338181496
+        },
+        "temporal_reverse": {
+          "mae": 0.011477501131594181,
+          "motion_mae": 0.05321898311376572,
+          "background_mae": 0.005151330027729273
+        }
+      }
+    },
+    {
+      "sample_id": "val_000006",
+      "dataset": "sihyun77/suho_3_17_1",
+      "changed_fraction": 0.0316436767578125,
+      "pixel": {
+        "gt": {
+          "mae": 0.0,
+          "motion_mae": 0.0,
+          "background_mae": 0.0
+        },
+        "static": {
+          "mae": 0.0052758464589715,
+          "motion_mae": 0.09362797439098358,
+          "background_mae": 0.0023886989802122116
+        },
+        "local_oracle": {
+          "mae": 0.0023131126072257757,
+          "motion_mae": 0.0,
+          "background_mae": 0.0023886989802122116
+        },
+        "motion_blur": {
+          "mae": 0.001976547297090292,
+          "motion_mae": 0.06246262788772583,
+          "background_mae": 0.0
+        },
+        "background_blur": {
+          "mae": 0.0221882127225399,
+          "motion_mae": 0.0,
+          "background_mae": 0.022913284599781036
+        },
+        "temporal_reverse": {
+          "mae": 0.00698879873380065,
+          "motion_mae": 0.1014765277504921,
+          "background_mae": 0.003901152638718486
+        }
+      }
+    },
+    {
+      "sample_id": "val_000007",
+      "dataset": "pranavsaroha/so100_carrot_5",
+      "changed_fraction": 0.10663833618164062,
+      "pixel": {
+        "gt": {
+          "mae": 0.0,
+          "motion_mae": 0.0,
+          "background_mae": 0.0
+        },
+        "static": {
+          "mae": 0.01935763657093048,
+          "motion_mae": 0.13226531445980072,
+          "background_mae": 0.005880133714526892
+        },
+        "local_oracle": {
+          "mae": 0.005253088194876909,
+          "motion_mae": 0.0,
+          "background_mae": 0.005880133714526892
+        },
+        "motion_blur": {
+          "mae": 0.005964853335171938,
+          "motion_mae": 0.05593535676598549,
+          "background_mae": 0.0
+        },
+        "background_blur": {
+          "mae": 0.021084744483232498,
+          "motion_mae": 0.0,
+          "background_mae": 0.023601580411195755
+        },
+        "temporal_reverse": {
+          "mae": 0.013270427472889423,
+          "motion_mae": 0.0682370662689209,
+          "background_mae": 0.006709191482514143
+        }
+      }
+    },
+    {
+      "sample_id": "val_000008",
+      "dataset": "ganker5/so100_dataline_0328",
+      "changed_fraction": 0.13440017700195311,
+      "pixel": {
+        "gt": {
+          "mae": 0.0,
+          "motion_mae": 0.0,
+          "background_mae": 0.0
+        },
+        "static": {
+          "mae": 0.015595478005707264,
+          "motion_mae": 0.093133844435215,
+          "background_mae": 0.0035562256816774607
+        },
+        "local_oracle": {
+          "mae": 0.0030782681424170732,
+          "motion_mae": 0.0,
+          "background_mae": 0.0035562256816774607
+        },
+        "motion_blur": {
+          "mae": 0.005631108768284321,
+          "motion_mae": 0.04189806059002876,
+          "background_mae": 0.0
+        },
+        "background_blur": {
+          "mae": 0.008668254129588604,
+          "motion_mae": 0.0,
+          "background_mae": 0.010014154016971588
+        },
+        "temporal_reverse": {
+          "mae": 0.016730569303035736,
+          "motion_mae": 0.09295132756233215,
+          "background_mae": 0.0048959022387862206
+        }
+      }
+    },
+    {
+      "sample_id": "val_000009",
+      "dataset": "DorayakiLin/so100_pick_charger_on_tissue",
+      "changed_fraction": 0.10407905578613282,
+      "pixel": {
+        "gt": {
+          "mae": 0.0,
+          "motion_mae": 0.0,
+          "background_mae": 0.0
+        },
+        "static": {
+          "mae": 0.03041413053870201,
+          "motion_mae": 0.2656402289867401,
+          "background_mae": 0.0030879336409270763
+        },
+        "local_oracle": {
+          "mae": 0.00276654539629817,
+          "motion_mae": 0.0,
+          "background_mae": 0.0030879336409270763
+        },
+        "motion_blur": {
+          "mae": 0.009726911783218384,
+          "motion_mae": 0.09345697611570358,
+          "background_mae": 0.0
+        },
+        "background_blur": {
+          "mae": 0.019692417234182358,
+          "motion_mae": 0.0,
+          "background_mae": 0.021980075165629387
+        },
+        "temporal_reverse": {
+          "mae": 0.04139705374836922,
+          "motion_mae": 0.276789128780365,
+          "background_mae": 0.01405160129070282
+        }
+      }
+    },
+    {
+      "sample_id": "val_000010",
+      "dataset": "tkc79/so100_lego_box_2",
+      "changed_fraction": 0.3025402069091797,
+      "pixel": {
+        "gt": {
+          "mae": 0.0,
+          "motion_mae": 0.0,
+          "background_mae": 0.0
+        },
+        "static": {
+          "mae": 0.057641785591840744,
+          "motion_mae": 0.1669664829969406,
+          "background_mae": 0.010219505988061428
+        },
+        "local_oracle": {
+          "mae": 0.00712769478559494,
+          "motion_mae": 0.0,
+          "background_mae": 0.010219505988061428
+        },
+        "motion_blur": {
+          "mae": 0.014737842604517937,
+          "motion_mae": 0.04871367663145065,
+          "background_mae": 0.0
+        },
+        "background_blur": {
+          "mae": 0.0072039393708109856,
+          "motion_mae": 0.0,
+          "background_mae": 0.010328825563192368
+        },
+        "temporal_reverse": {
+          "mae": 0.06062789633870125,
+          "motion_mae": 0.14631693065166473,
+          "background_mae": 0.023458203300833702
+        }
+      }
+    },
+    {
+      "sample_id": "val_000011",
+      "dataset": "samsam0510/glove_reorientation_1",
+      "changed_fraction": 0.11911773681640625,
+      "pixel": {
+        "gt": {
+          "mae": 0.0,
+          "motion_mae": 0.0,
+          "background_mae": 0.0
+        },
+        "static": {
+          "mae": 0.014162285253405571,
+          "motion_mae": 0.08744644373655319,
+          "background_mae": 0.004252399317920208
+        },
+        "local_oracle": {
+          "mae": 0.00374586321413517,
+          "motion_mae": 0.0,
+          "background_mae": 0.004252399317920208
+        },
+        "motion_blur": {
+          "mae": 0.004417123273015022,
+          "motion_mae": 0.0370820052921772,
+          "background_mae": 0.0
+        },
+        "background_blur": {
+          "mae": 0.020376045256853104,
+          "motion_mae": 0.0,
+          "background_mae": 0.02313140593469143
+        },
+        "temporal_reverse": {
+          "mae": 0.022537313401699066,
+          "motion_mae": 0.08481594175100327,
+          "background_mae": 0.014115650206804276
+        }
+      }
+    },
+    {
+      "sample_id": "val_000012",
+      "dataset": "sihyun77/suho_3_17_1",
+      "changed_fraction": 0.16070098876953126,
+      "pixel": {
+        "gt": {
+          "mae": 0.0,
+          "motion_mae": 0.0,
+          "background_mae": 0.0
+        },
+        "static": {
+          "mae": 0.03401952236890793,
+          "motion_mae": 0.1867082118988037,
+          "background_mae": 0.004784147720783949
+        },
+        "local_oracle": {
+          "mae": 0.004015331156551838,
+          "motion_mae": 0.0,
+          "background_mae": 0.004784147720783949
+        },
+        "motion_blur": {
+          "mae": 0.00626353407278657,
+          "motion_mae": 0.038976315408945084,
+          "background_mae": 0.0
+        },
+        "background_blur": {
+          "mae": 0.018893156200647354,
+          "motion_mae": 0.0,
+          "background_mae": 0.022510632872581482
+        },
+        "temporal_reverse": {
+          "mae": 0.04777403920888901,
+          "motion_mae": 0.19852769374847412,
+          "background_mae": 0.0189091544598341
+        }
+      }
+    },
+    {
+      "sample_id": "val_000013",
+      "dataset": "pranavsaroha/so100_carrot_5",
+      "changed_fraction": 0.20040321350097656,
+      "pixel": {
+        "gt": {
+          "mae": 0.0,
+          "motion_mae": 0.0,
+          "background_mae": 0.0
+        },
+        "static": {
+          "mae": 0.03339024633169174,
+          "motion_mae": 0.14239415526390076,
+          "background_mae": 0.006070553790777922
+        },
+        "local_oracle": {
+          "mae": 0.004853995982557535,
+          "motion_mae": 0.0,
+          "background_mae": 0.006070553790777922
+        },
+        "motion_blur": {
+          "mae": 0.009822244755923748,
+          "motion_mae": 0.049012403935194016,
+          "background_mae": 0.0
+        },
+        "background_blur": {
+          "mae": 0.01866675354540348,
+          "motion_mae": 0.0,
+          "background_mae": 0.023345204070210457
+        },
+        "temporal_reverse": {
+          "mae": 0.03256317228078842,
+          "motion_mae": 0.11779652535915375,
+          "background_mae": 0.011201111599802971
+        }
+      }
+    },
+    {
+      "sample_id": "val_000014",
+      "dataset": "ganker5/so100_dataline_0328",
+      "changed_fraction": 0.1539325714111328,
+      "pixel": {
+        "gt": {
+          "mae": 0.0,
+          "motion_mae": 0.0,
+          "background_mae": 0.0
+        },
+        "static": {
+          "mae": 0.015827590599656105,
+          "motion_mae": 0.0838509202003479,
+          "background_mae": 0.0034515003208070993
+        },
+        "local_oracle": {
+          "mae": 0.0029202026780694723,
+          "motion_mae": 0.0,
+          "background_mae": 0.0034515003208070993
+        },
+        "motion_blur": {
+          "mae": 0.007013687398284674,
+          "motion_mae": 0.045563384890556335,
+          "background_mae": 0.0
+        },
+        "background_blur": {
+          "mae": 0.009127960540354252,
+          "motion_mae": 0.0,
+          "background_mae": 0.010788697749376297
+        },
+        "temporal_reverse": {
+          "mae": 0.019437963142991066,
+          "motion_mae": 0.08692368119955063,
+          "background_mae": 0.0071596866473555565
+        }
+      }
+    },
+    {
+      "sample_id": "val_000015",
+      "dataset": "DorayakiLin/so100_pick_charger_on_tissue",
+      "changed_fraction": 0.15204963684082032,
+      "pixel": {
+        "gt": {
+          "mae": 0.0,
+          "motion_mae": 0.0,
+          "background_mae": 0.0
+        },
+        "static": {
+          "mae": 0.03154817968606949,
+          "motion_mae": 0.19048114120960236,
+          "background_mae": 0.003049238817766309
+        },
+        "local_oracle": {
+          "mae": 0.0025856022257357836,
+          "motion_mae": 0.0,
+          "background_mae": 0.003049238817766309
+        },
+        "motion_blur": {
+          "mae": 0.01317482627928257,
+          "motion_mae": 0.08664815127849579,
+          "background_mae": 0.0
+        },
+        "background_blur": {
+          "mae": 0.016772156581282616,
+          "motion_mae": 0.0,
+          "background_mae": 0.019779635593295097
+        },
+        "temporal_reverse": {
+          "mae": 0.0399969182908535,
+          "motion_mae": 0.21524104475975037,
+          "background_mae": 0.008573172613978386
+        }
+      }
+    },
+    {
+      "sample_id": "val_000016",
+      "dataset": "tkc79/so100_lego_box_2",
+      "changed_fraction": 0.2742412567138672,
+      "pixel": {
+        "gt": {
+          "mae": 0.0,
+          "motion_mae": 0.0,
+          "background_mae": 0.0
+        },
+        "static": {
+          "mae": 0.05744107812643051,
+          "motion_mae": 0.18733644485473633,
+          "background_mae": 0.00835774652659893
+        },
+        "local_oracle": {
+          "mae": 0.006065706256777048,
+          "motion_mae": 0.0,
+          "background_mae": 0.00835774652659893
+        },
+        "motion_blur": {
+          "mae": 0.012348229065537453,
+          "motion_mae": 0.04502688720822334,
+          "background_mae": 0.0
+        },
+        "background_blur": {
+          "mae": 0.009301578626036644,
+          "motion_mae": 0.0,
+          "background_mae": 0.012816355563700199
+        },
+        "temporal_reverse": {
+          "mae": 0.06680165231227875,
+          "motion_mae": 0.15864865481853485,
+          "background_mae": 0.03209558501839638
+        }
+      }
+    },
+    {
+      "sample_id": "val_000017",
+      "dataset": "samsam0510/glove_reorientation_1",
+      "changed_fraction": 0.32063827514648435,
+      "pixel": {
+        "gt": {
+          "mae": 0.0,
+          "motion_mae": 0.0,
+          "background_mae": 0.0
+        },
+        "static": {
+          "mae": 0.05341082066297531,
+          "motion_mae": 0.15492743253707886,
+          "background_mae": 0.00549801392480731
+        },
+        "local_oracle": {
+          "mae": 0.0037351404316723347,
+          "motion_mae": 0.0,
+          "background_mae": 0.00549801392480731
+        },
+        "motion_blur": {
+          "mae": 0.011127215810120106,
+          "motion_mae": 0.0347033329308033,
+          "background_mae": 0.0
+        },
+        "background_blur": {
+          "mae": 0.0158022902905941,
+          "motion_mae": 0.0,
+          "background_mae": 0.023260487243533134
+        },
+        "temporal_reverse": {
+          "mae": 0.04480072110891342,
+          "motion_mae": 0.11883626878261566,
+          "background_mae": 0.009858166798949242
+        }
+      }
+    },
+    {
+      "sample_id": "val_000018",
+      "dataset": "sihyun77/suho_3_17_1",
+      "changed_fraction": 0.0028141021728515627,
+      "pixel": {
+        "gt": {
+          "mae": 0.0,
+          "motion_mae": 0.0,
+          "background_mae": 0.0
+        },
+        "static": {
+          "mae": 0.0029949890449643135,
+          "motion_mae": 0.03783407434821129,
+          "background_mae": 0.0028966725803911686
+        },
+        "local_oracle": {
+          "mae": 0.0028885204810649157,
+          "motion_mae": 0.0,
+          "background_mae": 0.0028966725803911686
+        },
+        "motion_blur": {
+          "mae": 0.0002922791172750294,
+          "motion_mae": 0.10386230051517487,
+          "background_mae": 0.0
+        },
+        "background_blur": {
+          "mae": 0.022736933082342148,
+          "motion_mae": 0.0,
+          "background_mae": 0.022801099345088005
+        },
+        "temporal_reverse": {
+          "mae": 0.0027942671440541744,
+          "motion_mae": 0.018464207649230957,
+          "background_mae": 0.0027500465512275696
+        }
+      }
+    },
+    {
+      "sample_id": "val_000019",
+      "dataset": "pranavsaroha/so100_carrot_5",
+      "changed_fraction": 0.0814544677734375,
+      "pixel": {
+        "gt": {
+          "mae": 0.0,
+          "motion_mae": 0.0,
+          "background_mae": 0.0
+        },
+        "static": {
+          "mae": 0.015768971294164658,
+          "motion_mae": 0.13618583977222443,
+          "background_mae": 0.005090686958283186
+        },
+        "local_oracle": {
+          "mae": 0.0046760281547904015,
+          "motion_mae": 0.0,
+          "background_mae": 0.005090686958283186
+        },
+        "motion_blur": {
+          "mae": 0.00533096119761467,
+          "motion_mae": 0.065447136759758,
+          "background_mae": 0.0
+        },
+        "background_blur": {
+          "mae": 0.0215345099568367,
+          "motion_mae": 0.0,
+          "background_mae": 0.023444151505827904
+        },
+        "temporal_reverse": {
+          "mae": 0.02275054343044758,
+          "motion_mae": 0.13948532938957214,
+          "background_mae": 0.012398779392242432
+        }
+      }
+    },
+    {
+      "sample_id": "val_000020",
+      "dataset": "ganker5/so100_dataline_0328",
+      "changed_fraction": 0.09436264038085937,
+      "pixel": {
+        "gt": {
+          "mae": 0.0,
+          "motion_mae": 0.0,
+          "background_mae": 0.0
+        },
+        "static": {
+          "mae": 0.011963266879320145,
+          "motion_mae": 0.08851167559623718,
+          "background_mae": 0.003987329080700874
+        },
+        "local_oracle": {
+          "mae": 0.0036110724322497845,
+          "motion_mae": 0.0,
+          "background_mae": 0.003987329080700874
+        },
+        "motion_blur": {
+          "mae": 0.003255685092881322,
+          "motion_mae": 0.034501850605010986,
+          "background_mae": 0.0
+        },
+        "background_blur": {
+          "mae": 0.010275132022798061,
+          "motion_mae": 0.0,
+          "background_mae": 0.011345749720931053
+        },
+        "temporal_reverse": {
+          "mae": 0.016237761825323105,
+          "motion_mae": 0.08617596328258514,
+          "background_mae": 0.00895056501030922
+        }
+      }
+    },
+    {
+      "sample_id": "val_000021",
+      "dataset": "DorayakiLin/so100_pick_charger_on_tissue",
+      "changed_fraction": 0.0004001617431640625,
+      "pixel": {
+        "gt": {
+          "mae": 0.0,
+          "motion_mae": 0.0,
+          "background_mae": 0.0
+        },
+        "static": {
+          "mae": 0.003707803087309003,
+          "motion_mae": 0.01671433076262474,
+          "background_mae": 0.003702595829963684
+        },
+        "local_oracle": {
+          "mae": 0.0037011150270700455,
+          "motion_mae": 0.0,
+          "background_mae": 0.003702595829963684
+        },
+        "motion_blur": {
+          "mae": 4.33409477409441e-05,
+          "motion_mae": 0.1083085685968399,
+          "background_mae": 0.0
+        },
+        "background_blur": {
+          "mae": 0.029709085822105408,
+          "motion_mae": 0.0,
+          "background_mae": 0.0297209732234478
+        },
+        "temporal_reverse": {
+          "mae": 0.003728000447154045,
+          "motion_mae": 0.014457590878009796,
+          "background_mae": 0.0037237058859318495
+        }
+      }
+    },
+    {
+      "sample_id": "val_000022",
+      "dataset": "tkc79/so100_lego_box_2",
+      "changed_fraction": 0.042907333374023436,
+      "pixel": {
+        "gt": {
+          "mae": 0.0,
+          "motion_mae": 0.0,
+          "background_mae": 0.0
+        },
+        "static": {
+          "mae": 0.007444311864674091,
+          "motion_mae": 0.12243780493736267,
+          "background_mae": 0.0022890486288815737
+        },
+        "local_oracle": {
+          "mae": 0.0021908325143158436,
+          "motion_mae": 0.0,
+          "background_mae": 0.0022890486288815737
+        },
+        "motion_blur": {
+          "mae": 0.0033666961826384068,
+          "motion_mae": 0.07846436649560928,
+          "background_mae": 0.0
+        },
+        "background_blur": {
+          "mae": 0.01630227454006672,
+          "motion_mae": 0.0,
+          "background_mae": 0.01703311875462532
+        },
+        "temporal_reverse": {
+          "mae": 0.012551243416965008,
+          "motion_mae": 0.12240293622016907,
+          "background_mae": 0.0076264855451881886
+        }
+      }
+    },
+    {
+      "sample_id": "val_000023",
+      "dataset": "samsam0510/glove_reorientation_1",
+      "changed_fraction": 0.2086627960205078,
+      "pixel": {
+        "gt": {
+          "mae": 0.0,
+          "motion_mae": 0.0,
+          "background_mae": 0.0
+        },
+        "static": {
+          "mae": 0.02258090302348137,
+          "motion_mae": 0.09074283391237259,
+          "background_mae": 0.004607707262039185
+        },
+        "local_oracle": {
+          "mae": 0.0036462494172155857,
+          "motion_mae": 0.0,
+          "background_mae": 0.004607707262039185
+        },
+        "motion_blur": {
+          "mae": 0.009252500720322132,
+          "motion_mae": 0.04434187710285187,
+          "background_mae": 0.0
+        },
+        "background_blur": {
+          "mae": 0.017408927902579308,
+          "motion_mae": 0.0,
+          "background_mae": 0.02199937030673027
+        },
+        "temporal_reverse": {
+          "mae": 0.01936344988644123,
+          "motion_mae": 0.059726614505052567,
+          "background_mae": 0.008720329031348228
+        }
+      }
+    }
+  ],
+  "feature_scores": null
+}
