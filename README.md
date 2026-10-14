@@ -1,10 +1,8 @@
 # INHA World Model Challenge 2026
 
-SO100 로봇의 첫 관측 이미지와 16-step, 6D action trajectory로 16-frame 영상을 생성하는 대회의 연구·실험 저장소입니다.
+SO100 로봇의 첫 관측 이미지와 16-step, 6D action trajectory로 16-frame 영상을 생성하는 대회입니다.
 
-현재 전체 결론과 대회 정의는 [PROJECT_SUMMARY.md](PROJECT_SUMMARY.md)에서 시작하면 됩니다. 이 저장소는 성공한 두 후보뿐 아니라 실패한 실험과 그 원인도 보존합니다. 아래 계획은 절대적인 최종 계획이 아니며, 독립적인 train-only holdout과 실제 제출 결과가 반박하면 변경합니다.
-
-## 현재 핵심 결과
+## 결과
 
 | 후보 | 공개 점수 | 현재 역할 |
 |---|---:|---|
@@ -12,7 +10,7 @@ SO100 로봇의 첫 관측 이미지와 16-step, 6D action trajectory로 16-fram
 | Wan2.1-I2V-14B Spatial Action 250-step | **0.25** | 시각 품질 reference |
 | Dream/DynamiCrafter 10K | 0.28188 | 최초 제출 baseline |
 
-점수는 낮을수록 좋으며, 공식 산식은 `0.3 × DINO + 0.3 × Video Feature + 0.4 × Action`입니다.
+점수는 낮을수록 좋으며, 산식은 `0.3 × DINO + 0.3 × Video Feature + 0.4 × Action`입니다.
 
 ## 문서 안내
 
